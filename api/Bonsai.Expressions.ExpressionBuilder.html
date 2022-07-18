@@ -1,0 +1,664 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ExpressionBuilder
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ExpressionBuilder
+   ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Bonsai.Expressions.ExpressionBuilder">
+  
+  
+  <h1 id="Bonsai_Expressions_ExpressionBuilder" data-uid="Bonsai.Expressions.ExpressionBuilder" class="text-break">Class ExpressionBuilder
+  </h1>
+  <div class="markdown level0 summary"><p>Provides the abstract base class for all expression tree node builders.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">ExpressionBuilder</span></div>
+      <div class="level2"><a class="xref" href="Bonsai.Expressions.DisableBuilder.html">DisableBuilder</a></div>
+      <div class="level2"><a class="xref" href="Bonsai.Expressions.ExternalizedProperty.html">ExternalizedProperty</a></div>
+      <div class="level2"><a class="xref" href="Bonsai.Expressions.InspectBuilder.html">InspectBuilder</a></div>
+      <div class="level2"><a class="xref" href="Bonsai.Expressions.PropertySource.html">PropertySource</a></div>
+      <div class="level2"><a class="xref" href="Bonsai.Expressions.SingleArgumentExpressionBuilder.html">SingleArgumentExpressionBuilder</a></div>
+      <div class="level2"><a class="xref" href="Bonsai.Expressions.UnitBuilder.html">UnitBuilder</a></div>
+      <div class="level2"><a class="xref" href="Bonsai.Expressions.UnknownTypeBuilder.html">UnknownTypeBuilder</a></div>
+      <div class="level2"><a class="xref" href="Bonsai.Expressions.VariableArgumentExpressionBuilder.html">VariableArgumentExpressionBuilder</a></div>
+      <div class="level2"><a class="xref" href="Bonsai.Expressions.WorkflowExpressionBuilder.html">WorkflowExpressionBuilder</a></div>
+      <div class="level2"><a class="xref" href="Bonsai.Expressions.ZeroArgumentExpressionBuilder.html">ZeroArgumentExpressionBuilder</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Bonsai.Expressions.IExpressionBuilder.html">IExpressionBuilder</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Bonsai.Expressions.html">Bonsai.Expressions</a></h6>
+  <h6><strong>Assembly</strong>: Bonsai.Core.dll</h6>
+  <h5 id="Bonsai_Expressions_ExpressionBuilder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TypeConverter(&quot;Bonsai.Design.ExpressionBuilderTypeConverter, Bonsai.Design&quot;)]
+public abstract class ExpressionBuilder : IExpressionBuilder</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Expressions_ExpressionBuilder__ctor.md&amp;value=---%0Auid%3A%20Bonsai.Expressions.ExpressionBuilder.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/Expressions/ExpressionBuilder.cs/#L31">View Source</a>
+  </span>
+  <a id="Bonsai_Expressions_ExpressionBuilder__ctor_" data-uid="Bonsai.Expressions.ExpressionBuilder.#ctor*"></a>
+  <h4 id="Bonsai_Expressions_ExpressionBuilder__ctor" data-uid="Bonsai.Expressions.ExpressionBuilder.#ctor">ExpressionBuilder()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bonsai.Expressions.ExpressionBuilder.html">ExpressionBuilder</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ExpressionBuilder()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Expressions_ExpressionBuilder_ArgumentRange.md&amp;value=---%0Auid%3A%20Bonsai.Expressions.ExpressionBuilder.ArgumentRange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/Expressions/ExpressionBuilder.cs/#L50">View Source</a>
+  </span>
+  <a id="Bonsai_Expressions_ExpressionBuilder_ArgumentRange_" data-uid="Bonsai.Expressions.ExpressionBuilder.ArgumentRange*"></a>
+  <h4 id="Bonsai_Expressions_ExpressionBuilder_ArgumentRange" data-uid="Bonsai.Expressions.ExpressionBuilder.ArgumentRange">ArgumentRange</h4>
+  <div class="markdown level1 summary"><p>Gets the range of input arguments that this expression builder accepts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Browsable(false)]
+public abstract Range&lt;int&gt; ArgumentRange { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Range-1.html">Range</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Expressions_ExpressionBuilder_Build_System_Collections_Generic_IEnumerable_System_Linq_Expressions_Expression__.md&amp;value=---%0Auid%3A%20Bonsai.Expressions.ExpressionBuilder.Build(System.Collections.Generic.IEnumerable%7BSystem.Linq.Expressions.Expression%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/Expressions/ExpressionBuilder.cs/#L62">View Source</a>
+  </span>
+  <a id="Bonsai_Expressions_ExpressionBuilder_Build_" data-uid="Bonsai.Expressions.ExpressionBuilder.Build*"></a>
+  <h4 id="Bonsai_Expressions_ExpressionBuilder_Build_System_Collections_Generic_IEnumerable_System_Linq_Expressions_Expression__" data-uid="Bonsai.Expressions.ExpressionBuilder.Build(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})">Build(IEnumerable&lt;Expression&gt;)</h4>
+  <div class="markdown level1 summary"><p>Constructs an <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.linq.expressions.expression">Expression</a> node from a collection of input
+arguments. The result can be chained with other builders in a workflow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Expression Build(IEnumerable&lt;Expression&gt; arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.linq.expressions.expression">Expression</a>&gt;</td>
+        <td><span class="parametername">arguments</span></td>
+        <td><p>A collection of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.linq.expressions.expression">Expression</a> nodes representing the input
+arguments.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.linq.expressions.expression">Expression</a></td>
+        <td><p>The constructed <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.linq.expressions.expression">Expression</a> node.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Expressions_ExpressionBuilder_FromWorkflowElement_System_Object_Bonsai_ElementCategory_.md&amp;value=---%0Auid%3A%20Bonsai.Expressions.ExpressionBuilder.FromWorkflowElement(System.Object%2CBonsai.ElementCategory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/Expressions/ExpressionBuilder.cs/#L156">View Source</a>
+  </span>
+  <a id="Bonsai_Expressions_ExpressionBuilder_FromWorkflowElement_" data-uid="Bonsai.Expressions.ExpressionBuilder.FromWorkflowElement*"></a>
+  <h4 id="Bonsai_Expressions_ExpressionBuilder_FromWorkflowElement_System_Object_Bonsai_ElementCategory_" data-uid="Bonsai.Expressions.ExpressionBuilder.FromWorkflowElement(System.Object,Bonsai.ElementCategory)">FromWorkflowElement(Object, ElementCategory)</h4>
+  <div class="markdown level1 summary"><p>Creates a new expression builder from the specified editor browsable element and category.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ExpressionBuilder FromWorkflowElement(object element, ElementCategory elementCategory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">element</span></td>
+        <td><p>The editor browsable element for which to build a new expression builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bonsai.ElementCategory.html">ElementCategory</a></td>
+        <td><span class="parametername">elementCategory</span></td>
+        <td><p>The workflow category of the specified element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Expressions.ExpressionBuilder.html">ExpressionBuilder</a></td>
+        <td><p>A new <a class="xref" href="Bonsai.Expressions.ExpressionBuilder.html">ExpressionBuilder</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Expressions_ExpressionBuilder_GetElementDisplayName_System_Object_.md&amp;value=---%0Auid%3A%20Bonsai.Expressions.ExpressionBuilder.GetElementDisplayName(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/Expressions/ExpressionBuilder.cs/#L210">View Source</a>
+  </span>
+  <a id="Bonsai_Expressions_ExpressionBuilder_GetElementDisplayName_" data-uid="Bonsai.Expressions.ExpressionBuilder.GetElementDisplayName*"></a>
+  <h4 id="Bonsai_Expressions_ExpressionBuilder_GetElementDisplayName_System_Object_" data-uid="Bonsai.Expressions.ExpressionBuilder.GetElementDisplayName(System.Object)">GetElementDisplayName(Object)</h4>
+  <div class="markdown level1 summary"><p>Gets the display name for the specified element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetElementDisplayName(object element)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">element</span></td>
+        <td><p>The element for which to retrieve the display name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The name of the element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Expressions_ExpressionBuilder_GetElementDisplayName_System_Type_.md&amp;value=---%0Auid%3A%20Bonsai.Expressions.ExpressionBuilder.GetElementDisplayName(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/Expressions/ExpressionBuilder.cs/#L192">View Source</a>
+  </span>
+  <a id="Bonsai_Expressions_ExpressionBuilder_GetElementDisplayName_" data-uid="Bonsai.Expressions.ExpressionBuilder.GetElementDisplayName*"></a>
+  <h4 id="Bonsai_Expressions_ExpressionBuilder_GetElementDisplayName_System_Type_" data-uid="Bonsai.Expressions.ExpressionBuilder.GetElementDisplayName(System.Type)">GetElementDisplayName(Type)</h4>
+  <div class="markdown level1 summary"><p>Gets the display name for the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetElementDisplayName(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a> for which to retrieve the display name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The display name for the specified <code data-dev-comment-type="paramref" class="paramref">type</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Expressions_ExpressionBuilder_GetVisualizerElement_Bonsai_Expressions_ExpressionBuilder_.md&amp;value=---%0Auid%3A%20Bonsai.Expressions.ExpressionBuilder.GetVisualizerElement(Bonsai.Expressions.ExpressionBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/Expressions/ExpressionBuilder.cs/#L126">View Source</a>
+  </span>
+  <a id="Bonsai_Expressions_ExpressionBuilder_GetVisualizerElement_" data-uid="Bonsai.Expressions.ExpressionBuilder.GetVisualizerElement*"></a>
+  <h4 id="Bonsai_Expressions_ExpressionBuilder_GetVisualizerElement_Bonsai_Expressions_ExpressionBuilder_" data-uid="Bonsai.Expressions.ExpressionBuilder.GetVisualizerElement(Bonsai.Expressions.ExpressionBuilder)">GetVisualizerElement(ExpressionBuilder)</h4>
+  <div class="markdown level1 summary"><p>Returns the <a class="xref" href="Bonsai.Expressions.InspectBuilder.html">InspectBuilder</a> instance that should be used to visualize
+the specified workflow element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InspectBuilder GetVisualizerElement(ExpressionBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Expressions.ExpressionBuilder.html">ExpressionBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The <a class="xref" href="Bonsai.Expressions.ExpressionBuilder.html">ExpressionBuilder</a> for which to retrieve the visualizer element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Expressions.InspectBuilder.html">InspectBuilder</a></td>
+        <td><p>The <a class="xref" href="Bonsai.Expressions.InspectBuilder.html">InspectBuilder</a> instance that should be used to visualize the
+specified workflow element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Expressions_ExpressionBuilder_GetWorkflowElement_Bonsai_Expressions_ExpressionBuilder_.md&amp;value=---%0Auid%3A%20Bonsai.Expressions.ExpressionBuilder.GetWorkflowElement(Bonsai.Expressions.ExpressionBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/Expressions/ExpressionBuilder.cs/#L107">View Source</a>
+  </span>
+  <a id="Bonsai_Expressions_ExpressionBuilder_GetWorkflowElement_" data-uid="Bonsai.Expressions.ExpressionBuilder.GetWorkflowElement*"></a>
+  <h4 id="Bonsai_Expressions_ExpressionBuilder_GetWorkflowElement_Bonsai_Expressions_ExpressionBuilder_" data-uid="Bonsai.Expressions.ExpressionBuilder.GetWorkflowElement(Bonsai.Expressions.ExpressionBuilder)">GetWorkflowElement(ExpressionBuilder)</h4>
+  <div class="markdown level1 summary"><p>Returns the editor browsable element for the specified <a class="xref" href="Bonsai.Expressions.ExpressionBuilder.html">ExpressionBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object GetWorkflowElement(ExpressionBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Expressions.ExpressionBuilder.html">ExpressionBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The <a class="xref" href="Bonsai.Expressions.ExpressionBuilder.html">ExpressionBuilder</a> for which to retrieve the editor browsable element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><p>An <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a> that is the editor browsable element for the specified
+<code data-dev-comment-type="paramref" class="paramref">builder</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Expressions_ExpressionBuilder_ToString.md&amp;value=---%0Auid%3A%20Bonsai.Expressions.ExpressionBuilder.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/Expressions/ExpressionBuilder.cs/#L71">View Source</a>
+  </span>
+  <a id="Bonsai_Expressions_ExpressionBuilder_ToString_" data-uid="Bonsai.Expressions.ExpressionBuilder.ToString*"></a>
+  <h4 id="Bonsai_Expressions_ExpressionBuilder_ToString" data-uid="Bonsai.Expressions.ExpressionBuilder.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a string that represents the display name of this
+<a class="xref" href="Bonsai.Expressions.ExpressionBuilder.html">ExpressionBuilder</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The string representation of this <a class="xref" href="Bonsai.Expressions.ExpressionBuilder.html">ExpressionBuilder</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Expressions_ExpressionBuilder_Unwrap_Bonsai_Expressions_ExpressionBuilder_.md&amp;value=---%0Auid%3A%20Bonsai.Expressions.ExpressionBuilder.Unwrap(Bonsai.Expressions.ExpressionBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/Expressions/ExpressionBuilder.cs/#L86">View Source</a>
+  </span>
+  <a id="Bonsai_Expressions_ExpressionBuilder_Unwrap_" data-uid="Bonsai.Expressions.ExpressionBuilder.Unwrap*"></a>
+  <h4 id="Bonsai_Expressions_ExpressionBuilder_Unwrap_Bonsai_Expressions_ExpressionBuilder_" data-uid="Bonsai.Expressions.ExpressionBuilder.Unwrap(Bonsai.Expressions.ExpressionBuilder)">Unwrap(ExpressionBuilder)</h4>
+  <div class="markdown level1 summary"><p>Removes all decorators from a specified <a class="xref" href="Bonsai.Expressions.ExpressionBuilder.html">ExpressionBuilder</a> instance
+and returns the first non-decorated (i.e. primitive) builder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ExpressionBuilder Unwrap(ExpressionBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Expressions.ExpressionBuilder.html">ExpressionBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>An <a class="xref" href="Bonsai.Expressions.ExpressionBuilder.html">ExpressionBuilder</a> instance from which to remove decorators.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Expressions.ExpressionBuilder.html">ExpressionBuilder</a></td>
+        <td><p>The non-decorated <a class="xref" href="Bonsai.Expressions.ExpressionBuilder.html">ExpressionBuilder</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Bonsai.Expressions.IExpressionBuilder.html">IExpressionBuilder</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Bonsai.Expressions.ExpressionBuilderGraphExtensions.html#Bonsai_Expressions_ExpressionBuilderGraphExtensions_Build_Bonsai_Expressions_ExpressionBuilder_System_Linq_Expressions_Expression___">ExpressionBuilderGraphExtensions.Build(ExpressionBuilder, Expression[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Bonsai.Expressions.ExpressionBuilderGraphExtensions.html#Bonsai_Expressions_ExpressionBuilderGraphExtensions_IsBuildDependency_Bonsai_Expressions_ExpressionBuilder_">ExpressionBuilderGraphExtensions.IsBuildDependency(ExpressionBuilder)</a>
+  </div>
+  <div>
+      <a class="xref" href="Bonsai.Expressions.ExpressionBuilderGraphExtensions.html#Bonsai_Expressions_ExpressionBuilderGraphExtensions_AsInspectBuilder_Bonsai_Expressions_ExpressionBuilder_">ExpressionBuilderGraphExtensions.AsInspectBuilder(ExpressionBuilder)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Expressions_ExpressionBuilder.md&amp;value=---%0Auid%3A%20Bonsai.Expressions.ExpressionBuilder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/Expressions/ExpressionBuilder.cs/#L19" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

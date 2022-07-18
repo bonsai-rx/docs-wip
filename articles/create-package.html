@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Creating a Package </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Creating a Package ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="create-package">
+<h1 id="creating-a-package">Creating a Package</h1>
+
+<p>The Bonsai language can be easily extended with custom operators, which are installed and shared using assembly packages. These packages are typically written in the C# programming language, using the <a href="https://www.visualstudio.com/">Visual Studio</a> development environment.</p>
+<h2 id="install-pre-requisites">Install pre-requisites</h2>
+<ol>
+<li><a href="https://www.visualstudio.com/">Visual Studio</a>. You can install the Community edition for free.</li>
+<li>Bonsai VS Extensions. In the Windows Start Menu, search for the &quot;<strong>Install Bonsai VS Extensions</strong>&quot; shortcut and run it.</li>
+</ol>
+<h2 id="create-a-package-project">Create a package project</h2>
+<ol>
+<li>Start <strong>Visual Studio</strong>.</li>
+<li>Create a <strong>New Project</strong>. In the <strong>New Project</strong> dialog, there should now be a project template for creating a Bonsai package, under <strong>Templates/Visual C#/Bonsai</strong>. <img src="../images/extensions-packageproject.png" alt="Creating a new Bonsai package project"></li>
+<li>After the project is created, you should see that a file &quot;<strong>Transform1.cs</strong>&quot; has been created and added to the solution explorer. This file contains an example implementation of a custom transform node. <img src="../images/extensions-transformtemplate.png" alt="Bonsai transform template"></li>
+<li><code>TSource</code> and <code>TResult</code> specify the input and output data types of the transform and you can modify them however you want. Every Bonsai node operates on observable sequences using the <a href="http://reactivex.io/">ReactiveX</a> framework. Transforms are nodes which apply an operation to every item in the input sequence. The simplest way to implement a transform is by using the <a href="http://reactivex.io/documentation/operators/map.html"><code>Select</code></a> operator from Rx. As an example, we will modify the transform in order to apply a sine operation on numeric inputs. <img src="../images/extensions-transformsine.png" alt="Implementation of a sine transform"></li>
+<li>We can test our transform by starting the project with <strong>F5</strong>. This will automatically launch the Bonsai editor with our package preloaded in the <strong>Toolbox</strong>. Add a <code>Timer</code> source and our <code>Transform1</code> node. Set the timer period to some reasonable value like 0.1 seconds and run the workflow. <img src="../images/extensions-running.png" alt="Running the sine transform"></li>
+<li>It is also possible to debug our code while it is running by setting breakpoints, either by clicking on the left of the line we want to debug or by hitting <strong>F9</strong> over the target code. After this, you can run the code step by step and inspect the runtime value of variables. <img src="../images/extensions-breakpoint.png" alt="Setting a breakpoint on the sine transform"> <img src="../images/extensions-debugging.png" alt="Debugging the sine transform"></li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/blob/main/articles/create-package.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,813 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UpdateVertexBuffer
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UpdateVertexBuffer
+   ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Bonsai.Shaders.UpdateVertexBuffer">
+  
+  
+  <h1 id="Bonsai_Shaders_UpdateVertexBuffer" data-uid="Bonsai.Shaders.UpdateVertexBuffer" class="text-break">Class UpdateVertexBuffer
+  </h1>
+  <div class="markdown level0 summary"><p>Represents an operator that updates the vertex buffer data used by the
+specified mesh geometry.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Bonsai.Combinator-2.html">Combinator</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>, <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</div>
+    <div class="level2"><a class="xref" href="Bonsai.Sink-1.html">Sink</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</div>
+    <div class="level3"><span class="xref">UpdateVertexBuffer</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Bonsai.Combinator-2.html#Bonsai_Combinator_2_Process_System_IObservable__0__">Combinator&lt;Mat, Mat&gt;.Process(IObservable&lt;Mat&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Bonsai.Shaders.html">Bonsai.Shaders</a></h6>
+  <h6><strong>Assembly</strong>: Bonsai.Shaders.dll</h6>
+  <h5 id="Bonsai_Shaders_UpdateVertexBuffer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UpdateVertexBuffer : Sink&lt;Mat&gt;</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_UpdateVertexBuffer_DrawMode.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.UpdateVertexBuffer.DrawMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/UpdateVertexBuffer.cs/#L30">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_UpdateVertexBuffer_DrawMode_" data-uid="Bonsai.Shaders.UpdateVertexBuffer.DrawMode*"></a>
+  <h4 id="Bonsai_Shaders_UpdateVertexBuffer_DrawMode" data-uid="Bonsai.Shaders.UpdateVertexBuffer.DrawMode">DrawMode</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value specifying the kind of primitives to render
+with the vertex buffer data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PrimitiveType DrawMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.Graphics.OpenGL4.PrimitiveType.html">PrimitiveType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_UpdateVertexBuffer_MeshName.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.UpdateVertexBuffer.MeshName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/UpdateVertexBuffer.cs/#L22">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_UpdateVertexBuffer_MeshName_" data-uid="Bonsai.Shaders.UpdateVertexBuffer.MeshName*"></a>
+  <h4 id="Bonsai_Shaders_UpdateVertexBuffer_MeshName" data-uid="Bonsai.Shaders.UpdateVertexBuffer.MeshName">MeshName</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the name of the mesh geometry to update.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TypeConverter(typeof(MeshNameConverter))]
+public string MeshName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_UpdateVertexBuffer_Usage.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.UpdateVertexBuffer.Usage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/UpdateVertexBuffer.cs/#L37">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_UpdateVertexBuffer_Usage_" data-uid="Bonsai.Shaders.UpdateVertexBuffer.Usage*"></a>
+  <h4 id="Bonsai_Shaders_UpdateVertexBuffer_Usage" data-uid="Bonsai.Shaders.UpdateVertexBuffer.Usage">Usage</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value specifying the expected usage pattern of the
+vertex buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BufferUsageHint Usage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.Graphics.OpenGL4.BufferUsageHint.html">BufferUsageHint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_UpdateVertexBuffer_VertexAttributes.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.UpdateVertexBuffer.VertexAttributes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/UpdateVertexBuffer.cs/#L44">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_UpdateVertexBuffer_VertexAttributes_" data-uid="Bonsai.Shaders.UpdateVertexBuffer.VertexAttributes*"></a>
+  <h4 id="Bonsai_Shaders_UpdateVertexBuffer_VertexAttributes" data-uid="Bonsai.Shaders.UpdateVertexBuffer.VertexAttributes">VertexAttributes</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of vertex attributes specifying how to interpret
+the vertex array data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VertexAttributeMappingCollection VertexAttributes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.VertexAttributeMappingCollection.html">VertexAttributeMappingCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_UpdateVertexBuffer_Process_System_IObservable_OpenCV_Net_Mat__.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.UpdateVertexBuffer.Process(System.IObservable%7BOpenCV.Net.Mat%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/UpdateVertexBuffer.cs/#L282">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_UpdateVertexBuffer_Process_" data-uid="Bonsai.Shaders.UpdateVertexBuffer.Process*"></a>
+  <h4 id="Bonsai_Shaders_UpdateVertexBuffer_Process_System_IObservable_OpenCV_Net_Mat__" data-uid="Bonsai.Shaders.UpdateVertexBuffer.Process(System.IObservable{OpenCV.Net.Mat})">Process(IObservable&lt;Mat&gt;)</h4>
+  <div class="markdown level1 summary"><p>Updates the specified mesh geometry using each of the matrix data in
+an observable sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IObservable&lt;Mat&gt; Process(IObservable&lt;Mat&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects representing the vertex array
+data used to update the mesh geometry.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>An observable sequence that is identical to the <code data-dev-comment-type="paramref" class="paramref">source</code>
+sequence but where there is an additional side effect of scheduling
+an update operation where mesh geometry data is updated using each
+of the matrices in the sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Bonsai.Combinator&lt;OpenCV.Net.Mat, OpenCV.Net.Mat&gt;.Process(System.IObservable&lt;OpenCV.Net.Mat&gt;)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_UpdateVertexBuffer_Process__1_System_IObservable___0____.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.UpdateVertexBuffer.Process%60%601(System.IObservable%7B%60%600%5B%5D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/UpdateVertexBuffer.cs/#L66">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_UpdateVertexBuffer_Process_" data-uid="Bonsai.Shaders.UpdateVertexBuffer.Process*"></a>
+  <h4 id="Bonsai_Shaders_UpdateVertexBuffer_Process__1_System_IObservable___0____" data-uid="Bonsai.Shaders.UpdateVertexBuffer.Process``1(System.IObservable{``0[]})">Process&lt;TVertex&gt;(IObservable&lt;TVertex[]&gt;)</h4>
+  <div class="markdown level1 summary"><p>Updates the specified mesh geometry using each of the array data in
+an observable sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;TVertex[]&gt; Process&lt;TVertex&gt;(IObservable&lt;TVertex[]&gt; source)
+    where TVertex : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TVertex[]&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of vertex array data used to update the mesh geometry.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TVertex[]&gt;</td>
+        <td><p>An observable sequence that is identical to the <code data-dev-comment-type="paramref" class="paramref">source</code>
+sequence but where there is an additional side effect of scheduling
+an update operation where mesh geometry data is updated using each
+of the arrays in the sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TVertex</span></td>
+        <td><p>The type of the vertex elements used to render each primitive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_UpdateVertexBuffer_Process__1_System_IObservable_System_Tuple___0___System_Byte_____.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.UpdateVertexBuffer.Process%60%601(System.IObservable%7BSystem.Tuple%7B%60%600%5B%5D%2CSystem.Byte%5B%5D%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/UpdateVertexBuffer.cs/#L175">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_UpdateVertexBuffer_Process_" data-uid="Bonsai.Shaders.UpdateVertexBuffer.Process*"></a>
+  <h4 id="Bonsai_Shaders_UpdateVertexBuffer_Process__1_System_IObservable_System_Tuple___0___System_Byte_____" data-uid="Bonsai.Shaders.UpdateVertexBuffer.Process``1(System.IObservable{System.Tuple{``0[],System.Byte[]}})">Process&lt;TVertex&gt;(IObservable&lt;Tuple&lt;TVertex[], Byte[]&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Updates the specified mesh geometry using vertex and 8-bit index data
+from an observable sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Tuple&lt;TVertex[], byte[]&gt;&gt; Process&lt;TVertex&gt;(IObservable&lt;Tuple&lt;TVertex[], byte[]&gt;&gt; source)
+    where TVertex : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;TVertex[], <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The sequence of pairs of vertex and 8-bit index data used to update the
+mesh geometry.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;TVertex[], <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]&gt;&gt;</td>
+        <td><p>An observable sequence that is identical to the <code data-dev-comment-type="paramref" class="paramref">source</code>
+sequence but where there is an additional side effect of scheduling
+an update operation where mesh geometry data is updated using each
+of the pairs of vertex and index data in the sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TVertex</span></td>
+        <td><p>The type of the vertex elements used to render each primitive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_UpdateVertexBuffer_Process__1_System_IObservable_System_Tuple___0___System_Int16_____.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.UpdateVertexBuffer.Process%60%601(System.IObservable%7BSystem.Tuple%7B%60%600%5B%5D%2CSystem.Int16%5B%5D%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/UpdateVertexBuffer.cs/#L197">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_UpdateVertexBuffer_Process_" data-uid="Bonsai.Shaders.UpdateVertexBuffer.Process*"></a>
+  <h4 id="Bonsai_Shaders_UpdateVertexBuffer_Process__1_System_IObservable_System_Tuple___0___System_Int16_____" data-uid="Bonsai.Shaders.UpdateVertexBuffer.Process``1(System.IObservable{System.Tuple{``0[],System.Int16[]}})">Process&lt;TVertex&gt;(IObservable&lt;Tuple&lt;TVertex[], Int16[]&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Updates the specified mesh geometry using vertex and signed 16-bit
+index data from an observable sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Tuple&lt;TVertex[], short[]&gt;&gt; Process&lt;TVertex&gt;(IObservable&lt;Tuple&lt;TVertex[], short[]&gt;&gt; source)
+    where TVertex : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;TVertex[], <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>[]&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The sequence of pairs of vertex and signed 16-bit index data used to update
+the mesh geometry.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;TVertex[], <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>[]&gt;&gt;</td>
+        <td><p>An observable sequence that is identical to the <code data-dev-comment-type="paramref" class="paramref">source</code>
+sequence but where there is an additional side effect of scheduling
+an update operation where mesh geometry data is updated using each
+of the pairs of vertex and index data in the sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TVertex</span></td>
+        <td><p>The type of the vertex elements used to render each primitive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_UpdateVertexBuffer_Process__1_System_IObservable_System_Tuple___0___System_Int32_____.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.UpdateVertexBuffer.Process%60%601(System.IObservable%7BSystem.Tuple%7B%60%600%5B%5D%2CSystem.Int32%5B%5D%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/UpdateVertexBuffer.cs/#L241">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_UpdateVertexBuffer_Process_" data-uid="Bonsai.Shaders.UpdateVertexBuffer.Process*"></a>
+  <h4 id="Bonsai_Shaders_UpdateVertexBuffer_Process__1_System_IObservable_System_Tuple___0___System_Int32_____" data-uid="Bonsai.Shaders.UpdateVertexBuffer.Process``1(System.IObservable{System.Tuple{``0[],System.Int32[]}})">Process&lt;TVertex&gt;(IObservable&lt;Tuple&lt;TVertex[], Int32[]&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Updates the specified mesh geometry using vertex and signed 32-bit
+index data from an observable sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Tuple&lt;TVertex[], int[]&gt;&gt; Process&lt;TVertex&gt;(IObservable&lt;Tuple&lt;TVertex[], int[]&gt;&gt; source)
+    where TVertex : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;TVertex[], <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>[]&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The sequence of pairs of vertex and signed 32-bit index data used to update
+the mesh geometry.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;TVertex[], <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>[]&gt;&gt;</td>
+        <td><p>An observable sequence that is identical to the <code data-dev-comment-type="paramref" class="paramref">source</code>
+sequence but where there is an additional side effect of scheduling
+an update operation where mesh geometry data is updated using each
+of the pairs of vertex and index data in the sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TVertex</span></td>
+        <td><p>The type of the vertex elements used to render each primitive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_UpdateVertexBuffer_Process__1_System_IObservable_System_Tuple___0___System_UInt16_____.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.UpdateVertexBuffer.Process%60%601(System.IObservable%7BSystem.Tuple%7B%60%600%5B%5D%2CSystem.UInt16%5B%5D%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/UpdateVertexBuffer.cs/#L219">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_UpdateVertexBuffer_Process_" data-uid="Bonsai.Shaders.UpdateVertexBuffer.Process*"></a>
+  <h4 id="Bonsai_Shaders_UpdateVertexBuffer_Process__1_System_IObservable_System_Tuple___0___System_UInt16_____" data-uid="Bonsai.Shaders.UpdateVertexBuffer.Process``1(System.IObservable{System.Tuple{``0[],System.UInt16[]}})">Process&lt;TVertex&gt;(IObservable&lt;Tuple&lt;TVertex[], UInt16[]&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Updates the specified mesh geometry using vertex and unsigned 16-bit
+index data from an observable sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Tuple&lt;TVertex[], ushort[]&gt;&gt; Process&lt;TVertex&gt;(IObservable&lt;Tuple&lt;TVertex[], ushort[]&gt;&gt; source)
+    where TVertex : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;TVertex[], <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>[]&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The sequence of pairs of vertex and unsigned 16-bit index data used to update
+the mesh geometry.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;TVertex[], <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>[]&gt;&gt;</td>
+        <td><p>An observable sequence that is identical to the <code data-dev-comment-type="paramref" class="paramref">source</code>
+sequence but where there is an additional side effect of scheduling
+an update operation where mesh geometry data is updated using each
+of the pairs of vertex and index data in the sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TVertex</span></td>
+        <td><p>The type of the vertex elements used to render each primitive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_UpdateVertexBuffer_Process__1_System_IObservable_System_Tuple___0___System_UInt32_____.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.UpdateVertexBuffer.Process%60%601(System.IObservable%7BSystem.Tuple%7B%60%600%5B%5D%2CSystem.UInt32%5B%5D%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/UpdateVertexBuffer.cs/#L263">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_UpdateVertexBuffer_Process_" data-uid="Bonsai.Shaders.UpdateVertexBuffer.Process*"></a>
+  <h4 id="Bonsai_Shaders_UpdateVertexBuffer_Process__1_System_IObservable_System_Tuple___0___System_UInt32_____" data-uid="Bonsai.Shaders.UpdateVertexBuffer.Process``1(System.IObservable{System.Tuple{``0[],System.UInt32[]}})">Process&lt;TVertex&gt;(IObservable&lt;Tuple&lt;TVertex[], UInt32[]&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Updates the specified mesh geometry using vertex and unsigned 32-bit
+index data from an observable sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Tuple&lt;TVertex[], uint[]&gt;&gt; Process&lt;TVertex&gt;(IObservable&lt;Tuple&lt;TVertex[], uint[]&gt;&gt; source)
+    where TVertex : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;TVertex[], <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a>[]&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The sequence of pairs of vertex and unsigned 32-bit index data used to update
+the mesh geometry.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;TVertex[], <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a>[]&gt;&gt;</td>
+        <td><p>An observable sequence that is identical to the <code data-dev-comment-type="paramref" class="paramref">source</code>
+sequence but where there is an additional side effect of scheduling
+an update operation where mesh geometry data is updated using each
+of the pairs of vertex and index data in the sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TVertex</span></td>
+        <td><p>The type of the vertex elements used to render each primitive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_UpdateVertexBuffer.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.UpdateVertexBuffer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/UpdateVertexBuffer.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

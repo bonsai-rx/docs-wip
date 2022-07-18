@@ -1,0 +1,1260 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ContainsPoint
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ContainsPoint
+   ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Bonsai.Vision.ContainsPoint">
+  
+  
+  <h1 id="Bonsai_Vision_ContainsPoint" data-uid="Bonsai.Vision.ContainsPoint" class="text-break">Class ContainsPoint
+  </h1>
+  <div class="markdown level0 summary"><p>Represents an operator that determines whether each point in the sequence is
+contained inside a rectangle, contour, or other polygonal shape.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">ContainsPoint</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Bonsai.Vision.html">Bonsai.Vision</a></h6>
+  <h6><strong>Assembly</strong>: Bonsai.Vision.dll</h6>
+  <h5 id="Bonsai_Vision_ContainsPoint_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Combinator]
+[WorkflowElementCategory(ElementCategory.Transform)]
+public class ContainsPoint</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_Bonsai_Vision_ConnectedComponent_OpenCV_Net_Point___.md&amp;value=---%0Auid%3A%20Bonsai.Vision.ContainsPoint.Process(System.IObservable%7BSystem.Tuple%7BBonsai.Vision.ConnectedComponent%2COpenCV.Net.Point%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/ContainsPoint.cs/#L132">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_ContainsPoint_Process_" data-uid="Bonsai.Vision.ContainsPoint.Process*"></a>
+  <h4 id="Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_Bonsai_Vision_ConnectedComponent_OpenCV_Net_Point___" data-uid="Bonsai.Vision.ContainsPoint.Process(System.IObservable{System.Tuple{Bonsai.Vision.ConnectedComponent,OpenCV.Net.Point}})">Process(IObservable&lt;Tuple&lt;ConnectedComponent, Point&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether each point in an observable sequence is contained
+inside the polygonal contour of a connected component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;bool&gt; Process(IObservable&lt;Tuple&lt;ConnectedComponent, Point&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="Bonsai.Vision.ConnectedComponent.html">ConnectedComponent</a>, <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs containing a <a class="xref" href="Bonsai.Vision.ConnectedComponent.html">ConnectedComponent</a> object
+and a point with integer coordinates to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> values indicating whether the point
+is contained inside the polygonal contour of a connected component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_Bonsai_Vision_ConnectedComponent_OpenCV_Net_Point2f___.md&amp;value=---%0Auid%3A%20Bonsai.Vision.ContainsPoint.Process(System.IObservable%7BSystem.Tuple%7BBonsai.Vision.ConnectedComponent%2COpenCV.Net.Point2f%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/ContainsPoint.cs/#L149">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_ContainsPoint_Process_" data-uid="Bonsai.Vision.ContainsPoint.Process*"></a>
+  <h4 id="Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_Bonsai_Vision_ConnectedComponent_OpenCV_Net_Point2f___" data-uid="Bonsai.Vision.ContainsPoint.Process(System.IObservable{System.Tuple{Bonsai.Vision.ConnectedComponent,OpenCV.Net.Point2f}})">Process(IObservable&lt;Tuple&lt;ConnectedComponent, Point2f&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether each point in an observable sequence is contained
+inside the polygonal contour of a connected component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;bool&gt; Process(IObservable&lt;Tuple&lt;ConnectedComponent, Point2f&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="Bonsai.Vision.ConnectedComponent.html">ConnectedComponent</a>, <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point2f.html">Point2f</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs containing a <a class="xref" href="Bonsai.Vision.ConnectedComponent.html">ConnectedComponent</a> object
+and a point with single-precision floating-point coordinates to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> values indicating whether the point
+is contained inside the polygonal contour of a connected component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Contour_OpenCV_Net_Point___.md&amp;value=---%0Auid%3A%20Bonsai.Vision.ContainsPoint.Process(System.IObservable%7BSystem.Tuple%7BOpenCV.Net.Contour%2COpenCV.Net.Point%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/ContainsPoint.cs/#L98">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_ContainsPoint_Process_" data-uid="Bonsai.Vision.ContainsPoint.Process*"></a>
+  <h4 id="Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Contour_OpenCV_Net_Point___" data-uid="Bonsai.Vision.ContainsPoint.Process(System.IObservable{System.Tuple{OpenCV.Net.Contour,OpenCV.Net.Point}})">Process(IObservable&lt;Tuple&lt;Contour, Point&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether each point in an observable sequence is contained
+inside a polygonal contour.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;bool&gt; Process(IObservable&lt;Tuple&lt;Contour, Point&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Contour.html">Contour</a>, <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs containing a <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Contour.html">Contour</a> object and a
+point with integer coordinates to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> values indicating whether the point
+is contained inside the polygonal contour.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Contour_OpenCV_Net_Point2f___.md&amp;value=---%0Auid%3A%20Bonsai.Vision.ContainsPoint.Process(System.IObservable%7BSystem.Tuple%7BOpenCV.Net.Contour%2COpenCV.Net.Point2f%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/ContainsPoint.cs/#L115">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_ContainsPoint_Process_" data-uid="Bonsai.Vision.ContainsPoint.Process*"></a>
+  <h4 id="Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Contour_OpenCV_Net_Point2f___" data-uid="Bonsai.Vision.ContainsPoint.Process(System.IObservable{System.Tuple{OpenCV.Net.Contour,OpenCV.Net.Point2f}})">Process(IObservable&lt;Tuple&lt;Contour, Point2f&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether each point in an observable sequence is contained
+inside a polygonal contour.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;bool&gt; Process(IObservable&lt;Tuple&lt;Contour, Point2f&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Contour.html">Contour</a>, <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point2f.html">Point2f</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs containing a <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Contour.html">Contour</a> object and a
+point with single-precision floating-point coordinates to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> values indicating whether the point
+is contained inside the polygonal contour.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point_Bonsai_Vision_ConnectedComponent___.md&amp;value=---%0Auid%3A%20Bonsai.Vision.ContainsPoint.Process(System.IObservable%7BSystem.Tuple%7BOpenCV.Net.Point%2CBonsai.Vision.ConnectedComponent%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/ContainsPoint.cs/#L305">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_ContainsPoint_Process_" data-uid="Bonsai.Vision.ContainsPoint.Process*"></a>
+  <h4 id="Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point_Bonsai_Vision_ConnectedComponent___" data-uid="Bonsai.Vision.ContainsPoint.Process(System.IObservable{System.Tuple{OpenCV.Net.Point,Bonsai.Vision.ConnectedComponent}})">Process(IObservable&lt;Tuple&lt;Point, ConnectedComponent&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether each point in an observable sequence is contained
+inside the polygonal contour of a connected component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;bool&gt; Process(IObservable&lt;Tuple&lt;Point, ConnectedComponent&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a>, <a class="xref" href="Bonsai.Vision.ConnectedComponent.html">ConnectedComponent</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs containing a point with integer coordinates and
+a <a class="xref" href="Bonsai.Vision.ConnectedComponent.html">ConnectedComponent</a> object to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> values indicating whether the point
+is contained inside the polygonal contour of a connected component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point_OpenCV_Net_Contour___.md&amp;value=---%0Auid%3A%20Bonsai.Vision.ContainsPoint.Process(System.IObservable%7BSystem.Tuple%7BOpenCV.Net.Point%2COpenCV.Net.Contour%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/ContainsPoint.cs/#L271">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_ContainsPoint_Process_" data-uid="Bonsai.Vision.ContainsPoint.Process*"></a>
+  <h4 id="Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point_OpenCV_Net_Contour___" data-uid="Bonsai.Vision.ContainsPoint.Process(System.IObservable{System.Tuple{OpenCV.Net.Point,OpenCV.Net.Contour}})">Process(IObservable&lt;Tuple&lt;Point, Contour&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether each point in an observable sequence is contained
+inside a polygonal contour.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;bool&gt; Process(IObservable&lt;Tuple&lt;Point, Contour&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a>, <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Contour.html">Contour</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs containing a point with integer coordinates and
+a <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Contour.html">Contour</a> object to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> values indicating whether the point
+is contained inside the polygonal contour.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point_OpenCV_Net_Point_______.md&amp;value=---%0Auid%3A%20Bonsai.Vision.ContainsPoint.Process(System.IObservable%7BSystem.Tuple%7BOpenCV.Net.Point%2COpenCV.Net.Point%5B%5D%5B%5D%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/ContainsPoint.cs/#L376">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_ContainsPoint_Process_" data-uid="Bonsai.Vision.ContainsPoint.Process*"></a>
+  <h4 id="Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point_OpenCV_Net_Point_______" data-uid="Bonsai.Vision.ContainsPoint.Process(System.IObservable{System.Tuple{OpenCV.Net.Point,OpenCV.Net.Point[][]}})">Process(IObservable&lt;Tuple&lt;Point, Point[][]&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether each point in an observable sequence is contained
+inside any of the polygonal contours specified by arrays of vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;bool&gt; Process(IObservable&lt;Tuple&lt;Point, Point[][]&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a>, <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a>[][]&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs containing a point with integer coordinates and a
+jagged array of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a> values specifying the contours to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> values indicating whether the point
+is contained inside any of the polygonal contours specified by arrays of
+vertices.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point_OpenCV_Net_Point_____.md&amp;value=---%0Auid%3A%20Bonsai.Vision.ContainsPoint.Process(System.IObservable%7BSystem.Tuple%7BOpenCV.Net.Point%2COpenCV.Net.Point%5B%5D%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/ContainsPoint.cs/#L340">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_ContainsPoint_Process_" data-uid="Bonsai.Vision.ContainsPoint.Process*"></a>
+  <h4 id="Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point_OpenCV_Net_Point_____" data-uid="Bonsai.Vision.ContainsPoint.Process(System.IObservable{System.Tuple{OpenCV.Net.Point,OpenCV.Net.Point[]}})">Process(IObservable&lt;Tuple&lt;Point, Point[]&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether each point in an observable sequence is contained
+inside the polygonal contour specified by an array of vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;bool&gt; Process(IObservable&lt;Tuple&lt;Point, Point[]&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a>, <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a>[]&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs containing a point with integer coordinates and
+a <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a> array specifying the contour to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> values indicating whether the point
+is contained inside the polygonal contour specified by an array of vertices.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point_OpenCV_Net_Rect___.md&amp;value=---%0Auid%3A%20Bonsai.Vision.ContainsPoint.Process(System.IObservable%7BSystem.Tuple%7BOpenCV.Net.Point%2COpenCV.Net.Rect%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/ContainsPoint.cs/#L237">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_ContainsPoint_Process_" data-uid="Bonsai.Vision.ContainsPoint.Process*"></a>
+  <h4 id="Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point_OpenCV_Net_Rect___" data-uid="Bonsai.Vision.ContainsPoint.Process(System.IObservable{System.Tuple{OpenCV.Net.Point,OpenCV.Net.Rect}})">Process(IObservable&lt;Tuple&lt;Point, Rect&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether each point in an observable sequence is contained
+inside a rectangle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;bool&gt; Process(IObservable&lt;Tuple&lt;Point, Rect&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a>, <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Rect.html">Rect</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs containing a point with integer coordinates and
+a rectangle to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> values indicating whether the point
+is contained inside the rectangle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point___OpenCV_Net_Point___.md&amp;value=---%0Auid%3A%20Bonsai.Vision.ContainsPoint.Process(System.IObservable%7BSystem.Tuple%7BOpenCV.Net.Point%5B%5D%2COpenCV.Net.Point%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/ContainsPoint.cs/#L166">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_ContainsPoint_Process_" data-uid="Bonsai.Vision.ContainsPoint.Process*"></a>
+  <h4 id="Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point___OpenCV_Net_Point___" data-uid="Bonsai.Vision.ContainsPoint.Process(System.IObservable{System.Tuple{OpenCV.Net.Point[],OpenCV.Net.Point}})">Process(IObservable&lt;Tuple&lt;Point[], Point&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether each point in an observable sequence is contained
+inside the polygonal contour specified by an array of vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;bool&gt; Process(IObservable&lt;Tuple&lt;Point[], Point&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a>[], <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs containing a <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a> array specifying the
+contour and a point with integer coordinates to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> values indicating whether the point
+is contained inside the polygonal contour specified by an array of vertices.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point___OpenCV_Net_Point2f___.md&amp;value=---%0Auid%3A%20Bonsai.Vision.ContainsPoint.Process(System.IObservable%7BSystem.Tuple%7BOpenCV.Net.Point%5B%5D%2COpenCV.Net.Point2f%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/ContainsPoint.cs/#L183">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_ContainsPoint_Process_" data-uid="Bonsai.Vision.ContainsPoint.Process*"></a>
+  <h4 id="Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point___OpenCV_Net_Point2f___" data-uid="Bonsai.Vision.ContainsPoint.Process(System.IObservable{System.Tuple{OpenCV.Net.Point[],OpenCV.Net.Point2f}})">Process(IObservable&lt;Tuple&lt;Point[], Point2f&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether each point in an observable sequence is contained
+inside the polygonal contour specified by an array of vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;bool&gt; Process(IObservable&lt;Tuple&lt;Point[], Point2f&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a>[], <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point2f.html">Point2f</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs containing a <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a> array specifying the
+contour and a point with single-precision floating-point coordinates to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> values indicating whether the point
+is contained inside the polygonal contour specified by an array of vertices.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point_____OpenCV_Net_Point___.md&amp;value=---%0Auid%3A%20Bonsai.Vision.ContainsPoint.Process(System.IObservable%7BSystem.Tuple%7BOpenCV.Net.Point%5B%5D%5B%5D%2COpenCV.Net.Point%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/ContainsPoint.cs/#L201">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_ContainsPoint_Process_" data-uid="Bonsai.Vision.ContainsPoint.Process*"></a>
+  <h4 id="Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point_____OpenCV_Net_Point___" data-uid="Bonsai.Vision.ContainsPoint.Process(System.IObservable{System.Tuple{OpenCV.Net.Point[][],OpenCV.Net.Point}})">Process(IObservable&lt;Tuple&lt;Point[][], Point&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether each point in an observable sequence is contained
+inside any of the polygonal contours specified by arrays of vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;bool&gt; Process(IObservable&lt;Tuple&lt;Point[][], Point&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a>[][], <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs containing a jagged array of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a> values
+specifying the contours and a point with integer coordinates to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> values indicating whether the point
+is contained inside any of the polygonal contours specified by arrays of
+vertices.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point_____OpenCV_Net_Point2f___.md&amp;value=---%0Auid%3A%20Bonsai.Vision.ContainsPoint.Process(System.IObservable%7BSystem.Tuple%7BOpenCV.Net.Point%5B%5D%5B%5D%2COpenCV.Net.Point2f%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/ContainsPoint.cs/#L220">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_ContainsPoint_Process_" data-uid="Bonsai.Vision.ContainsPoint.Process*"></a>
+  <h4 id="Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point_____OpenCV_Net_Point2f___" data-uid="Bonsai.Vision.ContainsPoint.Process(System.IObservable{System.Tuple{OpenCV.Net.Point[][],OpenCV.Net.Point2f}})">Process(IObservable&lt;Tuple&lt;Point[][], Point2f&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether each point in an observable sequence is contained
+inside any of the polygonal contours specified by arrays of vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;bool&gt; Process(IObservable&lt;Tuple&lt;Point[][], Point2f&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a>[][], <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point2f.html">Point2f</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs containing a jagged array of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a> values
+specifying the contours and a point with single-precision floating-point
+coordinates to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> values indicating whether the point
+is contained inside any of the polygonal contours specified by arrays of
+vertices.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point2f_Bonsai_Vision_ConnectedComponent___.md&amp;value=---%0Auid%3A%20Bonsai.Vision.ContainsPoint.Process(System.IObservable%7BSystem.Tuple%7BOpenCV.Net.Point2f%2CBonsai.Vision.ConnectedComponent%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/ContainsPoint.cs/#L323">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_ContainsPoint_Process_" data-uid="Bonsai.Vision.ContainsPoint.Process*"></a>
+  <h4 id="Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point2f_Bonsai_Vision_ConnectedComponent___" data-uid="Bonsai.Vision.ContainsPoint.Process(System.IObservable{System.Tuple{OpenCV.Net.Point2f,Bonsai.Vision.ConnectedComponent}})">Process(IObservable&lt;Tuple&lt;Point2f, ConnectedComponent&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether each point in an observable sequence is contained
+inside the polygonal contour of a connected component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;bool&gt; Process(IObservable&lt;Tuple&lt;Point2f, ConnectedComponent&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point2f.html">Point2f</a>, <a class="xref" href="Bonsai.Vision.ConnectedComponent.html">ConnectedComponent</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs containing a point with single-precision
+floating-point coordinates and a <a class="xref" href="Bonsai.Vision.ConnectedComponent.html">ConnectedComponent</a> object
+to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> values indicating whether the point
+is contained inside the polygonal contour of a connected component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point2f_OpenCV_Net_Contour___.md&amp;value=---%0Auid%3A%20Bonsai.Vision.ContainsPoint.Process(System.IObservable%7BSystem.Tuple%7BOpenCV.Net.Point2f%2COpenCV.Net.Contour%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/ContainsPoint.cs/#L288">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_ContainsPoint_Process_" data-uid="Bonsai.Vision.ContainsPoint.Process*"></a>
+  <h4 id="Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point2f_OpenCV_Net_Contour___" data-uid="Bonsai.Vision.ContainsPoint.Process(System.IObservable{System.Tuple{OpenCV.Net.Point2f,OpenCV.Net.Contour}})">Process(IObservable&lt;Tuple&lt;Point2f, Contour&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether each point in an observable sequence is contained
+inside a polygonal contour.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;bool&gt; Process(IObservable&lt;Tuple&lt;Point2f, Contour&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point2f.html">Point2f</a>, <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Contour.html">Contour</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs containing a point with single-precision
+floating-point coordinates and a <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Contour.html">Contour</a> object to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> values indicating whether the point
+is contained inside the polygonal contour.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point2f_OpenCV_Net_Point_______.md&amp;value=---%0Auid%3A%20Bonsai.Vision.ContainsPoint.Process(System.IObservable%7BSystem.Tuple%7BOpenCV.Net.Point2f%2COpenCV.Net.Point%5B%5D%5B%5D%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/ContainsPoint.cs/#L395">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_ContainsPoint_Process_" data-uid="Bonsai.Vision.ContainsPoint.Process*"></a>
+  <h4 id="Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point2f_OpenCV_Net_Point_______" data-uid="Bonsai.Vision.ContainsPoint.Process(System.IObservable{System.Tuple{OpenCV.Net.Point2f,OpenCV.Net.Point[][]}})">Process(IObservable&lt;Tuple&lt;Point2f, Point[][]&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether each point in an observable sequence is contained
+inside any of the polygonal contours specified by arrays of vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;bool&gt; Process(IObservable&lt;Tuple&lt;Point2f, Point[][]&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point2f.html">Point2f</a>, <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a>[][]&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs containing a point with single-precision floating-point
+coordinates and a jagged array of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a> values specifying the
+contours to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> values indicating whether the point
+is contained inside any of the polygonal contours specified by arrays of
+vertices.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point2f_OpenCV_Net_Point_____.md&amp;value=---%0Auid%3A%20Bonsai.Vision.ContainsPoint.Process(System.IObservable%7BSystem.Tuple%7BOpenCV.Net.Point2f%2COpenCV.Net.Point%5B%5D%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/ContainsPoint.cs/#L358">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_ContainsPoint_Process_" data-uid="Bonsai.Vision.ContainsPoint.Process*"></a>
+  <h4 id="Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point2f_OpenCV_Net_Point_____" data-uid="Bonsai.Vision.ContainsPoint.Process(System.IObservable{System.Tuple{OpenCV.Net.Point2f,OpenCV.Net.Point[]}})">Process(IObservable&lt;Tuple&lt;Point2f, Point[]&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether each point in an observable sequence is contained
+inside the polygonal contour specified by an array of vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;bool&gt; Process(IObservable&lt;Tuple&lt;Point2f, Point[]&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point2f.html">Point2f</a>, <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a>[]&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs containing a point with single-precision
+floating-point coordinates and a <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a> array specifying
+the contour to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> values indicating whether the point
+is contained inside the polygonal contour specified by an array of vertices.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point2f_OpenCV_Net_Rect___.md&amp;value=---%0Auid%3A%20Bonsai.Vision.ContainsPoint.Process(System.IObservable%7BSystem.Tuple%7BOpenCV.Net.Point2f%2COpenCV.Net.Rect%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/ContainsPoint.cs/#L254">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_ContainsPoint_Process_" data-uid="Bonsai.Vision.ContainsPoint.Process*"></a>
+  <h4 id="Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Point2f_OpenCV_Net_Rect___" data-uid="Bonsai.Vision.ContainsPoint.Process(System.IObservable{System.Tuple{OpenCV.Net.Point2f,OpenCV.Net.Rect}})">Process(IObservable&lt;Tuple&lt;Point2f, Rect&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether each point in an observable sequence is contained
+inside a rectangle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;bool&gt; Process(IObservable&lt;Tuple&lt;Point2f, Rect&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point2f.html">Point2f</a>, <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Rect.html">Rect</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs containing a point with single-precision
+floating-point coordinates and a rectangle to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> values indicating whether the point
+is contained inside the rectangle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Rect_OpenCV_Net_Point___.md&amp;value=---%0Auid%3A%20Bonsai.Vision.ContainsPoint.Process(System.IObservable%7BSystem.Tuple%7BOpenCV.Net.Rect%2COpenCV.Net.Point%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/ContainsPoint.cs/#L64">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_ContainsPoint_Process_" data-uid="Bonsai.Vision.ContainsPoint.Process*"></a>
+  <h4 id="Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Rect_OpenCV_Net_Point___" data-uid="Bonsai.Vision.ContainsPoint.Process(System.IObservable{System.Tuple{OpenCV.Net.Rect,OpenCV.Net.Point}})">Process(IObservable&lt;Tuple&lt;Rect, Point&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether each point in an observable sequence is contained
+inside a rectangle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;bool&gt; Process(IObservable&lt;Tuple&lt;Rect, Point&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Rect.html">Rect</a>, <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs containing a rectangle and a point with integer
+coordinates to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> values indicating whether the point
+is contained inside the rectangle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Rect_OpenCV_Net_Point2f___.md&amp;value=---%0Auid%3A%20Bonsai.Vision.ContainsPoint.Process(System.IObservable%7BSystem.Tuple%7BOpenCV.Net.Rect%2COpenCV.Net.Point2f%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/ContainsPoint.cs/#L81">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_ContainsPoint_Process_" data-uid="Bonsai.Vision.ContainsPoint.Process*"></a>
+  <h4 id="Bonsai_Vision_ContainsPoint_Process_System_IObservable_System_Tuple_OpenCV_Net_Rect_OpenCV_Net_Point2f___" data-uid="Bonsai.Vision.ContainsPoint.Process(System.IObservable{System.Tuple{OpenCV.Net.Rect,OpenCV.Net.Point2f}})">Process(IObservable&lt;Tuple&lt;Rect, Point2f&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether each point in an observable sequence is contained
+inside a rectangle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;bool&gt; Process(IObservable&lt;Tuple&lt;Rect, Point2f&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Rect.html">Rect</a>, <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point2f.html">Point2f</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs containing a rectangle and a point with single-precision
+floating-point coordinates to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a> values indicating whether the point
+is contained inside the rectangle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_ContainsPoint.md&amp;value=---%0Auid%3A%20Bonsai.Vision.ContainsPoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/ContainsPoint.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

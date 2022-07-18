@@ -1,0 +1,619 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct DispatchParameters
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct DispatchParameters
+   ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Bonsai.Shaders.DispatchParameters">
+  
+  
+  <h1 id="Bonsai_Shaders_DispatchParameters" data-uid="Bonsai.Shaders.DispatchParameters" class="text-break">Struct DispatchParameters
+  </h1>
+  <div class="markdown level0 summary"><p>Represents parameters used when launching compute shader work groups.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Bonsai.Shaders.DispatchParameters.html">DispatchParameters</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Bonsai.Shaders.html">Bonsai.Shaders</a></h6>
+  <h6><strong>Assembly</strong>: Bonsai.Shaders.dll</h6>
+  <h5 id="Bonsai_Shaders_DispatchParameters_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TypeConverter(typeof(NumericRecordConverter))]
+public struct DispatchParameters : IEquatable&lt;DispatchParameters&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_DispatchParameters__ctor_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.DispatchParameters.%23ctor(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/DispatchParameters.cs/#L42">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_DispatchParameters__ctor_" data-uid="Bonsai.Shaders.DispatchParameters.#ctor*"></a>
+  <h4 id="Bonsai_Shaders_DispatchParameters__ctor_System_Int32_System_Int32_System_Int32_" data-uid="Bonsai.Shaders.DispatchParameters.#ctor(System.Int32,System.Int32,System.Int32)">DispatchParameters(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bonsai.Shaders.DispatchParameters.html">DispatchParameters</a> structure
+using the specified number of compute work groups.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DispatchParameters(int numGroupsX, int numGroupsY, int numGroupsZ)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">numGroupsX</span></td>
+        <td><p>The number of work groups to be launched in the X dimension.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">numGroupsY</span></td>
+        <td><p>The number of work groups to be launched in the Y dimension.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">numGroupsZ</span></td>
+        <td><p>The number of work groups to be launched in the Z dimension.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_DispatchParameters_NumGroupsX.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.DispatchParameters.NumGroupsX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/DispatchParameters.cs/#L17">View Source</a>
+  </span>
+  <h4 id="Bonsai_Shaders_DispatchParameters_NumGroupsX" data-uid="Bonsai.Shaders.DispatchParameters.NumGroupsX">NumGroupsX</h4>
+  <div class="markdown level1 summary"><p>The number of work groups to be launched in the X dimension.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumGroupsX</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_DispatchParameters_NumGroupsY.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.DispatchParameters.NumGroupsY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/DispatchParameters.cs/#L22">View Source</a>
+  </span>
+  <h4 id="Bonsai_Shaders_DispatchParameters_NumGroupsY" data-uid="Bonsai.Shaders.DispatchParameters.NumGroupsY">NumGroupsY</h4>
+  <div class="markdown level1 summary"><p>The number of work groups to be launched in the Y dimension.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumGroupsY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_DispatchParameters_NumGroupsZ.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.DispatchParameters.NumGroupsZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/DispatchParameters.cs/#L27">View Source</a>
+  </span>
+  <h4 id="Bonsai_Shaders_DispatchParameters_NumGroupsZ" data-uid="Bonsai.Shaders.DispatchParameters.NumGroupsZ">NumGroupsZ</h4>
+  <div class="markdown level1 summary"><p>The number of work groups to be launched in the Z dimension.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumGroupsZ</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_DispatchParameters_Equals_Bonsai_Shaders_DispatchParameters_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.DispatchParameters.Equals(Bonsai.Shaders.DispatchParameters)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/DispatchParameters.cs/#L61">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_DispatchParameters_Equals_" data-uid="Bonsai.Shaders.DispatchParameters.Equals*"></a>
+  <h4 id="Bonsai_Shaders_DispatchParameters_Equals_Bonsai_Shaders_DispatchParameters_" data-uid="Bonsai.Shaders.DispatchParameters.Equals(Bonsai.Shaders.DispatchParameters)">Equals(DispatchParameters)</h4>
+  <div class="markdown level1 summary"><p>Returns a value indicating whether this instance is equal to the
+specified <a class="xref" href="Bonsai.Shaders.DispatchParameters.html">DispatchParameters</a> structure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(DispatchParameters other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.DispatchParameters.html">DispatchParameters</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>The <a class="xref" href="Bonsai.Shaders.DispatchParameters.html">DispatchParameters</a> object to compare with this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">other</code> represents
+the same parameter values as this instance; otherwise,
+<span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_DispatchParameters_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.DispatchParameters.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/DispatchParameters.cs/#L78">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_DispatchParameters_Equals_" data-uid="Bonsai.Shaders.DispatchParameters.Equals*"></a>
+  <h4 id="Bonsai_Shaders_DispatchParameters_Equals_System_Object_" data-uid="Bonsai.Shaders.DispatchParameters.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Returns a value indicating whether the specified object is a <a class="xref" href="Bonsai.Shaders.DispatchParameters.html">DispatchParameters</a>
+structure with the same parameter values as this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to compare with this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">obj</code> is a <a class="xref" href="Bonsai.Shaders.DispatchParameters.html">DispatchParameters</a>
+structure and has the same parameter values as this structure; otherwise,
+<span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.equals#system-valuetype-equals(system-object)">ValueType.Equals(Object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_DispatchParameters_GetHashCode.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.DispatchParameters.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/DispatchParameters.cs/#L84">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_DispatchParameters_GetHashCode_" data-uid="Bonsai.Shaders.DispatchParameters.GetHashCode*"></a>
+  <h4 id="Bonsai_Shaders_DispatchParameters_GetHashCode" data-uid="Bonsai.Shaders.DispatchParameters.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.gethashcode#system-valuetype-gethashcode">ValueType.GetHashCode()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_DispatchParameters_ToString.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.DispatchParameters.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/DispatchParameters.cs/#L101">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_DispatchParameters_ToString_" data-uid="Bonsai.Shaders.DispatchParameters.ToString*"></a>
+  <h4 id="Bonsai_Shaders_DispatchParameters_ToString" data-uid="Bonsai.Shaders.DispatchParameters.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> representation of this
+<a class="xref" href="Bonsai.Shaders.DispatchParameters.html">DispatchParameters</a> structure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> containing all the parameter values of this
+<a class="xref" href="Bonsai.Shaders.DispatchParameters.html">DispatchParameters</a> structure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.tostring#system-valuetype-tostring">ValueType.ToString()</a></div>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_DispatchParameters_op_Equality_Bonsai_Shaders_DispatchParameters_Bonsai_Shaders_DispatchParameters_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.DispatchParameters.op_Equality(Bonsai.Shaders.DispatchParameters%2CBonsai.Shaders.DispatchParameters)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/DispatchParameters.cs/#L121">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_DispatchParameters_op_Equality_" data-uid="Bonsai.Shaders.DispatchParameters.op_Equality*"></a>
+  <h4 id="Bonsai_Shaders_DispatchParameters_op_Equality_Bonsai_Shaders_DispatchParameters_Bonsai_Shaders_DispatchParameters_" data-uid="Bonsai.Shaders.DispatchParameters.op_Equality(Bonsai.Shaders.DispatchParameters,Bonsai.Shaders.DispatchParameters)">Equality(DispatchParameters, DispatchParameters)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether two <a class="xref" href="Bonsai.Shaders.DispatchParameters.html">DispatchParameters</a> structures are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(DispatchParameters left, DispatchParameters right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.DispatchParameters.html">DispatchParameters</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The <a class="xref" href="Bonsai.Shaders.DispatchParameters.html">DispatchParameters</a> structure on the left-hand side of the
+equality operator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.DispatchParameters.html">DispatchParameters</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The <a class="xref" href="Bonsai.Shaders.DispatchParameters.html">DispatchParameters</a> structure on the right-hand side of the
+equality operator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">left</code> and <code data-dev-comment-type="paramref" class="paramref">right</code>
+have equal parameter values; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_DispatchParameters_op_Inequality_Bonsai_Shaders_DispatchParameters_Bonsai_Shaders_DispatchParameters_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.DispatchParameters.op_Inequality(Bonsai.Shaders.DispatchParameters%2CBonsai.Shaders.DispatchParameters)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/DispatchParameters.cs/#L142">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_DispatchParameters_op_Inequality_" data-uid="Bonsai.Shaders.DispatchParameters.op_Inequality*"></a>
+  <h4 id="Bonsai_Shaders_DispatchParameters_op_Inequality_Bonsai_Shaders_DispatchParameters_Bonsai_Shaders_DispatchParameters_" data-uid="Bonsai.Shaders.DispatchParameters.op_Inequality(Bonsai.Shaders.DispatchParameters,Bonsai.Shaders.DispatchParameters)">Inequality(DispatchParameters, DispatchParameters)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether two <a class="xref" href="Bonsai.Shaders.DispatchParameters.html">DispatchParameters</a> structures are different.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(DispatchParameters left, DispatchParameters right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.DispatchParameters.html">DispatchParameters</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The <a class="xref" href="Bonsai.Shaders.DispatchParameters.html">DispatchParameters</a> structure on the left-hand side of the
+inequality operator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.DispatchParameters.html">DispatchParameters</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The <a class="xref" href="Bonsai.Shaders.DispatchParameters.html">DispatchParameters</a> structure on the right-hand side of the
+inequality operator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">left</code> and <code data-dev-comment-type="paramref" class="paramref">right</code>
+differ in any of their parameter values; <span class="xref">false</span> if
+<code data-dev-comment-type="paramref" class="paramref">left</code> and <code data-dev-comment-type="paramref" class="paramref">right</code> are equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_DispatchParameters.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.DispatchParameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/DispatchParameters.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

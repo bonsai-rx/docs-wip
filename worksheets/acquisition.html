@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Acquisition and Tracking </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Acquisition and Tracking ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="acquisition-and-tracking">Acquisition and Tracking</h1>
+
+<h2 id="video-acquisition">Video Acquisition</h2>
+<p>Bonsai can be used to acquire and record data from many different devices. The exercises below will make you comfortable with the most common Bonsai data types. The first data type we will discuss is an image, which is represented as a 2D matrix of pixels. Each pixel represents either a brightness value in a grayscale image, or a BGR colour value in a colour image.</p>
+<h3 id="exercise-1-saving-a-video"><strong>Exercise 1:</strong> Saving a video</h3>
+<p><img src="../images/acquisition-video.svg" alt="Saving a video"></p>
+<ul>
+<li>Insert a <code>CameraCapture</code> source.</li>
+<li>Insert a <code>VideoWriter</code> sink.</li>
+<li>Configure the <code>FileName</code> property of the <code>VideoWriter</code> operator with a file name ending in <code>.avi</code>.</li>
+<li>Run the workflow and check that it generates a valid video file.</li>
+</ul>
+<h3 id="exercise-2-saving-a-grayscale-video"><strong>Exercise 2:</strong> Saving a grayscale video</h3>
+<p><img src="../images/acquisition-grayvideo.svg" alt="Saving a grayscale video"></p>
+<ul>
+<li>Insert a <code>Grayscale</code> transform between <code>CameraCapture</code> and <code>VideoWriter</code>.</li>
+<li>Run the workflow. The output should now be a grayscale movie.</li>
+<li>Modify the workflow so that it records <strong>simultaneously</strong> a colour and a grayscale movie.</li>
+</ul>
+<h2 id="audio-acquisition">Audio Acquisition</h2>
+<p>Audio data is captured at much higher temporal sampling frequencies than video. However, the data is typically buffered into chunks of multiple samples before being sent to the computer. Also, multi-channel data can be acquired simultaneously in the case of a stereo microphone, or high-density ephys probes. Such multi-sample, multi-channel data is typically represented as a 2D matrix, where rows represent channels, and columns represent time.</p>
+<h3 id="exercise-3-saving-a-wav-file"><strong>Exercise 3:</strong> Saving a WAV file</h3>
+<p><img src="../images/acquisition-audio.svg" alt="Saving a WAV file"></p>
+<ul>
+<li>Insert an <code>AudioCapture</code> source.</li>
+<li>Insert an <code>AudioWriter</code> sink.</li>
+<li>Configure the <code>FileName</code> property of the <code>AudioWriter</code> operator with a file name ending in <code>.wav</code>.</li>
+<li>Make sure that the <code>SamplingFrequency</code> property of the <code>AudioWriter</code> matches the frequency of audio capture.</li>
+<li>Run the workflow for some seconds. Playback the file in Windows Media Player to check that it is a valid audio file.</li>
+</ul>
+<h3 id="exercise-4-saving-raw-binary-waveform-data"><strong>Exercise 4:</strong> Saving raw binary waveform data</h3>
+<p><img src="../images/acquisition-audiobinary.svg" alt="Saving raw binary waveform data"></p>
+<ul>
+<li>Replace the <code>AudioWriter</code> operator with a <code>MatrixWriter</code> sink.</li>
+<li>Configure the <code>Path</code> property of the <code>MatrixWriter</code> operator with a file name ending in <code>.bin</code>.</li>
+<li>Run the workflow for some seconds.</li>
+<li>Open the resulting binary file in MATLAB/Python/R and make a time series plot of the raw waveform samples.
+<ul>
+<li><strong>MATLAB:</strong> Use the <a href="https://www.mathworks.com/help/matlab/ref/fread.html"><code>fread</code></a> function to read the binary file. The source data must be set to <code>int16</code>.</li>
+<li><strong>Python:</strong> Use the <a href="https://numpy.org/doc/stable/reference/generated/numpy.fromfile.html"><code>fromfile</code></a> in the <a href="https://numpy.org/install/"><code>numpy</code></a> package to read the binary file. The <code>dtype</code> option must be set to <code>np.int16</code>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="exercise-5-trigger-an-auditory-stimulus"><strong>Exercise 5:</strong> Trigger an auditory stimulus</h3>
+<p><img src="../images/acquisition-audioplayback.svg" alt="Playback an audio file"></p>
+<ul>
+<li>Insert an <code>AudioReader</code> source.</li>
+<li>Configure the <code>FileName</code> property to point to the audio file you recorded in <em>Exercise 3</em>.</li>
+<li>Insert an <code>AudioPlayback</code> sink.</li>
+<li>Run the workflow and check that the sound is played correctly.</li>
+</ul>
+<p><img src="../images/acquisition-audiotrigger.svg" alt="Trigger an auditory stimulus"></p>
+<ul>
+<li>Insert a <code>KeyDown</code> source.</li>
+<li>Set the <code>BufferLength</code> property of the <code>AudioReader</code> to zero, so that all audio data is read into a single buffer.</li>
+<li>Combine the key press with the audio data using the <code>WithLatestFrom</code> combinator.</li>
+<li>Right-click the <code>WithLatestFrom</code> operator. Select the <code>Tuple</code> &gt; <code>Item2</code> member from the context menu.</li>
+<li>Move the <code>AudioPlayback</code> sink so that it follows the selected <code>Item2</code> member.</li>
+<li>Run the workflow and press a key. What happens if you press the key several times?</li>
+</ul>
+<h2 id="arduino-acquisition">Arduino Acquisition</h2>
+<p>In order to communicate and interact with an Arduino using Bonsai, you must program the microcontroller to send and receive binary data from the computer via the USB cable. Fortunately, the Arduino environment already comes with a standard implementation of an efficient binary protocol called <strong><a href="https://github.com/firmata/arduino">Firmata</a></strong> which can be used for serial communication with external applications such as Bonsai.</p>
+<h3 id="configure-arduino-for-real-time-communication">Configure Arduino for real-time communication</h3>
+<ul>
+<li>Open the <a href="https://www.arduino.cc/en/Main/Software">Arduino IDE</a>.</li>
+<li>Upload <code>StandardFirmata</code> to your Arduino. The code can be found in <code>File</code> &gt; <code>Examples</code> &gt; <code>Firmata</code>.</li>
+</ul>
+<h3 id="exercise-6-saving-analog-data"><strong>Exercise 6:</strong> Saving analog data</h3>
+<p><img src="../images/acquisition-analog.svg" alt="Saving analog data"></p>
+<ul>
+<li>Insert an <code>AnalogInput</code> source.</li>
+<li>Configure the <code>PortName</code> property to point to the correct serial port where the Arduino is connected.</li>
+<li>Run the workflow and visualize the output of the analog source. What do you see?</li>
+<li><strong>Optional:</strong> Connect a sensor to the analog input pin, e.g. a potentiometer or a button.</li>
+<li>Insert a <code>CsvWriter</code> sink. This operator records input data into a text file.</li>
+<li>Configure the <code>FileName</code> property of the <code>CsvWriter</code> operator with a file name ending in <code>.csv</code>.</li>
+<li>Run the workflow, record some interesting signal, and then open the result text data file.</li>
+</ul>
+<h3 id="exercise-7-control-an-led"><strong>Exercise 7:</strong> Control an LED</h3>
+<p><img src="../images/acquisition-led.svg" alt="Control an LED"></p>
+<ul>
+<li>Insert a <code>Boolean</code> source.</li>
+<li>Insert a <code>DigitalOutput</code> sink.</li>
+<li>Set the <code>Pin</code> property of the <code>DigitalOutput</code> operator to 13.</li>
+<li>Configure the <code>PortName</code> property.</li>
+<li>Run the workflow and change the <code>Value</code> property of the <code>Boolean</code> operator.</li>
+<li><strong>Optional:</strong> Use your mouse to control the LED! Replace the <code>Boolean</code> operator by a <code>MouseMove</code> source (hint: use <code>GreaterThan</code>, <code>LessThan</code>, or equivalent operators to connect one of the mouse axis to <code>DigitalOutput</code>).</li>
+</ul>
+<h3 id="exercise-8-control-a-servo-motor"><strong>Exercise 8:</strong> Control a servo motor</h3>
+<p><img src="../images/acquisition-servo.svg" alt="Control a servo motor"></p>
+<ul>
+<li>Insert a <code>Timer</code> source. Set its <code>Period</code> property to 500 ms.</li>
+<li>Insert a <code>Take</code> operator. Set its <code>Count</code> property to 10.</li>
+<li>Insert a <code>Rescale</code> operator. Set its <code>Max</code> property to 10, and its <code>RangeMax</code> property to 180.</li>
+<li>Insert a <code>Repeat</code> operator.</li>
+<li>Insert a <code>ServoOutput</code> sink.</li>
+<li>Set the <code>Pin</code> property of the <code>ServoOutput</code> operator to 9.</li>
+<li>Configure the <code>PortName</code> property.</li>
+<li>Connect a servo motor to the Arduino pin 9 and run the workflow. Can you explain the behaviour of the servo?</li>
+<li><strong>Optional:</strong> Make the servo sweep back and forth.</li>
+</ul>
+<h2 id="video-tracking">Video Tracking</h2>
+<p>Bonsai allows processing captured raw video data to extract real-time measures of behaviour or other derived quantities. The exercises below will introduce you to some of its online video processing capabilities.</p>
+<h3 id="exercise-9-segmentation-of-a-coloured-object"><strong>Exercise 9:</strong> Segmentation of a coloured object</h3>
+<p><img src="../images/acquisition-segmentation1.svg" alt="Segmentation of a coloured object"></p>
+<ul>
+<li>Insert a <code>CameraCapture</code> source.</li>
+<li>Insert a <code>RangeThreshold</code> transform.</li>
+<li>Open the visualizer for the <code>RangeThreshold</code> operator.</li>
+<li>Configure the <code>Lower</code> and <code>Upper</code> properties of the <code>RangeThreshold</code> to isolate your coloured object (hint: click the small arrow to the left of each property to expand their individual values).</li>
+</ul>
+<p>This method segments coloured objects by setting boundaries directly on the BGR colour space. This colour space is considered a poor choice for colour segmentation. Can you see why?</p>
+<p><img src="../images/acquisition-segmentation2.svg" alt="Segmentation of a coloured object"></p>
+<ul>
+<li>Replace the <code>RangeThreshold</code> operator by a <code>ConvertColor</code> transform. This node converts the image from the BGR colour space to the <a href="https://en.wikipedia.org/wiki/HSL_and_HSV">Hue-Saturation-Value (HSV) colour space</a>.</li>
+<li>Insert an <code>HsvThreshold</code> transform.</li>
+<li>Configure the <code>Lower</code>and <code>Upper</code> properties of the <code>HsvThreshold</code> to isolate the object.</li>
+<li>Test the resulting tracking under different illumination conditions.</li>
+</ul>
+<h3 id="exercise-10-real-time-position-tracking"><strong>Exercise 10:</strong> Real-time position tracking</h3>
+<p><img src="../images/acquisition-tracking.svg" alt="Real-time position tracking"></p>
+<ul>
+<li>Starting with the workflow from the previous exercise, insert a <code>FindContours</code> transform. This operator traces the contours of all the objects in a black-and-white image. An <em>object</em> is defined as a region of connected white pixels.</li>
+<li>Insert a <code>BinaryRegionAnalysis</code> transform. This node calculates the area, center of mass, and orientation for all the detected contours.</li>
+<li>Insert a <code>LargestBinaryRegion</code> transform to extract the largest detected object in the image.</li>
+<li>Select the <code>ConnectedComponent</code> &gt; <code>Centroid</code> field of the largest binary region using the context menu.</li>
+<li>Record the position of the centroid using a <code>CsvWriter</code> sink.</li>
+<li><strong>Optional:</strong> Open the CSV file in Excel/Python/MATLAB/R and plot the trajectory of the object.</li>
+</ul>
+<h3 id="exercise-11-background-subtraction-and-motion-segmentation"><strong>Exercise 11:</strong> Background subtraction and motion segmentation</h3>
+<p><img src="../images/acquisition-backsubtraction.svg" alt="Background subtraction"></p>
+<ul>
+<li>Create a grayscale video workflow similar to <em>Exercise 2</em>.</li>
+<li>Insert a <code>Skip</code> operator. Set its <code>Count</code> property to 1.</li>
+<li>In a new branch, insert a <code>Take</code> operator. Set its <code>Count</code> property to 1.</li>
+<li>Combine the images from both branches using the <code>CombineLatest</code> combinator.</li>
+<li>Insert the <code>AbsoluteDifference</code> transform after <code>CombineLatest</code>.</li>
+<li>Insert a <code>Threshold</code> transform. Visualize the node output and adjust the <code>ThresholdValue</code> property.</li>
+</ul>
+<p><em>Describe in your own words what the above workflow is doing.</em></p>
+<p><img src="../images/acquisition-motionsegmentation.svg" alt="Motion segmentation"></p>
+<ul>
+<li>Replace the <code>CombineLatest</code> operator with the <code>Zip</code> combinator.</li>
+<li>Delete the <code>Take</code> operator.</li>
+</ul>
+<p><em>Describe in your own words what the above modified workflow is doing.</em></p>
+<h3 id="exercise-12-measuring-motion"><strong>Exercise 12:</strong> Measuring motion</h3>
+<p><img src="../images/acquisition-motion.svg" alt="Measuring motion"></p>
+<ul>
+<li>Create a grayscale video stream similar to <em>Exercise 2</em>.</li>
+<li>Insert a <code>BackgroundSubtraction</code> transform. Set its <code>AdaptationRate</code> property to 1.</li>
+<li>Insert a <code>Sum</code> operator. This operator will sum the values of all the pixels in the image.</li>
+<li>Run the workflow, point the camera at a moving object and visualize the output of the <code>Sum</code> operator. Compare small movements to big movements. What happens to the signal when the object holds perfect still?</li>
+<li>Right-click the <code>Sum</code> operator. Select the <code>Scalar</code> &gt; <code>Val0</code> member from the context menu.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <code>Sum</code> operator sums the pixel values across all image colour channels. However, in the case of grayscale binary images, there is only one active channel and its sum is stored in the <code>Val0</code> field.</p>
+</div>
+<ul>
+<li>Record the motion of an object using a <code>CsvWriter</code> sink.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/blob/main/worksheets/acquisition.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

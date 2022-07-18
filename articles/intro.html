@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>What is Bonsai? </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="What is Bonsai? ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="what-is-bonsai">What is Bonsai?</h2>
+
+<p>Bonsai is a programming language with the following major features:</p>
+<ol>
+<li><strong>It operates on sequences of elements that are ordered in time.</strong> Elements within these sequences can be any kind of data (images, numbers, strings, etc), and these sequences can be either finite or infinite. Elements within sequences can occur regularly or irregularly and do not need to conform to any underlying clock -- sequences are asynchronous. Most hardware that interacts with the world is asynchronous: a human using a keyboard can produce a sequence of keystrokes, and a webcam can produce a sequence of images, but the time of each keypress and image capture is unrelated. Bonsai addresses this fact at the core of its design and is therefore particularly good at interacting with the physical world.</li>
+</ol>
+<p><img src="../images/simple-sequence.svg" alt="A simple sequence"></p>
+<p><em>Footnote: If you look at the source code of Bonsai, the technical name for the datatype of all sequences in Bonsai is &quot;IObservable&quot;.</em></p>
+<ol start="2">
+<li><p><strong>It is (strictly) composable.</strong> Operations on sequences (generation, filtering, combining, etc.) are composed in order to define new sequences. In this way, Bonsai operators are much closer to normal mathematical functions than those in many of the programming languages with which you might already be familiar. In fact, one can think of Bonsai as an algebra that operates on temporal sequences in a similar way to how linear algebra operates on matrices.</p>
+</li>
+<li><p><strong>It is a visual language.</strong> Operator composition is defined using a graphical tool. To define a composition, operators are linked together in order to form a visual graph (in the mathematical sense), which is called a &quot;workflow&quot; in Bonsai. Each node defines a sequence and each connection gives a node the option to get data from the connected preceding node(s).</p>
+</li>
+</ol>
+<p>The visual language of Bonsai can be read using the following colour code:</p>
+<h3 id="how-to-read-bonsai-code">How to read Bonsai code</h3>
+<p>The visual language of Bonsai contains the following 4 major colors:</p>
+<ul>
+<li><strong>Green == Sources.</strong> Sources generate sequences of data and do not require an input connection. Some sources generate infinite sequences (i.e. webcams), while others generate finite sequences (i.e. movie files).</li>
+<li><strong>Blue == Transforms.</strong> Transforms always have a single input connection. Transforms apply some operation on the elements of the incoming sequence, and every element of the input sequence is transformed into an element in the output sequence, with no changes to order or rate.</li>
+<li><strong>Orange == Combinators.</strong> Combinators take one or more input sequences and apply some sort of control flow. With a combinator node, you can combine data, monitor various sequences, generate new events, drop events, etc. Most of the reactive operators fall into this category, and most of the complexity of a Bonsai workflow lies in the orange nodes.</li>
+<li><strong>Purple == Sinks.</strong> Sinks take one sequence as input and output the exact same sequence, but they cause some kind of side effect outside of Bonsai (i.e. save data to a file, turn on or off some hardware, etc). Sinks do not change the elements in a sequence, and therefore can be placed anywhere in a workflow without changing its operation.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/blob/main/articles/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

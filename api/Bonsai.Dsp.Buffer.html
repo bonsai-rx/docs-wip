@@ -1,0 +1,2816 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Buffer
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Buffer
+   ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Bonsai.Dsp.Buffer">
+  
+  
+  <h1 id="Bonsai_Dsp_Buffer" data-uid="Bonsai.Dsp.Buffer" class="text-break">Class Buffer
+  </h1>
+  <div class="markdown level0 summary"><p>Represents an operator that collects each element of the sequence into zero or more
+array buffers based on element count information.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">Buffer</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Bonsai.Dsp.html">Bonsai.Dsp</a></h6>
+  <h6><strong>Assembly</strong>: Bonsai.Dsp.dll</h6>
+  <h5 id="Bonsai_Dsp_Buffer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Combinator]
+[WorkflowElementCategory(ElementCategory.Transform)]
+public class Buffer</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Count.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L22">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Count_" data-uid="Bonsai.Dsp.Buffer.Count*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Count" data-uid="Bonsai.Dsp.Buffer.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the number of elements in each array buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Skip.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Skip%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L33">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Skip_" data-uid="Bonsai.Dsp.Buffer.Skip*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Skip" data-uid="Bonsai.Dsp.Buffer.Skip">Skip</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the optional number of elements to skip between the creation of consecutive buffers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Skip { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Bonsai_Dsp_Buffer_Skip_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If no value is specified, it is considered to be be equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a> in order
+to generate consecutive non-overlapping buffers. If the value is less than <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>
+this operator will generate overlapping sliding windows.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_OpenCV_Net_Mat__.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BOpenCV.Net.Mat%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L1060">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_OpenCV_Net_Mat__" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{OpenCV.Net.Mat})">Process(IObservable&lt;Mat&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Mat&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of array buffers containing the samples to buffer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+the same number of rows as each element in each list, and column length equal to
+<a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Byte__.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Byte%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L49">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Byte__" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Byte})">Process(IObservable&lt;Byte&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;byte&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of 8-bit unsigned integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> vectors of length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>
+containing the buffered data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Collections_Generic_IList_System_Byte___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Collections.Generic.IList%7BSystem.Byte%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L946">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Collections_Generic_IList_System_Byte___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Collections.Generic.IList{System.Byte}})">Process(IObservable&lt;IList&lt;Byte&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;IList&lt;byte&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of lists of 8-bit unsigned integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+as many rows as there are elements in each list, and column length equal to
+<a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Collections_Generic_IList_System_Double___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Collections.Generic.IList%7BSystem.Double%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L1041">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Collections_Generic_IList_System_Double___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Collections.Generic.IList{System.Double}})">Process(IObservable&lt;IList&lt;Double&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;IList&lt;double&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of lists of 64-bit floating-point numbers to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+as many rows as there are elements in each list, and column length equal to
+<a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Collections_Generic_IList_System_Int16___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Collections.Generic.IList%7BSystem.Int16%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L965">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Collections_Generic_IList_System_Int16___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Collections.Generic.IList{System.Int16}})">Process(IObservable&lt;IList&lt;Int16&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;IList&lt;short&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of lists of 16-bit signed integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+as many rows as there are elements in each list, and column length equal to
+<a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Collections_Generic_IList_System_Int32___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Collections.Generic.IList%7BSystem.Int32%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L1003">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Collections_Generic_IList_System_Int32___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Collections.Generic.IList{System.Int32}})">Process(IObservable&lt;IList&lt;Int32&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;IList&lt;int&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of lists of 32-bit signed integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+as many rows as there are elements in each list, and column length equal to
+<a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Collections_Generic_IList_System_Single___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Collections.Generic.IList%7BSystem.Single%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L1022">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Collections_Generic_IList_System_Single___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Collections.Generic.IList{System.Single}})">Process(IObservable&lt;IList&lt;Single&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;IList&lt;float&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of lists of 32-bit floating-point numbers to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+as many rows as there are elements in each list, and column length equal to
+<a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Collections_Generic_IList_System_UInt16___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Collections.Generic.IList%7BSystem.UInt16%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L984">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Collections_Generic_IList_System_UInt16___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Collections.Generic.IList{System.UInt16}})">Process(IObservable&lt;IList&lt;UInt16&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;IList&lt;ushort&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of lists of 16-bit unsigned integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+as many rows as there are elements in each list, and column length equal to
+<a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Double__.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Double%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L139">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Double__" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Double})">Process(IObservable&lt;Double&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;double&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of 64-bit floating-point numbers to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> vectors of length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>
+containing the buffered data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Int16__.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Int16%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L67">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Int16__" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Int16})">Process(IObservable&lt;Int16&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;short&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of 16-bit signed integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> vectors of length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>
+containing the buffered data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Int32__.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L103">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Int32__" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Int32})">Process(IObservable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;int&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of 32-bit signed integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> vectors of length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>
+containing the buffered data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Single__.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Single%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L121">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Single__" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Single})">Process(IObservable&lt;Single&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;float&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of 32-bit floating-point numbers to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> vectors of length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>
+containing the buffered data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Byte_System_Byte_System_Byte_System_Byte_System_Byte_System_Byte_System_Byte___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Byte%2CSystem.Byte%2CSystem.Byte%2CSystem.Byte%2CSystem.Byte%2CSystem.Byte%2CSystem.Byte%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L808">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Byte_System_Byte_System_Byte_System_Byte_System_Byte_System_Byte_System_Byte___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte}})">Process(IObservable&lt;Tuple&lt;Byte, Byte, Byte, Byte, Byte, Byte, Byte&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;byte, byte, byte, byte, byte, byte, byte&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-7">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of septuples of 8-bit unsigned integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+seven rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Byte_System_Byte_System_Byte_System_Byte_System_Byte_System_Byte___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Byte%2CSystem.Byte%2CSystem.Byte%2CSystem.Byte%2CSystem.Byte%2CSystem.Byte%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L679">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Byte_System_Byte_System_Byte_System_Byte_System_Byte_System_Byte___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte}})">Process(IObservable&lt;Tuple&lt;Byte, Byte, Byte, Byte, Byte, Byte&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;byte, byte, byte, byte, byte, byte&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-6">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of sextuples of 8-bit unsigned integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+six rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Byte_System_Byte_System_Byte_System_Byte_System_Byte___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Byte%2CSystem.Byte%2CSystem.Byte%2CSystem.Byte%2CSystem.Byte%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L551">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Byte_System_Byte_System_Byte_System_Byte_System_Byte___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Byte,System.Byte,System.Byte,System.Byte,System.Byte}})">Process(IObservable&lt;Tuple&lt;Byte, Byte, Byte, Byte, Byte&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;byte, byte, byte, byte, byte&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-5">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of quintuples of 8-bit unsigned integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+five rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Byte_System_Byte_System_Byte_System_Byte___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Byte%2CSystem.Byte%2CSystem.Byte%2CSystem.Byte%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L424">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Byte_System_Byte_System_Byte_System_Byte___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Byte,System.Byte,System.Byte,System.Byte}})">Process(IObservable&lt;Tuple&lt;Byte, Byte, Byte, Byte&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;byte, byte, byte, byte&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-4">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of quadruples of 8-bit unsigned integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+four rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Byte_System_Byte_System_Byte___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Byte%2CSystem.Byte%2CSystem.Byte%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L298">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Byte_System_Byte_System_Byte___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Byte,System.Byte,System.Byte}})">Process(IObservable&lt;Tuple&lt;Byte, Byte, Byte&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;byte, byte, byte&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-3">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of triples of 8-bit unsigned integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+three rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Byte_System_Byte___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Byte%2CSystem.Byte%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L173">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Byte_System_Byte___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Byte,System.Byte}})">Process(IObservable&lt;Tuple&lt;Byte, Byte&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;byte, byte&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs of 8-bit unsigned integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+two rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L898">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double}})">Process(IObservable&lt;Tuple&lt;Double, Double, Double, Double, Double, Double, Double&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;double, double, double, double, double, double, double&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-7">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of septuples of 64-bit floating-point numbers to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+seven rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L769">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Double,System.Double,System.Double,System.Double,System.Double,System.Double}})">Process(IObservable&lt;Tuple&lt;Double, Double, Double, Double, Double, Double&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;double, double, double, double, double, double&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-6">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of sextuples of 64-bit floating-point numbers to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+six rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Double_System_Double_System_Double_System_Double_System_Double___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L641">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Double_System_Double_System_Double_System_Double_System_Double___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Double,System.Double,System.Double,System.Double,System.Double}})">Process(IObservable&lt;Tuple&lt;Double, Double, Double, Double, Double&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;double, double, double, double, double&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-5">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of quintuples of 64-bit floating-point numbers to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+five rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Double_System_Double_System_Double_System_Double___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L514">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Double_System_Double_System_Double_System_Double___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Double,System.Double,System.Double,System.Double}})">Process(IObservable&lt;Tuple&lt;Double, Double, Double, Double&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;double, double, double, double&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-4">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of quadruples of 64-bit floating-point numbers to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+four rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Double_System_Double_System_Double___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Double%2CSystem.Double%2CSystem.Double%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L388">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Double_System_Double_System_Double___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Double,System.Double,System.Double}})">Process(IObservable&lt;Tuple&lt;Double, Double, Double&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;double, double, double&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-3">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of triples of 64-bit floating-point numbers to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+three rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Double_System_Double___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Double%2CSystem.Double%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L263">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Double_System_Double___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Double,System.Double}})">Process(IObservable&lt;Tuple&lt;Double, Double&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;double, double&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs of 64-bit floating-point numbers to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+two rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int16_System_Int16_System_Int16_System_Int16_System_Int16_System_Int16_System_Int16___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Int16%2CSystem.Int16%2CSystem.Int16%2CSystem.Int16%2CSystem.Int16%2CSystem.Int16%2CSystem.Int16%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L826">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int16_System_Int16_System_Int16_System_Int16_System_Int16_System_Int16_System_Int16___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16}})">Process(IObservable&lt;Tuple&lt;Int16, Int16, Int16, Int16, Int16, Int16, Int16&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;short, short, short, short, short, short, short&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-7">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of septuples of 16-bit signed integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+seven rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int16_System_Int16_System_Int16_System_Int16_System_Int16_System_Int16___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Int16%2CSystem.Int16%2CSystem.Int16%2CSystem.Int16%2CSystem.Int16%2CSystem.Int16%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L697">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int16_System_Int16_System_Int16_System_Int16_System_Int16_System_Int16___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16}})">Process(IObservable&lt;Tuple&lt;Int16, Int16, Int16, Int16, Int16, Int16&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;short, short, short, short, short, short&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-6">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of sextuples of 16-bit signed integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+six rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int16_System_Int16_System_Int16_System_Int16_System_Int16___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Int16%2CSystem.Int16%2CSystem.Int16%2CSystem.Int16%2CSystem.Int16%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L569">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int16_System_Int16_System_Int16_System_Int16_System_Int16___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Int16,System.Int16,System.Int16,System.Int16,System.Int16}})">Process(IObservable&lt;Tuple&lt;Int16, Int16, Int16, Int16, Int16&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;short, short, short, short, short&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-5">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of quintuples of 16-bit signed integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+five rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int16_System_Int16_System_Int16_System_Int16___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Int16%2CSystem.Int16%2CSystem.Int16%2CSystem.Int16%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L442">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int16_System_Int16_System_Int16_System_Int16___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Int16,System.Int16,System.Int16,System.Int16}})">Process(IObservable&lt;Tuple&lt;Int16, Int16, Int16, Int16&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;short, short, short, short&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-4">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of quadruples of 16-bit signed integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+four rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int16_System_Int16_System_Int16___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Int16%2CSystem.Int16%2CSystem.Int16%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L316">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int16_System_Int16_System_Int16___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Int16,System.Int16,System.Int16}})">Process(IObservable&lt;Tuple&lt;Int16, Int16, Int16&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;short, short, short&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-3">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of triples of 16-bit signed integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+three rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int16_System_Int16___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Int16%2CSystem.Int16%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L191">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int16_System_Int16___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Int16,System.Int16}})">Process(IObservable&lt;Tuple&lt;Int16, Int16&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;short, short&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs of 16-bit signed integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+two rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L862">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32}})">Process(IObservable&lt;Tuple&lt;Int32, Int32, Int32, Int32, Int32, Int32, Int32&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;int, int, int, int, int, int, int&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-7">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of septuples of 32-bit signed integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+seven rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L733">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32}})">Process(IObservable&lt;Tuple&lt;Int32, Int32, Int32, Int32, Int32, Int32&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;int, int, int, int, int, int&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-6">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of sextuples of 32-bit signed integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+six rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L605">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Int32,System.Int32,System.Int32,System.Int32,System.Int32}})">Process(IObservable&lt;Tuple&lt;Int32, Int32, Int32, Int32, Int32&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;int, int, int, int, int&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-5">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of quintuples of 32-bit signed integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+five rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int32_System_Int32_System_Int32_System_Int32___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L478">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int32_System_Int32_System_Int32_System_Int32___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Int32,System.Int32,System.Int32,System.Int32}})">Process(IObservable&lt;Tuple&lt;Int32, Int32, Int32, Int32&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;int, int, int, int&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-4">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of quadruples of 32-bit signed integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+four rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int32_System_Int32_System_Int32___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Int32%2CSystem.Int32%2CSystem.Int32%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L352">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int32_System_Int32_System_Int32___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Int32,System.Int32,System.Int32}})">Process(IObservable&lt;Tuple&lt;Int32, Int32, Int32&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;int, int, int&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-3">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of triples of 32-bit signed integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+three rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int32_System_Int32___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Int32%2CSystem.Int32%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L227">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Int32_System_Int32___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Int32,System.Int32}})">Process(IObservable&lt;Tuple&lt;Int32, Int32&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;int, int&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs of 32-bit signed integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+two rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L880">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single}})">Process(IObservable&lt;Tuple&lt;Single, Single, Single, Single, Single, Single, Single&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;float, float, float, float, float, float, float&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-7">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of septuples of 32-bit floating-point numbers to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+seven rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L751">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Single,System.Single,System.Single,System.Single,System.Single,System.Single}})">Process(IObservable&lt;Tuple&lt;Single, Single, Single, Single, Single, Single&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;float, float, float, float, float, float&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-6">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of sextuples of 32-bit floating-point numbers to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+six rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Single_System_Single_System_Single_System_Single_System_Single___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L623">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Single_System_Single_System_Single_System_Single_System_Single___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Single,System.Single,System.Single,System.Single,System.Single}})">Process(IObservable&lt;Tuple&lt;Single, Single, Single, Single, Single&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;float, float, float, float, float&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-5">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of quintuples of 32-bit floating-point numbers to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+five rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Single_System_Single_System_Single_System_Single___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L496">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Single_System_Single_System_Single_System_Single___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Single,System.Single,System.Single,System.Single}})">Process(IObservable&lt;Tuple&lt;Single, Single, Single, Single&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;float, float, float, float&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-4">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of quadruples of 32-bit floating-point numbers to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+four rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Single_System_Single_System_Single___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Single%2CSystem.Single%2CSystem.Single%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L370">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Single_System_Single_System_Single___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Single,System.Single,System.Single}})">Process(IObservable&lt;Tuple&lt;Single, Single, Single&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;float, float, float&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-3">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of triples of 32-bit floating-point numbers to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+three rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Single_System_Single___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.Single%2CSystem.Single%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L245">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_Single_System_Single___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.Single,System.Single}})">Process(IObservable&lt;Tuple&lt;Single, Single&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;float, float&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs of 32-bit floating-point numbers to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+two rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_UInt16_System_UInt16_System_UInt16_System_UInt16_System_UInt16_System_UInt16_System_UInt16___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.UInt16%2CSystem.UInt16%2CSystem.UInt16%2CSystem.UInt16%2CSystem.UInt16%2CSystem.UInt16%2CSystem.UInt16%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L844">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_UInt16_System_UInt16_System_UInt16_System_UInt16_System_UInt16_System_UInt16_System_UInt16___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.UInt16}})">Process(IObservable&lt;Tuple&lt;UInt16, UInt16, UInt16, UInt16, UInt16, UInt16, UInt16&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;ushort, ushort, ushort, ushort, ushort, ushort, ushort&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-7">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of septuples of 16-bit unsigned integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+seven rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_UInt16_System_UInt16_System_UInt16_System_UInt16_System_UInt16_System_UInt16___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.UInt16%2CSystem.UInt16%2CSystem.UInt16%2CSystem.UInt16%2CSystem.UInt16%2CSystem.UInt16%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L715">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_UInt16_System_UInt16_System_UInt16_System_UInt16_System_UInt16_System_UInt16___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.UInt16}})">Process(IObservable&lt;Tuple&lt;UInt16, UInt16, UInt16, UInt16, UInt16, UInt16&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;ushort, ushort, ushort, ushort, ushort, ushort&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-6">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of sextuples of 16-bit unsigned integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+six rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_UInt16_System_UInt16_System_UInt16_System_UInt16_System_UInt16___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.UInt16%2CSystem.UInt16%2CSystem.UInt16%2CSystem.UInt16%2CSystem.UInt16%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L587">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_UInt16_System_UInt16_System_UInt16_System_UInt16_System_UInt16___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.UInt16}})">Process(IObservable&lt;Tuple&lt;UInt16, UInt16, UInt16, UInt16, UInt16&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;ushort, ushort, ushort, ushort, ushort&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-5">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of quintuples of 16-bit unsigned integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+five rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_UInt16_System_UInt16_System_UInt16_System_UInt16___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.UInt16%2CSystem.UInt16%2CSystem.UInt16%2CSystem.UInt16%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L460">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_UInt16_System_UInt16_System_UInt16_System_UInt16___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.UInt16,System.UInt16,System.UInt16,System.UInt16}})">Process(IObservable&lt;Tuple&lt;UInt16, UInt16, UInt16, UInt16&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;ushort, ushort, ushort, ushort&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-4">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of quadruples of 16-bit unsigned integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+four rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_UInt16_System_UInt16_System_UInt16___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.UInt16%2CSystem.UInt16%2CSystem.UInt16%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L334">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_UInt16_System_UInt16_System_UInt16___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.UInt16,System.UInt16,System.UInt16}})">Process(IObservable&lt;Tuple&lt;UInt16, UInt16, UInt16&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;ushort, ushort, ushort&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-3">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of triples of 16-bit unsigned integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+three rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_UInt16_System_UInt16___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.Tuple%7BSystem.UInt16%2CSystem.UInt16%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L209">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_Tuple_System_UInt16_System_UInt16___" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.Tuple{System.UInt16,System.UInt16}})">Process(IObservable&lt;Tuple&lt;UInt16, UInt16&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;Tuple&lt;ushort, ushort&gt;&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs of 16-bit unsigned integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> objects containing the buffered data, with
+two rows and column length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer_Process_System_IObservable_System_UInt16__.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer.Process(System.IObservable%7BSystem.UInt16%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L85">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Buffer_Process_" data-uid="Bonsai.Dsp.Buffer.Process*"></a>
+  <h4 id="Bonsai_Dsp_Buffer_Process_System_IObservable_System_UInt16__" data-uid="Bonsai.Dsp.Buffer.Process(System.IObservable{System.UInt16})">Process(IObservable&lt;UInt16&gt;)</h4>
+  <div class="markdown level1 summary"><p>Collects each element of the sequence into zero or more array buffers based on
+element count information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Mat&gt; Process(IObservable&lt;ushort&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of 16-bit unsigned integer values to buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a>&gt;</td>
+        <td><p>A sequence of <a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a> vectors of length equal to <a class="xref" href="Bonsai.Dsp.Buffer.html#Bonsai_Dsp_Buffer_Count">Count</a>
+containing the buffered data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Buffer.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Buffer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Buffer.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

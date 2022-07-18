@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Operators </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Operators ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="operators">
+<h1 id="operators">Operators</h1>
+
+<p>When building a Bonsai program, you chain together reactive operators to create new observable sequences. There are many different operators, which can create all kinds of observable sequences. These operators can be roughly grouped into different categories, depending on their shared characteristics.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Category</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="../images/language-source.svg" alt="Source"></td>
+<td>generate event streams from devices or files</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="../images/language-transform.svg" alt="Transform"></td>
+<td>convert or process individual data items</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="../images/language-condition.svg" alt="Condition"></td>
+<td>filter data items matching some specific condition</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="../images/language-sink.svg" alt="Sink"></td>
+<td>save data or trigger external outputs</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="../images/language-combinator.svg" alt="Combinator"></td>
+<td>manage control flow or synchronize parallel inputs</td>
+</tr>
+</tbody>
+</table>
+<h2 id="source">Source</h2>
+<p>Sources create sequences that generate notifications spontaneously. This means that you can place these nodes without connecting them to any input. Every Bonsai program will contain at least one source. Usually sources represent streams of data which are acquired from devices or files, such as cameras, microphones, accelerometers, WAV files, network sockets, touchpads, etc.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Even though all sources can be placed independently, sometimes you can still connect an input to them. For example, if you place a <code>FileCapture</code> source by itself, it will playback all frames of the movie at the specified frame rate. However, if you connect it to an input, the next frame will now be played only when a new notification arrives, allowing you to precisely control video playback.</p>
+</div>
+<h2 id="transform">Transform</h2>
+<p>Transforms apply an operation to individual data items in a sequence. They always take exactly one input sequence, and generate another sequence which has the same number of elements as the input, but where each item has been modified according to the function specified by the transform.</p>
+<p>In other words, all transforms have a similar style of marble diagram:</p>
+<p><img src="../images/marble-transform.svg" alt="Transform operator"></p>
+<p>Every transform will always produce exactly one item for every notification generated by the input sequence. Each item that is produced will be the result of applying the transform function on the elements of the input sequence, and is sent out immediately whenever a new notification is received. When the input sequence terminates successfully (or exceptionally), the transformed sequence also terminates.</p>
+<p>The only distinction between different transforms will be in the exact function that is applied to each element (e.g., <code>Grayscale</code> will convert a sequence of color images to a sequence of grayscale images, while <code>FindContours</code> will convert a sequence of binary images into a sequence of contours).</p>
+<h2 id="condition">Condition</h2>
+<p>Condition operators apply a filter on individual data items in a sequence. Similar to transforms, they always take exactly one input sequence, and generate another sequence where the only emitted elements are items from the original sequence that match the condition criteria.</p>
+<p><img src="../images/marble-condition.svg" alt="Condition operator"></p>
+<p>The condition function is applied to individual items immediately whenever a new notification is received from the input sequence, and valid items are sent out as soon as they are found to match the criteria. When the input sequence terminates successfully (or exceptionally), the filtered sequence also terminates.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <code>Condition</code> operator allows you to specify arbitrary matching criteria using a node group. The input to the nested node group is the unfiltered sequence, and the output must be a sequence of elements of type <code>bool</code>, i.e. logical values indicating <code>true</code> or <code>false</code> depending on whether the current item is considered to match the criteria.</p>
+</div>
+<h2 id="sink">Sink</h2>
+<p>Whenever you need to save data into a file, trigger an external output, move a motor, or otherwise generate some kind of side effect with the data processed in Bonsai, you probably need to use a sink operator. Similar to transforms and conditions, sinks also apply a function to every individual element of an observable sequence. However, the application of the function will not modify or filter the input items in any way, which means the output sequence generated by a sink is identical to the input sequence.</p>
+<p>For this reason, all sinks also share a very similar style of marble diagram:</p>
+<p><img src="../images/marble-sink.svg" alt="Sink operator"></p>
+<p>Because the output sequence of a sink is exactly the same as the input sequence, sinks can always be placed at any point of the workflow without breaking existing behaviour.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can chain multiple sinks sequentially as long as the input is compatible. This can be very convenient when you need to run multiple side effects on a single data stream. A common application is to log data into a file while simultaneously transmitting it to an external device.</p>
+</div>
+<h2 id="combinator">Combinator</h2>
+<p>Although a lot can be done with the right sequence of sources, transforms and sinks, there are many other operators which allow you to express more complex combinations of observables. These operators are grouped together under the <code>Combinator</code> category, but their behaviour can be extremely diverse.</p>
+<p>Combinators can be used to merge data from multiple sources; control when observable sequences start and stop; or even to create entirely new sequences dynamically. Together, they provide an incredibly flexible toolkit to manipulate asynchronous data streams.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/blob/main/articles/operators.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Networking </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Networking ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="networking">Networking</h1>
+
+<p>Bonsai includes support for <a href="https://opensoundcontrol.stanford.edu/spec-1_0.html">Open Sound Control</a> (OSC), a flexible networking protocol for low-latency communication between different processes, potentially running in different devices over the network. The next exercises will show you how to leverage these primitives for connecting two Bonsai processes exchanging a variety of data. The final optional exercise shows how to leverage the OSC protocol to interface a Python script with a Bonsai workflow.</p>
+<h3 id="exercise-1-peer-to-peer-udp-communication"><strong>Exercise 1:</strong> Peer-to-peer UDP communication</h3>
+<p>We will start by implementing a direct peer-to-peer communication link between two processes on the same machine. This will allow us to send data between two known nodes in the network, or two independent Bonsai processes.</p>
+<p><img src="../images/osc-send-message.svg" alt="Send message"></p>
+<ul>
+<li>Setup the above workflow.</li>
+<li>Set the <code>Name</code> property of the <code>CreateUdpClient</code> source to <code>Emitter</code>.</li>
+<li>Set the <code>RemotePort</code> to 2342.</li>
+<li>Set the <code>Connection</code> property of the <code>SendMessage</code> sink to <code>Emitter</code>.</li>
+</ul>
+<p>Open a new Bonsai window and setup the following workflow:</p>
+<p><img src="../images/osc-receive-message.svg" alt="Receive message"></p>
+<ul>
+<li>Set the <code>Name</code> property of the <code>CreateUdpClient</code> source to <code>Receiver</code>.</li>
+<li>Set the <code>Port</code> property to 2342.</li>
+<li>Set the <code>Connection</code> property of the <code>ReceiveMessage</code> source to <code>Receiver</code>.</li>
+<li>Run the workflow and visualize the output of the <code>ReceiveMessage</code> source. Note the characters displayed in the <code>TypeTag</code>. Now change the <code>TypeTag</code> property of the <code>ReceiveMessage</code> source to <code>i</code>. This will make the source interpret the contents of the OSC message as a 32-bit integer. You can string multiple characters to describe complex messages.</li>
+<li>If you have access to two computers over a shared network, you can try to setup one of them to be the <code>Emitter</code> and the other to be the <code>Receiver</code>. In this case, make sure to set the <code>RemoteHostName</code> property of the <code>Emitter</code> to match the IP address of the receiver computer.</li>
+</ul>
+<h3 id="exercise-2-clientserver-tcp-communication"><strong>Exercise 2:</strong> Client/Server TCP communication</h3>
+<p>Next we will implement a responsive TCP server with support to accept multiple connections. This will allow us to share data between multiple unknown nodes in the network, where each receiver node just needs to know the IP address of the server and establish a connection to the data stream.</p>
+<p><img src="../images/osc-send-tcp.svg" alt="Send message"></p>
+<ul>
+<li>Setup the above workflow (identical to the previous exercise but using <code>CreateTcpServer</code>).</li>
+<li>Set the <code>Name</code> property of the <code>CreateTcpServer</code> source to <code>Emitter</code>.</li>
+<li>Set the <code>Port</code> property to 2342.</li>
+<li>Set the <code>Connection</code> property of the <code>SendMessage</code> sink to <code>Emitter</code>.</li>
+</ul>
+<p>Open a new Bonsai window and setup the following workflow:</p>
+<p><img src="../images/osc-receive-tcp.svg" alt="Receive message"></p>
+<ul>
+<li>Set the <code>Name</code> property of the <code>CreateTcpClient</code> source to <code>Receiver</code>.</li>
+<li>Set the <code>Port</code> property to 2342.</li>
+<li>Set the <code>Connection</code> property of the <code>ReceiveMessage</code> source to <code>Receiver</code>.</li>
+<li>Run the workflow and visualize the output of the <code>ReceiveMessage</code> source, optionally setting the <code>TypeTag</code> property to <code>i</code>. Try opening multiple copies of the receiver workflow and running them simultaneously. Verify that data is streamed to all instances successfully.</li>
+<li>If you have access to two or more computers over a shared network, you can try to set up multiple remote data listeners. In this case, make sure to set the <code>HostName</code> property of the <code>Receiver</code> node to match the IP address of the receiver computer.</li>
+</ul>
+<h3 id="exercise-3-streaming-image-data"><strong>Exercise 3:</strong> Streaming image data</h3>
+<p>It is possible to share multiple data streams of different types simultaneously through a single OSC connection. To do this, we need to specify different OSC addresses for our messages to allow clients to subscribe to the independent streams.</p>
+<p><img src="../images/osc-send-image.svg" alt="Send message"></p>
+<ul>
+<li>Start from the previous emitter workflow.</li>
+<li>Set the <code>Address</code> property of the <code>SendMessage</code> sink to <code>/cursor</code>.</li>
+<li>Add a <code>CameraCapture</code> source.</li>
+<li>Add a <code>ConvertToArray</code> transform to convert the image into an array of bytes.</li>
+<li>Add a new <code>SendMessage</code> node with the <code>Address</code> property set to <code>/image</code>.</li>
+<li>Ensure the <code>Connection</code> property of the new node is set to <code>Emitter</code>.</li>
+</ul>
+<p>Open a new Bonsai window and setup the following workflow:</p>
+<p><img src="../images/osc-receive-image.svg" alt="Receive message"></p>
+<ul>
+<li>Start from the previous receiver workflow.</li>
+<li>Set the <code>Address</code> property of the <code>ReceiveMessage</code> source to <code>/cursor</code>.</li>
+<li>Add a new <code>ReceiveMessage</code> source with the <code>Address</code> property set to <code>/image</code>.</li>
+<li>Run the emitter workflow and the receiver workflow and verify that you can receive both data streams.</li>
+<li>Set the <code>TypeTag</code> property on the new <code>ReceiveMessage</code> node to <code>b</code> for byte array.</li>
+<li>Add a <code>ConvertFromArray</code> transform following the <code>ReceiveMessage</code> source.</li>
+<li>Add a <code>Reshape</code> transform.</li>
+<li>Set the <code>Channels</code> property to 3 (color image) and the <code>Rows</code> property to 480 (or your camera image height).</li>
+<li>Add a <code>ConvertToImage</code> transform to interpret the resulting buffer as an image.</li>
+<li>Run both the emitter and the receiver workflow and verify you can successfully receive and decode both data streams. If you have access to two or more computers over a shared network, you can try to set up multiple remote data listeners, each listening to one or both data streams.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/blob/main/worksheets/networking.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Data Synchronization </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Data Synchronization ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="data-synchronization">Data Synchronization</h1>
+
+<p>Synchronizing behaviour and other experimental events with stimulation or recorded neural data is a fundamental component of neuroscience data collection and analysis. The exercises below will walk you through some common synchronization problems encountered in systems neuroscience experiments, and how to handle them using Bonsai.</p>
+<h3 id="exercise-1-synchronizing-video-from-two-webcams"><strong>Exercise 1:</strong> Synchronizing video from two webcams</h3>
+<p><img src="../images/synching-webcam.svg" alt="Synching Video"></p>
+<ul>
+<li>Insert a <code>CameraCapture</code> source and set it to index 0.</li>
+<li>Insert another <code>CameraCapture</code> source and set it to index 1.</li>
+<li>Combine both sources using a <code>WithLatestFrom</code> combinator.</li>
+<li>Insert a <code>Concat (Dsp)</code> operator and set its <code>Axis</code> property to 1.</li>
+<li>Insert a <code>VideoWriter</code> sink and record a small segment of video.</li>
+</ul>
+<p><em>How would you test the synchronization between the two video streams?</em></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can use the <code>FileCapture</code> source to inspect the video frame by frame by setting the <code>Playing</code> property to <code>False</code>. After setting the <code>FileName</code> property to match your recorded video, run the workflow, open the source visualizer, and then right-clicking on top of the video frame to open up the seek bar at the bottom. You can use the arrow keys to move forward and back on individual frames.</p>
+</div>
+<h2 id="reaction-time">Reaction Time</h2>
+<p>For this and subsequent worksheets, we will use a simple reaction time task as our model systems neuroscience experiment. In this task, the subject needs to press a button as fast as possible following a stimulus, as described in the following diagram:</p>
+<div class="diagram"><p><img src="../images/reactiontime.svg" alt="State Machine Diagram"></p>
+</div>
+<p>The task begins with an inter-trial interval (<code>ITI</code>), followed by stimulus presentation (<code>ON</code>). After stimulus onset, advancement to the next state can happen only when the subject presses the button (<code>success</code>) or a timeout elapses (<code>miss</code>). Depending on which event is triggered first, the task advances either to the <code>Reward</code> state, or <code>Fail</code> state. At the end, the task goes back to the beginning of the ITI state for the next trial.</p>
+<h3 id="exercise-2-generating-a-fixed-interval-stimulus"><strong>Exercise 2:</strong> Generating a fixed-interval stimulus</h3>
+<p>In this first exercise, you will assemble the basic hardware and software components required to implement the reaction time task. The wiring diagram below illustrates the hardware assembly. You can wire the LED into any digital input pin, but make sure to note the pin number for the steps below.</p>
+<p><img src="../images/reaction-time-circuit.png" height="300" alt="Reaction Time Circuit"></p>
+<p>We will start by using a fixed-interval blinking LED as our stimulus.</p>
+<p><img src="../images/create-arduino.svg" alt="Create Arduino"></p>
+<ul>
+<li>To configure the Arduino analog sampling rate, insert a <code>CreateArduino</code> source.</li>
+<li>Configure the <code>PortName</code> to the Arduino port where the microcontroller is connected.</li>
+<li>Configure the <code>SamplingInterval</code> property to 10 ms.</li>
+</ul>
+<p><img src="../images/reaction-time-stimulus.svg" alt="Reaction Time Stimulus"></p>
+<ul>
+<li>Insert a <code>Timer</code> source and set its <code>DueTime</code> property to 1 second.</li>
+<li>Insert a <code>Boolean</code> source and set its <code>Value</code> property to <code>True</code>.</li>
+<li>Insert a <code>DigitalOutput</code> sink and set its <code>Pin</code> property to the Arduino pin where the LED is connected.</li>
+<li>Configure the <code>PortName</code> to the Arduino port where the microcontroller is connected.</li>
+<li>Insert a <code>Delay</code> operator and set its <code>DueTime</code> property to 200 milliseconds.</li>
+<li>Insert a <code>Boolean</code> source and set its <code>Value</code> property to <code>False</code>.</li>
+<li>Insert a <code>DigitalOutput</code> sink configured to the same <code>Pin</code> and <code>PortName</code>.</li>
+<li>Insert a <code>Repeat</code> operator.</li>
+</ul>
+<h3 id="exercise-3-measuring-reaction-time"><strong>Exercise 3:</strong> Measuring reaction time</h3>
+<p><img src="../images/reaction-time-measurement.svg" alt="Reaction Time Measurement"></p>
+<ul>
+<li>Insert an <code>AnalogInput</code> source.</li>
+<li>Set the <code>Pin</code> property to the analog pin number where the duplicate LED wire is connected.</li>
+<li>Insert a second <code>AnalogInput</code> source.</li>
+<li>Set the <code>Pin</code> property to the analog pin number where the button is connected.</li>
+<li>Connect both inputs to a <code>Zip</code> operator.</li>
+<li>Insert a <code>CsvWriter</code> sink and configure the <code>FileName</code> property.</li>
+<li>Insert a <code>RollingGraph</code> visualizer and set its <code>Capacity</code> property to 1000.</li>
+<li>Run the workflow, and verify that both the stimulus and the button are correctly recorded.</li>
+</ul>
+<h3 id="exercise-4-synchronizing-video-with-a-visual-stimulus"><strong>Exercise 4:</strong> Synchronizing video with a visual stimulus</h3>
+<p>To analyze movement dynamics in the reaction time task, you will need to align individual frame timing to stimulus onset. To do this, you can take advantage of the fact that our simple visual stimulus can be seen in the camera image and recorded together with the behaviour.</p>
+<p><img src="../images/synching-led.svg" alt="Synching LED"></p>
+<ul>
+<li>Starting from the workflow in the previous exercise, insert a <code>CameraCapture</code> source and position the camera such that you can see clearly both the LED and the computer keyboard.</li>
+<li>Insert a <code>VideoWriter</code> sink and configure the <code>FileName</code> with a path ending in <code>.avi</code>.</li>
+<li>Insert a <code>Crop</code> transform and set the <code>RegionOfInterest</code> property to a small area around the LED.</li>
+<li>Insert a <code>Grayscale</code> transform.</li>
+<li>Insert a <code>Sum (Dsp)</code> transform. This operator will sum the brightness values of all the pixels in the input image.</li>
+<li>Select the <code>Scalar</code> &gt; <code>Val0</code> field from the right-click context menu.</li>
+<li>Record the output in a text file using a <code>CsvWriter</code> sink.</li>
+<li>Open both the text file containing the Arduino data, and the text file containing video data, and verify that you have detected an equal number of stimulus in both files. What can you conclude from these two pieces of data?</li>
+<li><strong>Optional:</strong> Open the raw video file and find the exact frame where the stimulus came on. If you compare different trials you might notice that the brightness of the LED in that first frame across two different trials is different. Why is that?</li>
+</ul>
+<h3 id="exercise-5-trigger-a-visual-stimulus-using-a-button"><strong>Exercise 5:</strong> Trigger a visual stimulus using a button</h3>
+<p>To make our task more interesting, we will now trigger the stimulus manually using a button press and learn more about <code>SelectMany</code> along the way!</p>
+<p><img src="../images/triggered-stimulus-outer.svg" alt="Triggered Stimulus Outer"></p>
+<ul>
+<li>Connect a new push button component into one of the Arduino digital inputs.</li>
+<li>Insert a <code>DigitalInput</code> source and set its <code>Pin</code> property to the Arduino pin where the new button is connected.</li>
+<li>Configure the <code>PortName</code> to the Arduino port where the microcontroller is connected.</li>
+<li>Insert a <code>Condition</code> operator.</li>
+<li>Insert a <code>SelectMany</code> operator and move the stimulus generation logic inside the nested node:</li>
+</ul>
+<p><img src="../images/triggered-stimulus-inner.svg" alt="Triggered Stimulus Inner"></p>
+<p><em>Why do we need to remove the <code>Repeat</code> operator?</em></p>
+<ul>
+<li>Ask a friend to test your reaction time!</li>
+<li><strong>Optional:</strong> In the current workflow, what happens if you press the stimulus button twice in succession? Can you fix the current behaviour by using one of the higher order operators?</li>
+</ul>
+<h3 id="exercise-6-recording-response-triggered-videos"><strong>Exercise 6:</strong> Recording response-triggered videos</h3>
+<p><img src="../images/triggered-video-outer.svg" alt="Triggered Video Outer"></p>
+<ul>
+<li>Starting from the previous workflow, insert another <code>AnalogInput</code> source with the <code>Pin</code> property set to the button press pin number.</li>
+<li>Insert a <code>GreaterThan</code> operator.</li>
+<li>Insert a <code>DistinctUntilChanged</code> operator.</li>
+<li>Insert a <code>Condition</code> operator.</li>
+<li>In a new branch coming off the <code>VideoWriter</code>, insert a <code>Delay</code> operator.</li>
+<li>Set the <code>DueTime</code> property of the <code>Delay</code> operator to 1 second.</li>
+<li>Insert a <code>TriggeredWindow</code> operator, and set its <code>Count</code> property to 100.</li>
+<li>Insert a <code>SelectMany</code> operator and inside the nested node create the below workflow:</li>
+</ul>
+<p><img src="../images/triggered-video-inner.svg" alt="Triggered Video Inner"></p>
+<ul>
+<li>Run the workflow and record a few videos triggered on the button press.</li>
+<li>Inspect the videos frame by frame and check whether the response LED comes ON at exactly the same frame number across different trials.</li>
+<li>If it does not, why would this happen? And how would you fix it?</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/blob/main/worksheets/synching.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

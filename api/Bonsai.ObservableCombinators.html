@@ -1,0 +1,932 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ObservableCombinators
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ObservableCombinators
+   ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Bonsai.ObservableCombinators">
+  
+  
+  <h1 id="Bonsai_ObservableCombinators" data-uid="Bonsai.ObservableCombinators" class="text-break">Class ObservableCombinators
+  </h1>
+  <div class="markdown level0 summary"><p>Provides a set of static methods to aid in writing queries over observable sequences.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">ObservableCombinators</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Bonsai.html">Bonsai</a></h6>
+  <h6><strong>Assembly</strong>: Bonsai.Core.dll</h6>
+  <h5 id="Bonsai_ObservableCombinators_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ObservableCombinators</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_ObservableCombinators_Gate__1_System_IObservable___0__System_TimeSpan_.md&amp;value=---%0Auid%3A%20Bonsai.ObservableCombinators.Gate%60%601(System.IObservable%7B%60%600%7D%2CSystem.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/ObservableCombinators.cs/#L60">View Source</a>
+  </span>
+  <a id="Bonsai_ObservableCombinators_Gate_" data-uid="Bonsai.ObservableCombinators.Gate*"></a>
+  <h4 id="Bonsai_ObservableCombinators_Gate__1_System_IObservable___0__System_TimeSpan_" data-uid="Bonsai.ObservableCombinators.Gate``1(System.IObservable{``0},System.TimeSpan)">Gate&lt;TSource&gt;(IObservable&lt;TSource&gt;, TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Takes the single next element from the sequence every time the specified
+interval elapses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObservable&lt;TSource&gt; Gate&lt;TSource&gt;(this IObservable&lt;TSource&gt; source, TimeSpan interval)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The observable sequence to be gated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">interval</span></td>
+        <td><p>The time interval after which a new element of the sequence is allowed to propagate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource&gt;</td>
+        <td><p>The gated observable sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements in the source sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_ObservableCombinators_Gate__1_System_IObservable___0__System_TimeSpan_System_Reactive_Concurrency_IScheduler_.md&amp;value=---%0Auid%3A%20Bonsai.ObservableCombinators.Gate%60%601(System.IObservable%7B%60%600%7D%2CSystem.TimeSpan%2CSystem.Reactive.Concurrency.IScheduler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/ObservableCombinators.cs/#L76">View Source</a>
+  </span>
+  <a id="Bonsai_ObservableCombinators_Gate_" data-uid="Bonsai.ObservableCombinators.Gate*"></a>
+  <h4 id="Bonsai_ObservableCombinators_Gate__1_System_IObservable___0__System_TimeSpan_System_Reactive_Concurrency_IScheduler_" data-uid="Bonsai.ObservableCombinators.Gate``1(System.IObservable{``0},System.TimeSpan,System.Reactive.Concurrency.IScheduler)">Gate&lt;TSource&gt;(IObservable&lt;TSource&gt;, TimeSpan, IScheduler)</h4>
+  <div class="markdown level1 summary"><p>Takes the single next element from the sequence every time the specified
+interval elapses, using the specified scheduler to run gating timers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObservable&lt;TSource&gt; Gate&lt;TSource&gt;(this IObservable&lt;TSource&gt; source, TimeSpan interval, IScheduler scheduler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The observable sequence to be gated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">interval</span></td>
+        <td><p>The time interval after which a new element of the sequence is allowed to propagate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Reactive.Concurrency.IScheduler</span></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>The scheduler to run the gating timer on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource&gt;</td>
+        <td><p>The gated observable sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements in the source sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_ObservableCombinators_Gate__2_System_IObservable___0__System_IObservable___1__.md&amp;value=---%0Auid%3A%20Bonsai.ObservableCombinators.Gate%60%602(System.IObservable%7B%60%600%7D%2CSystem.IObservable%7B%60%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/ObservableCombinators.cs/#L93">View Source</a>
+  </span>
+  <a id="Bonsai_ObservableCombinators_Gate_" data-uid="Bonsai.ObservableCombinators.Gate*"></a>
+  <h4 id="Bonsai_ObservableCombinators_Gate__2_System_IObservable___0__System_IObservable___1__" data-uid="Bonsai.ObservableCombinators.Gate``2(System.IObservable{``0},System.IObservable{``1})">Gate&lt;TSource, TGate&gt;(IObservable&lt;TSource&gt;, IObservable&lt;TGate&gt;)</h4>
+  <div class="markdown level1 summary"><p>Takes the single next element from the sequence every time the gate
+produces an element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObservable&lt;TSource&gt; Gate&lt;TSource, TGate&gt;(this IObservable&lt;TSource&gt; source, IObservable&lt;TGate&gt; gate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The observable sequence to be gated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TGate&gt;</td>
+        <td><span class="parametername">gate</span></td>
+        <td><p>The sequence of gate events. Every time a new gate event is received, the single
+next element from <code data-dev-comment-type="paramref" class="paramref">source</code> is allowed to propagate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource&gt;</td>
+        <td><p>The gated observable sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements in the source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TGate</span></td>
+        <td><p>The type of the elements in the sequence of gate events.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_ObservableCombinators_Gate__2_System_IObservable___0__System_IObservable___1__System_TimeSpan_.md&amp;value=---%0Auid%3A%20Bonsai.ObservableCombinators.Gate%60%602(System.IObservable%7B%60%600%7D%2CSystem.IObservable%7B%60%601%7D%2CSystem.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/ObservableCombinators.cs/#L117">View Source</a>
+  </span>
+  <a id="Bonsai_ObservableCombinators_Gate_" data-uid="Bonsai.ObservableCombinators.Gate*"></a>
+  <h4 id="Bonsai_ObservableCombinators_Gate__2_System_IObservable___0__System_IObservable___1__System_TimeSpan_" data-uid="Bonsai.ObservableCombinators.Gate``2(System.IObservable{``0},System.IObservable{``1},System.TimeSpan)">Gate&lt;TSource, TGate&gt;(IObservable&lt;TSource&gt;, IObservable&lt;TGate&gt;, TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Takes the single next element from the sequence if this element is produced
+within a specified time interval after the gate produces an element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObservable&lt;TSource&gt; Gate&lt;TSource, TGate&gt;(this IObservable&lt;TSource&gt; source, IObservable&lt;TGate&gt; gate, TimeSpan timeSpan)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The observable sequence to be gated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TGate&gt;</td>
+        <td><span class="parametername">gate</span></td>
+        <td><p>The sequence of gate events. Every time a new gate event is received, the single
+next element from <code data-dev-comment-type="paramref" class="paramref">source</code> is allowed to propagate if it is
+produced before the maximum <code data-dev-comment-type="paramref" class="paramref">timeSpan</code> elapses.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">timeSpan</span></td>
+        <td><p>After receiving a gate event, the maximum interval that can elapse before an
+element from the source sequence is produced. If the element arrives after the
+interval elapsed, it is dropped.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource&gt;</td>
+        <td><p>The gated observable sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements in the source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TGate</span></td>
+        <td><p>The type of the elements in the sequence of gate events.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_ObservableCombinators_Gate__2_System_IObservable___0__System_IObservable___1__System_TimeSpan_System_Reactive_Concurrency_IScheduler_.md&amp;value=---%0Auid%3A%20Bonsai.ObservableCombinators.Gate%60%602(System.IObservable%7B%60%600%7D%2CSystem.IObservable%7B%60%601%7D%2CSystem.TimeSpan%2CSystem.Reactive.Concurrency.IScheduler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/ObservableCombinators.cs/#L142">View Source</a>
+  </span>
+  <a id="Bonsai_ObservableCombinators_Gate_" data-uid="Bonsai.ObservableCombinators.Gate*"></a>
+  <h4 id="Bonsai_ObservableCombinators_Gate__2_System_IObservable___0__System_IObservable___1__System_TimeSpan_System_Reactive_Concurrency_IScheduler_" data-uid="Bonsai.ObservableCombinators.Gate``2(System.IObservable{``0},System.IObservable{``1},System.TimeSpan,System.Reactive.Concurrency.IScheduler)">Gate&lt;TSource, TGate&gt;(IObservable&lt;TSource&gt;, IObservable&lt;TGate&gt;, TimeSpan, IScheduler)</h4>
+  <div class="markdown level1 summary"><p>Takes the single next element from the sequence if this element is produced
+within a specified time interval after the gate produces an element, using
+the specified scheduler to run gate closing timers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObservable&lt;TSource&gt; Gate&lt;TSource, TGate&gt;(this IObservable&lt;TSource&gt; source, IObservable&lt;TGate&gt; gate, TimeSpan timeSpan, IScheduler scheduler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The observable sequence to be gated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TGate&gt;</td>
+        <td><span class="parametername">gate</span></td>
+        <td><p>The sequence of gate events. Every time a new gate event is received, the single
+next element from <code data-dev-comment-type="paramref" class="paramref">source</code> is allowed to propagate if it is
+produced before the maximum <code data-dev-comment-type="paramref" class="paramref">timeSpan</code> elapses.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">timeSpan</span></td>
+        <td><p>After receiving a gate event, the maximum interval that can elapse before an
+element from the source sequence is produced. If the element arrives after the
+interval elapsed, it is dropped.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Reactive.Concurrency.IScheduler</span></td>
+        <td><span class="parametername">scheduler</span></td>
+        <td><p>The scheduler to run the gate closing timer on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource&gt;</td>
+        <td><p>The gated observable sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements in the source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TGate</span></td>
+        <td><p>The type of the elements in the sequence of gate events.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_ObservableCombinators_Gate__3_System_IObservable___0__System_IObservable___1__System_IObservable___2__.md&amp;value=---%0Auid%3A%20Bonsai.ObservableCombinators.Gate%60%603(System.IObservable%7B%60%600%7D%2CSystem.IObservable%7B%60%601%7D%2CSystem.IObservable%7B%60%602%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/ObservableCombinators.cs/#L166">View Source</a>
+  </span>
+  <a id="Bonsai_ObservableCombinators_Gate_" data-uid="Bonsai.ObservableCombinators.Gate*"></a>
+  <h4 id="Bonsai_ObservableCombinators_Gate__3_System_IObservable___0__System_IObservable___1__System_IObservable___2__" data-uid="Bonsai.ObservableCombinators.Gate``3(System.IObservable{``0},System.IObservable{``1},System.IObservable{``2})">Gate&lt;TSource, TGateOpening, TGateClosing&gt;(IObservable&lt;TSource&gt;, IObservable&lt;TGateOpening&gt;, IObservable&lt;TGateClosing&gt;)</h4>
+  <div class="markdown level1 summary"><p>Takes the single next element from the sequence if this element is produced
+between a gate opening and gate closing event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObservable&lt;TSource&gt; Gate&lt;TSource, TGateOpening, TGateClosing&gt;(this IObservable&lt;TSource&gt; source, IObservable&lt;TGateOpening&gt; openGate, IObservable&lt;TGateClosing&gt; closeGate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The observable sequence to be gated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TGateOpening&gt;</td>
+        <td><span class="parametername">openGate</span></td>
+        <td><p>The sequence of gate opening events. Every time a new gate event is received,
+the single next element from <code data-dev-comment-type="paramref" class="paramref">source</code> is allowed to propagate
+if it is produced before the next gate closing event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TGateClosing&gt;</td>
+        <td><span class="parametername">closeGate</span></td>
+        <td><p>The sequence of gate closing events. Every time a new gate event is received,
+the single next element from <code data-dev-comment-type="paramref" class="paramref">source</code> is allowed to propagate
+if it is produced before the next gate closing event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource&gt;</td>
+        <td><p>The gated observable sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements in the source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TGateOpening</span></td>
+        <td><p>The type of the elements in the sequence of gate opening events.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TGateClosing</span></td>
+        <td><p>The type of the elements in the sequence of gate closing events.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_ObservableCombinators_MulticastReconnectable__2_System_IObservable___0__System_Func_System_Reactive_Subjects_ISubject___0___1___.md&amp;value=---%0Auid%3A%20Bonsai.ObservableCombinators.MulticastReconnectable%60%602(System.IObservable%7B%60%600%7D%2CSystem.Func%7BSystem.Reactive.Subjects.ISubject%7B%60%600%2C%60%601%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/ObservableCombinators.cs/#L202">View Source</a>
+  </span>
+  <a id="Bonsai_ObservableCombinators_MulticastReconnectable_" data-uid="Bonsai.ObservableCombinators.MulticastReconnectable*"></a>
+  <h4 id="Bonsai_ObservableCombinators_MulticastReconnectable__2_System_IObservable___0__System_Func_System_Reactive_Subjects_ISubject___0___1___" data-uid="Bonsai.ObservableCombinators.MulticastReconnectable``2(System.IObservable{``0},System.Func{System.Reactive.Subjects.ISubject{``0,``1}})">MulticastReconnectable&lt;TSource, TResult&gt;(IObservable&lt;TSource&gt;, Func&lt;ISubject&lt;TSource, TResult&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns a connectable observable sequence that upon connection causes the <code data-dev-comment-type="paramref" class="paramref">source</code>
+to push results into a new fresh subject, which is created by invoking the specified
+<code data-dev-comment-type="paramref" class="paramref">subjectFactory</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IConnectableObservable&lt;TResult&gt; MulticastReconnectable&lt;TSource, TResult&gt;(this IObservable&lt;TSource&gt; source, Func&lt;ISubject&lt;TSource, TResult&gt;&gt; subjectFactory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The source sequence whose elements will be pushed into the specified subject.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<span class="xref">System.Reactive.Subjects.ISubject</span>&lt;TSource, TResult&gt;&gt;</td>
+        <td><span class="parametername">subjectFactory</span></td>
+        <td><p>The factory function used to create the subject that notifications will be pushed into.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Reactive.Subjects.IConnectableObservable</span>&lt;TResult&gt;</td>
+        <td><p>The reconnectable sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements in the source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The type of the elements in the result sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_ObservableCombinators_PublishReconnectable__1_System_IObservable___0__.md&amp;value=---%0Auid%3A%20Bonsai.ObservableCombinators.PublishReconnectable%60%601(System.IObservable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/ObservableCombinators.cs/#L214">View Source</a>
+  </span>
+  <a id="Bonsai_ObservableCombinators_PublishReconnectable_" data-uid="Bonsai.ObservableCombinators.PublishReconnectable*"></a>
+  <h4 id="Bonsai_ObservableCombinators_PublishReconnectable__1_System_IObservable___0__" data-uid="Bonsai.ObservableCombinators.PublishReconnectable``1(System.IObservable{``0})">PublishReconnectable&lt;TSource&gt;(IObservable&lt;TSource&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns a connectable observable sequence that upon connection causes the <code data-dev-comment-type="paramref" class="paramref">source</code>
+to push results into a new fresh <span class="xref">System.Reactive.Subjects.Subject`1</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IConnectableObservable&lt;TSource&gt; PublishReconnectable&lt;TSource&gt;(this IObservable&lt;TSource&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The source sequence whose elements will be pushed into the specified subject.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Reactive.Subjects.IConnectableObservable</span>&lt;TSource&gt;</td>
+        <td><p>The reconnectable sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements in the source sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_ObservableCombinators_Zip__3_System_IObservable___0__System_Collections_Generic_IEnumerable___1__System_Func___0___1___2__.md&amp;value=---%0Auid%3A%20Bonsai.ObservableCombinators.Zip%60%603(System.IObservable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%2CSystem.Func%7B%60%600%2C%60%601%2C%60%602%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/ObservableCombinators.cs/#L237">View Source</a>
+  </span>
+  <a id="Bonsai_ObservableCombinators_Zip_" data-uid="Bonsai.ObservableCombinators.Zip*"></a>
+  <h4 id="Bonsai_ObservableCombinators_Zip__3_System_IObservable___0__System_Collections_Generic_IEnumerable___1__System_Func___0___1___2__" data-uid="Bonsai.ObservableCombinators.Zip``3(System.IObservable{``0},System.Collections.Generic.IEnumerable{``1},System.Func{``0,``1,``2})">Zip&lt;TSource1, TSource2, TResult&gt;(IObservable&lt;TSource1&gt;, IEnumerable&lt;TSource2&gt;, Func&lt;TSource1, TSource2, TResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>Merges an observable sequence and an enumerable sequence into one observable sequence
+by using the selector function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IObservable&lt;TResult&gt; Zip&lt;TSource1, TSource2, TResult&gt;(this IObservable&lt;TSource1&gt; first, IEnumerable&lt;TSource2&gt; second, Func&lt;TSource1, TSource2, TResult&gt; resultSelector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource1&gt;</td>
+        <td><span class="parametername">first</span></td>
+        <td><p>The first observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TSource2&gt;</td>
+        <td><span class="parametername">second</span></td>
+        <td><p>The second enumerable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;TSource1, TSource2, TResult&gt;</td>
+        <td><span class="parametername">resultSelector</span></td>
+        <td><p>The function to invoke for each consecutive pair of elements from the first and second source.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TResult&gt;</td>
+        <td><p>An observable sequence containing the result of pairwise combining the elements
+of the first and second source using the specified result selector function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource1</span></td>
+        <td><p>The type of the elements in the first observable source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource2</span></td>
+        <td><p>The type of the elements in the second observable source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The type of the elements in the result sequence, returned by the selector function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_ObservableCombinators.md&amp;value=---%0Auid%3A%20Bonsai.ObservableCombinators%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/ObservableCombinators.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Observables </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Observables ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="observables">
+<h1 id="observables">Observables</h1>
+
+<p>Bonsai makes use of a unified model for asynchronous data streams: the observable sequence. This model was introduced by the popular <a href="http://reactivex.io/">ReactiveX</a> framework. Our favorite approach to explain what exactly is an observable sequence is to use a metaphor.</p>
+<h2 id="a-metaphor-for-asynchronous-computation">A metaphor for asynchronous computation</h2>
+<p>Think about your favorite social networking service, and how your personal account works within that service. There are usually two main actions you have available:</p>
+<ol>
+<li>Post text messages or share content such as pictures or videos.</li>
+<li>Follow other accounts so that you get notified whenever they send out their own messages. Very often users will post new messages in reaction to other posts they have just seen.</li>
+</ol>
+<p>Social network accounts can also be terminated. The user can naturally close her own account, indicating there will be no more future posts, or the account can be terminated exceptionally by a moderator, perhaps due to a breach in the terms of service.</p>
+<p>Now imagine you had a webcam with its own user account in the social network. From time to time, the camera would take a picture and post it on the network. Other accounts would now be able to &quot;follow&quot; the camera in order to react whenever it posts a new image. Some of these followers might repost the camera images, either in their original form or with modifications (e.g., a grayscale or colorizing filter).</p>
+<p>Other devices could have their own accounts, such as keyboards, microphones or temperature sensors. In this case, some users might follow both the camera and the keyboard, and start to aggregate posts by whether they happened close in time. For example, one user might repost an image from the camera only after the keyboard sent out a key press notification.</p>
+<p>Observable sequences are asynchronous sequences of data which behave in exactly this way. They are sources of data which can be &quot;followed&quot;, or rather subscribed to, so that its observers get notified whenever there are new items available in the sequence. Observable sequences can generate items spontaneously or in reaction to notifications from other sequences they are subscribing.</p>
+<p>Observable sequences can also terminate naturally when there is no more data to send out, or exceptionally, if there is an error with the device or during data processing.</p>
+<h2 id="the-bonsai-visual-language">The Bonsai visual language</h2>
+<p>The Bonsai programming language manipulates such reactive networks explicitly using workflow diagrams where observable sequences are represented graphically as colored nodes. Nodes can be connected to other nodes, from left to right, indicating that the rightmost node subscribes to the notifications of the leftmost node.</p>
+<p><img src="../images/language-sampleframe.svg" alt="Example workflow"></p>
+<p>By chaining networks of observable sequences in this way, it becomes possible to express very complex interactive systems in a surprisingly compact format. For example, the workflow diagram above describes a system that saves a grayscale snapshot from a camera into a file whenever there is a key press.</p>
+<h2 id="marble-diagrams">Marble diagrams</h2>
+<p>To understand how this example works we need to know not only the network of connections -- who follows who -- but also the rules used by each operator to generate new items. In order to analyse the behaviour and dynamics of individual operators, we use a different representation called a marble diagram.</p>
+<p>Marble diagrams allow you to describe not only <em>what</em> items are emitted by observable sequences, but also <em>when</em> they are emitted. The <code>Grayscale</code> operator is used below to describe the main components of marble diagrams.</p>
+<p><img src="../images/language-grayscale.svg" alt="Grayscale operator"></p>
+<p>Arrows entering the box indicate that the operator is receiving notifications from the observable sequence that it is subscribing to, or &quot;following&quot;. Arrows leaving the box show items that are emitted by the operator itself.</p>
+<p>The diagram shows that the <code>Grayscale</code> operator is reacting to each of the input notifications by sending out new images where all color information has been removed. This is an example of an operator which simply transforms incoming values into a different form. However, there are other operators like <code>Sample</code> which can have slightly more interesting marble diagrams.</p>
+<p><img src="../images/language-sample.svg" alt="Sample operator"></p>
+<p>We can see from the workflow diagram above that the <code>Sample</code> operator subscribes to two sequences: <code>Grayscale</code> and <code>KeyDown</code>. The marble diagram shows an hypothetical example of these two independent streams. <code>Grayscale</code> is sending out images periodically, following the camera. However, <code>KeyDown</code> sends out a notification only when there is a key press, which can happen at any moment, even in between camera images.</p>
+<p>The diagram makes clear the behaviour of <code>Sample</code>: it sends out the latest image that was received from <code>Grayscale</code> whenever there was a new key press. Marble diagrams are a useful tool to convey graphically the intuition of what a reactive operator is doing and will be used extensively throughout these pages.</p>
+<h2 id="temperature">Hot versus cold observable sequences</h2>
+<p>Some of the most subtle, but very important, aspects of the behaviour of observable sequences are the effects of subscription. When an image processing operator subscribes to a sequence of frames from a camera, that camera is turned on and acquisition is started. When the same operator subscribes to a sequence of frames from a video file, that file is opened and frames begin to be decoded into memory. These and other subscription side effects are necessary in order to generate the data items emitted from a sequence.</p>
+<p>The effects of subscription can have very different implications on the behaviour of reactive operators, depending on the nature of the underlying observable sequence. Consider again the difference between a video camera and a video file.</p>
+<p>A video camera generates a live broadcast of images. If an operator subscribes to the camera at any one time, it will get the images that are being captured by the camera at that time. If another operator subscribes to the camera at a later time, it will not receive the same images that the first operator received. When observable sequences have this fire-and-forget behaviour, they are said to be <em>hot</em>.</p>
+<p>A video file also generates a sequence of images, but in contrast to the camera, these images are generated on-demand. They are permanently stored on disk, and whenever an operator subscribes to the file, all the images can be played back from the beginning. Every operator will receive all the frames from the file, no matter when they subscribe to the sequence. When observable sequences have this on-demand behaviour, they are said to be <em>cold</em>.</p>
+<p>Understanding the <em>temperature</em> of an observable sequence is particularly important when that sequence is shared between multiple operators. It can help to understand whether those operators will see the same data items, and what the effects of subscribing to the shared sequence at different times are going to be.</p>
+<p>It is also possible to change the temperature of observable sequences using reactive operators. One operator can subscribe to the camera and start recording all incoming images. It can then replay all images on-demand to every downstream operator, even if they subscribe late. The originally <em>hot</em> sequence has been turned into a <em>cold</em> observable by this replay behaviour.</p>
+<p>Conversely, another operator can subscribe to a video file and start posting all the images to downstream operators. However, when other operators subscribe to it, instead of requesting a new subscription to the video, it simply starts to share the images coming from the original subscription, at whatever point of the video it is in. The originally <em>cold</em> sequence has been turned into a <em>hot</em> observable by this sharing, or publishing, behaviour.</p>
+<p>In the Bonsai visual language, whenever two operators receive data from the same source, i.e. whenever there are branches in the workflow, subscriptions are shared by default. This means that the default sharing behaviour of Bonsai sequences is <em>hot</em> by default. It is possible to change this by using specialized sharing operators, called <a class="xref" href="subjects.html">Subjects</a>.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/blob/main/articles/observables.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

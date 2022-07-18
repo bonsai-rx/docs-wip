@@ -1,0 +1,1042 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ShaderWindow
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ShaderWindow
+   ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Bonsai.Shaders.ShaderWindow">
+  
+  
+  <h1 id="Bonsai_Shaders_ShaderWindow" data-uid="Bonsai.Shaders.ShaderWindow" class="text-break">Class ShaderWindow
+  </h1>
+  <div class="markdown level0 summary"><p>Creates and renders a window using the specified resources and a programmable
+shader pipeline.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html">NativeWindow</a></div>
+    <div class="level2"><a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html">GameWindow</a></div>
+    <div class="level3"><span class="xref">ShaderWindow</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.Platform.IGameWindow.html">IGameWindow</a></div>
+    <div><a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.INativeWindow.html">INativeWindow</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_Dispose">GameWindow.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_Exit">GameWindow.Exit()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_MakeCurrent">GameWindow.MakeCurrent()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_OnClosing_System_ComponentModel_CancelEventArgs_">GameWindow.OnClosing(CancelEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_Run">GameWindow.Run()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_Run_System_Double_">GameWindow.Run(Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_Run_System_Double_System_Double_">GameWindow.Run(Double, Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_SwapBuffers">GameWindow.SwapBuffers()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_Dispose_System_Boolean_">GameWindow.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_OnWindowInfoChanged_System_EventArgs_">GameWindow.OnWindowInfoChanged(EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_Context">GameWindow.Context</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_IsExiting">GameWindow.IsExiting</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_RenderFrequency">GameWindow.RenderFrequency</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_RenderPeriod">GameWindow.RenderPeriod</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_RenderTime">GameWindow.RenderTime</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_TargetRenderFrequency">GameWindow.TargetRenderFrequency</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_TargetRenderPeriod">GameWindow.TargetRenderPeriod</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_TargetUpdateFrequency">GameWindow.TargetUpdateFrequency</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_TargetUpdatePeriod">GameWindow.TargetUpdatePeriod</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_UpdateFrequency">GameWindow.UpdateFrequency</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_UpdatePeriod">GameWindow.UpdatePeriod</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_UpdateTime">GameWindow.UpdateTime</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_VSync">GameWindow.VSync</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_WindowState">GameWindow.WindowState</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_Load">GameWindow.Load</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_RenderFrame">GameWindow.RenderFrame</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_Unload">GameWindow.Unload</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_UpdateFrame">GameWindow.UpdateFrame</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_OnUpdateThreadStarted">GameWindow.OnUpdateThreadStarted</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_Close">NativeWindow.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_PointToClient_System_Drawing_Point_">NativeWindow.PointToClient(Point)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_PointToScreen_System_Drawing_Point_">NativeWindow.PointToScreen(Point)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_ProcessEvents">NativeWindow.ProcessEvents()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_EnsureUndisposed">NativeWindow.EnsureUndisposed()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_OnDisposed_System_EventArgs_">NativeWindow.OnDisposed(EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_OnFocusedChanged_System_EventArgs_">NativeWindow.OnFocusedChanged(EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_OnIconChanged_System_EventArgs_">NativeWindow.OnIconChanged(EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_OnKeyPress_OpenTK_KeyPressEventArgs_">NativeWindow.OnKeyPress(KeyPressEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_OnKeyUp_OpenTK_Input_KeyboardKeyEventArgs_">NativeWindow.OnKeyUp(KeyboardKeyEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_OnMove_System_EventArgs_">NativeWindow.OnMove(EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_OnMouseEnter_System_EventArgs_">NativeWindow.OnMouseEnter(EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_OnMouseLeave_System_EventArgs_">NativeWindow.OnMouseLeave(EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_OnMouseDown_OpenTK_Input_MouseButtonEventArgs_">NativeWindow.OnMouseDown(MouseButtonEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_OnMouseUp_OpenTK_Input_MouseButtonEventArgs_">NativeWindow.OnMouseUp(MouseButtonEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_OnMouseMove_OpenTK_Input_MouseMoveEventArgs_">NativeWindow.OnMouseMove(MouseMoveEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_OnMouseWheel_OpenTK_Input_MouseWheelEventArgs_">NativeWindow.OnMouseWheel(MouseWheelEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_OnFileDrop_OpenTK_Input_FileDropEventArgs_">NativeWindow.OnFileDrop(FileDropEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_OnTitleChanged_System_EventArgs_">NativeWindow.OnTitleChanged(EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_OnVisibleChanged_System_EventArgs_">NativeWindow.OnVisibleChanged(EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_OnWindowBorderChanged_System_EventArgs_">NativeWindow.OnWindowBorderChanged(EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_OnWindowStateChanged_System_EventArgs_">NativeWindow.OnWindowStateChanged(EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_ProcessEvents_System_Boolean_">NativeWindow.ProcessEvents(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_Bounds">NativeWindow.Bounds</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_ClientRectangle">NativeWindow.ClientRectangle</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_Cursor">NativeWindow.Cursor</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_Exists">NativeWindow.Exists</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_Focused">NativeWindow.Focused</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_Icon">NativeWindow.Icon</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_Location">NativeWindow.Location</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_Size">NativeWindow.Size</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_Title">NativeWindow.Title</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_Visible">NativeWindow.Visible</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_WindowBorder">NativeWindow.WindowBorder</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_WindowInfo">NativeWindow.WindowInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_X">NativeWindow.X</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_Y">NativeWindow.Y</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_CursorVisible">NativeWindow.CursorVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_CursorGrabbed">NativeWindow.CursorGrabbed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_IsDisposed">NativeWindow.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_Closed">NativeWindow.Closed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_Closing">NativeWindow.Closing</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_Disposed">NativeWindow.Disposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_FocusedChanged">NativeWindow.FocusedChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_IconChanged">NativeWindow.IconChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_KeyDown">NativeWindow.KeyDown</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_KeyPress">NativeWindow.KeyPress</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_KeyUp">NativeWindow.KeyUp</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_Move">NativeWindow.Move</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_MouseEnter">NativeWindow.MouseEnter</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_MouseLeave">NativeWindow.MouseLeave</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_Resize">NativeWindow.Resize</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_TitleChanged">NativeWindow.TitleChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_VisibleChanged">NativeWindow.VisibleChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_WindowBorderChanged">NativeWindow.WindowBorderChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_WindowStateChanged">NativeWindow.WindowStateChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_MouseDown">NativeWindow.MouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_MouseUp">NativeWindow.MouseUp</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_MouseMove">NativeWindow.MouseMove</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_MouseWheel">NativeWindow.MouseWheel</a>
+    </div>
+    <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_FileDrop">NativeWindow.FileDrop</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Bonsai.Shaders.html">Bonsai.Shaders</a></h6>
+  <h6><strong>Assembly</strong>: Bonsai.Shaders.dll</h6>
+  <h5 id="Bonsai_Shaders_ShaderWindow_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ShaderWindow : GameWindow, IGameWindow, INativeWindow, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_ShaderWindow__ctor_Bonsai_Shaders_Configuration_ShaderWindowSettings_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.ShaderWindow.%23ctor(Bonsai.Shaders.Configuration.ShaderWindowSettings)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/ShaderWindow.cs/#L42">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_ShaderWindow__ctor_" data-uid="Bonsai.Shaders.ShaderWindow.#ctor*"></a>
+  <h4 id="Bonsai_Shaders_ShaderWindow__ctor_Bonsai_Shaders_Configuration_ShaderWindowSettings_" data-uid="Bonsai.Shaders.ShaderWindow.#ctor(Bonsai.Shaders.Configuration.ShaderWindowSettings)">ShaderWindow(ShaderWindowSettings)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bonsai.Shaders.ShaderWindow.html">ShaderWindow</a> class using
+the specified window configuration settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ShaderWindow(ShaderWindowSettings configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.Configuration.ShaderWindowSettings.html">ShaderWindowSettings</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The configuration settings used to initialize the shader window.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_ShaderWindow_ClearColor.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.ShaderWindow.ClearColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/ShaderWindow.cs/#L88">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_ShaderWindow_ClearColor_" data-uid="Bonsai.Shaders.ShaderWindow.ClearColor*"></a>
+  <h4 id="Bonsai_Shaders_ShaderWindow_ClearColor" data-uid="Bonsai.Shaders.ShaderWindow.ClearColor">ClearColor</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the color used to clear the framebuffer before rendering.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color ClearColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.color">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_ShaderWindow_ClientSize.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.ShaderWindow.ClientSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/ShaderWindow.cs/#L138">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_ShaderWindow_ClientSize_" data-uid="Bonsai.Shaders.ShaderWindow.ClientSize*"></a>
+  <h4 id="Bonsai_Shaders_ShaderWindow_ClientSize" data-uid="Bonsai.Shaders.ShaderWindow.ClientSize">ClientSize</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the size of the OpenGL surface in window coordinates.
+The coordinates are specified in device-dependent pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Size ClientSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.size">Size</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_ShaderWindow_Height.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.ShaderWindow.Height%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/ShaderWindow.cs/#L172">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_ShaderWindow_Height_" data-uid="Bonsai.Shaders.ShaderWindow.Height*"></a>
+  <h4 id="Bonsai_Shaders_ShaderWindow_Height" data-uid="Bonsai.Shaders.ShaderWindow.Height">Height</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the height of the OpenGL surface in window coordinates.
+The coordinates are specified in device-dependent pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Height { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_ShaderWindow_ResourceManager.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.ShaderWindow.ResourceManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/ShaderWindow.cs/#L129">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_ShaderWindow_ResourceManager_" data-uid="Bonsai.Shaders.ShaderWindow.ResourceManager*"></a>
+  <h4 id="Bonsai_Shaders_ShaderWindow_ResourceManager" data-uid="Bonsai.Shaders.ShaderWindow.ResourceManager">ResourceManager</h4>
+  <div class="markdown level1 summary"><p>Gets the resource manager used to load and release sets of render
+resources to the shader window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResourceManager ResourceManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Resources.ResourceManager.html">ResourceManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_ShaderWindow_Scissor.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.ShaderWindow.Scissor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/ShaderWindow.cs/#L107">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_ShaderWindow_Scissor_" data-uid="Bonsai.Shaders.ShaderWindow.Scissor*"></a>
+  <h4 id="Bonsai_Shaders_ShaderWindow_Scissor" data-uid="Bonsai.Shaders.ShaderWindow.Scissor">Scissor</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the active scissor box, in normalized coordinates. Any fragments
+falling outside the scissor box will be discarded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectangleF Scissor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_ShaderWindow_Shaders.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.ShaderWindow.Shaders%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/ShaderWindow.cs/#L120">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_ShaderWindow_Shaders_" data-uid="Bonsai.Shaders.ShaderWindow.Shaders*"></a>
+  <h4 id="Bonsai_Shaders_ShaderWindow_Shaders" data-uid="Bonsai.Shaders.ShaderWindow.Shaders">Shaders</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of shaders specifying the active render pipeline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Shader&gt; Shaders { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Bonsai.Shaders.Shader.html">Shader</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_ShaderWindow_Viewport.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.ShaderWindow.Viewport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/ShaderWindow.cs/#L93">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_ShaderWindow_Viewport_" data-uid="Bonsai.Shaders.ShaderWindow.Viewport*"></a>
+  <h4 id="Bonsai_Shaders_ShaderWindow_Viewport" data-uid="Bonsai.Shaders.ShaderWindow.Viewport">Viewport</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the active viewport for rendering, in normalized coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectangleF Viewport { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.drawing.rectanglef">RectangleF</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_ShaderWindow_Width.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.ShaderWindow.Width%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/ShaderWindow.cs/#L155">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_ShaderWindow_Width_" data-uid="Bonsai.Shaders.ShaderWindow.Width*"></a>
+  <h4 id="Bonsai_Shaders_ShaderWindow_Width" data-uid="Bonsai.Shaders.ShaderWindow.Width">Width</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the width of the OpenGL surface in window coordinates.
+The coordinates are specified in device-dependent pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Width { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_ShaderWindow_OnClosed_System_EventArgs_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.ShaderWindow.OnClosed(System.EventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/ShaderWindow.cs/#L324">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_ShaderWindow_OnClosed_" data-uid="Bonsai.Shaders.ShaderWindow.OnClosed*"></a>
+  <h4 id="Bonsai_Shaders_ShaderWindow_OnClosed_System_EventArgs_" data-uid="Bonsai.Shaders.ShaderWindow.OnClosed(System.EventArgs)">OnClosed(EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnClosed(EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_OnClosed_System_EventArgs_">NativeWindow.OnClosed(EventArgs)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_ShaderWindow_OnKeyDown_OpenTK_Input_KeyboardKeyEventArgs_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.ShaderWindow.OnKeyDown(OpenTK.Input.KeyboardKeyEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/ShaderWindow.cs/#L251">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_ShaderWindow_OnKeyDown_" data-uid="Bonsai.Shaders.ShaderWindow.OnKeyDown*"></a>
+  <h4 id="Bonsai_Shaders_ShaderWindow_OnKeyDown_OpenTK_Input_KeyboardKeyEventArgs_" data-uid="Bonsai.Shaders.ShaderWindow.OnKeyDown(OpenTK.Input.KeyboardKeyEventArgs)">OnKeyDown(KeyboardKeyEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnKeyDown(KeyboardKeyEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.Input.KeyboardKeyEventArgs.html">KeyboardKeyEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.NativeWindow.html#OpenTK_NativeWindow_OnKeyDown_OpenTK_Input_KeyboardKeyEventArgs_">NativeWindow.OnKeyDown(KeyboardKeyEventArgs)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_ShaderWindow_OnLoad_System_EventArgs_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.ShaderWindow.OnLoad(System.EventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/ShaderWindow.cs/#L232">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_ShaderWindow_OnLoad_" data-uid="Bonsai.Shaders.ShaderWindow.OnLoad*"></a>
+  <h4 id="Bonsai_Shaders_ShaderWindow_OnLoad_System_EventArgs_" data-uid="Bonsai.Shaders.ShaderWindow.OnLoad(System.EventArgs)">OnLoad(EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnLoad(EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_OnLoad_System_EventArgs_">GameWindow.OnLoad(EventArgs)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_ShaderWindow_OnRenderFrame_OpenTK_FrameEventArgs_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.ShaderWindow.OnRenderFrame(OpenTK.FrameEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/ShaderWindow.cs/#L281">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_ShaderWindow_OnRenderFrame_" data-uid="Bonsai.Shaders.ShaderWindow.OnRenderFrame*"></a>
+  <h4 id="Bonsai_Shaders_ShaderWindow_OnRenderFrame_OpenTK_FrameEventArgs_" data-uid="Bonsai.Shaders.ShaderWindow.OnRenderFrame(OpenTK.FrameEventArgs)">OnRenderFrame(FrameEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnRenderFrame(FrameEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.FrameEventArgs.html">FrameEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_OnRenderFrame_OpenTK_FrameEventArgs_">GameWindow.OnRenderFrame(FrameEventArgs)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_ShaderWindow_OnResize_System_EventArgs_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.ShaderWindow.OnResize(System.EventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/ShaderWindow.cs/#L266">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_ShaderWindow_OnResize_" data-uid="Bonsai.Shaders.ShaderWindow.OnResize*"></a>
+  <h4 id="Bonsai_Shaders_ShaderWindow_OnResize_System_EventArgs_" data-uid="Bonsai.Shaders.ShaderWindow.OnResize(System.EventArgs)">OnResize(EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnResize(EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_OnResize_System_EventArgs_">GameWindow.OnResize(EventArgs)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_ShaderWindow_OnUnload_System_EventArgs_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.ShaderWindow.OnUnload(System.EventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/ShaderWindow.cs/#L332">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_ShaderWindow_OnUnload_" data-uid="Bonsai.Shaders.ShaderWindow.OnUnload*"></a>
+  <h4 id="Bonsai_Shaders_ShaderWindow_OnUnload_System_EventArgs_" data-uid="Bonsai.Shaders.ShaderWindow.OnUnload(System.EventArgs)">OnUnload(EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnUnload(EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_OnUnload_System_EventArgs_">GameWindow.OnUnload(EventArgs)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_ShaderWindow_OnUpdateFrame_OpenTK_FrameEventArgs_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.ShaderWindow.OnUpdateFrame(OpenTK.FrameEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/ShaderWindow.cs/#L274">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_ShaderWindow_OnUpdateFrame_" data-uid="Bonsai.Shaders.ShaderWindow.OnUpdateFrame*"></a>
+  <h4 id="Bonsai_Shaders_ShaderWindow_OnUpdateFrame_OpenTK_FrameEventArgs_" data-uid="Bonsai.Shaders.ShaderWindow.OnUpdateFrame(OpenTK.FrameEventArgs)">OnUpdateFrame(FrameEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnUpdateFrame(FrameEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.FrameEventArgs.html">FrameEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.GameWindow.html#OpenTK_GameWindow_OnUpdateFrame_OpenTK_FrameEventArgs_">GameWindow.OnUpdateFrame(FrameEventArgs)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_ShaderWindow_Update_System_Action_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.ShaderWindow.Update(System.Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/ShaderWindow.cs/#L226">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_ShaderWindow_Update_" data-uid="Bonsai.Shaders.ShaderWindow.Update*"></a>
+  <h4 id="Bonsai_Shaders_ShaderWindow_Update_System_Action_" data-uid="Bonsai.Shaders.ShaderWindow.Update(System.Action)">Update(Action)</h4>
+  <div class="markdown level1 summary"><p>Queues a render command or state update.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update(Action action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td><p>The action that will execute when the next frame is rendered.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.Platform.IGameWindow.html">IGameWindow</a>
+  </div>
+  <div>
+      <a class="xref" href="https://horizongir.github.io/opentk/api/OpenTK.INativeWindow.html">INativeWindow</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_ShaderWindow.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.ShaderWindow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/ShaderWindow.cs/#L19" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

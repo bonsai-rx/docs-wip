@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Ephys Synchronization </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Ephys Synchronization ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="ephys-synchronization">Ephys Synchronization</h1>
+
+<p>Synchronizing behaviour and other experimental events with recorded neural data is a fundamental component of neuroscience data collection and analysis. The exercises below will walk you through some common cases encountered in systems neuroscience experiments, and how to deal with them using Bonsai.</p>
+<p>The general approach when synchronizing two independent data acquisition clocks is to record precise temporal events simultaneously in both systems. If you know that the two recorded events are the same, you know that those two time points are the same. When using multiple systems, it is common to choose the system with the fastest clock as <em>master</em>, and route all events to its analog or digital inputs.</p>
+<h3 id="exercise-1-synchronizing-behaviour-events-with-ephys"><strong>Exercise 1:</strong> Synchronizing behaviour events with ephys</h3>
+<ul>
+<li>Insert a <code>KeyDown</code> source.</li>
+<li>Insert an <code>Equal</code> transform and set its <code>Value</code> to one of the keys. The output of this operator will toggle between <code>True</code> and <code>False</code> depending on whether the key press matches the specified key.</li>
+<li>Insert a <code>DigitalOutput</code> sink and connect it to Arduino pin 13.</li>
+<li>Connect the Arduino pin 13 to OpenEphys analog input 1.</li>
+<li>Insert an <code>Rhd2000EvalBoard</code> source.</li>
+<li>Select the <code>Rhd2000DataFrame</code> &gt; <code>BoardAdcData</code> field from the source output using the context menu.</li>
+<li>Insert a <code>SelectChannels</code> transform and set the <code>Channels</code> property to 0. This will select only the first analog input channel.</li>
+<li>Insert a <code>MatrixWriter</code> sink and configure its <code>Path</code> property with a file name ending in <code>.bin</code>.</li>
+<li>Run the workflow and alternate pressing the selected key and some other key. Repeat this a couple of times to make the LED change state.</li>
+<li>Open the binary file in MATLAB/Python/R and plot the raw data. What can you conclude from it?</li>
+</ul>
+<h3 id="exercise-2-synchronizing-video-with-ephys-using-an-led"><strong>Exercise 2:</strong> Synchronizing video with ephys using an LED</h3>
+<ul>
+<li>Using the workflow from the previous exercise, insert a <code>CameraCapture</code> source and point the camera such that you can see clearly both the LED and the computer keyboard.</li>
+<li>Insert a <code>VideoWriter</code> sink and configure the <code>FileName</code> with a path ending in <code>.avi</code>.</li>
+<li>Insert a <code>Crop</code> transform and set the <code>RegionOfInterest</code> property to a small area around the LED.</li>
+<li>Insert a <code>Grayscale</code> transform.</li>
+<li>Insert a <code>Sum (Dsp)</code> transform. This operator will sum the brightness values of all the pixels in the input image.</li>
+<li>Select the <code>Scalar</code> &gt; <code>Val0</code> field from the right-click context menu.</li>
+<li>Record the output in a text file using a <code>CsvWriter</code> sink.</li>
+<li>Open both the text file and the binary file in MATLAB/Python/R and check that you have detected an equal number of key presses in both files. What can you conclude from these two pieces of data?</li>
+<li><strong>Optional:</strong> Repeat the exercise, replacing the <code>KeyDown</code> source with a periodic <code>Timer</code>. Can you point out some of the limitations of synchronizing a video stream with ephys using this method?</li>
+</ul>
+<h3 id="exercise-3-synchronizing-video-with-ephys-using-gpio"><strong>Exercise 3:</strong> Synchronizing video with ephys using GPIO</h3>
+<p>Industrial grade cameras often include a GPIO connector which exposes input and output digital pins that operate similar to the pins in an Arduino or other microcontrollers. It is possible to configure these pins to report when the shutter of the camera is open or closed (i.e., when a frame is being exposed, the shutter is open and the pin goes <code>HIGH</code>, and conversely, when exposure stops, the shutter closes and the pin goes <code>LOW</code>).</p>
+<p>By connecting this strobe signal to the ephys system and counting the number of pulses, it is possible to reconstruct with sub-millisecond precision how many exposures were acquired by the camera, and when each of them started. One problem to consider during high-speed recordings, however, is that frames may occasionally be dropped if the system cannot handle each acquired frame fast enough. One way to work around this issue is to record the hardware frame counter which can be enabled in the drivers of all industrial grade cameras.</p>
+<ul>
+<li>Connect one of the output GPIO camera pins to the OpenEphys analog input 1.</li>
+<li>Configure the camera output as <em>strobe</em>.</li>
+<li>Insert a <code>FlyCapture</code> source or other industrial grade camera capture source.</li>
+<li>Record the embedded hardware frame counter into a text file using <code>CsvWriter</code>.</li>
+<li>Record the OpenEphys analog input and verify that you can recover individual camera pulses.</li>
+<li>Point out some of the remaining difficulties of this approach and how you would adress them.</li>
+</ul>
+<h3 id="exercise-4-synchronizing-a-visual-stimulus-with-ephys"><strong>Exercise 4:</strong> Synchronizing a visual stimulus with ephys</h3>
+<p>Displaying visual patterns on a screen or projector can be subject to significant delays that may impact synchronization with neural signals. Unfortunately, most displays do not directly provide any kind of digital output that might be used to synchronize stimulus presentation with ephys.</p>
+<p>However, you can take advantage of the fact that all pixels in a frame are presented synchronously and reserve part of the display area to show a synchronization trigger. A passive photodiode can then be used to transduce this optical trigger into a digital signal that can be transmitted to the ephys auxiliary input channels.</p>
+<p>In this exercise you will track the display of a very simple visual stimulus: a transition between black and white.</p>
+<ul>
+<li>Insert a <code>SolidColor</code> source and set its <code>Size</code> property to a positive value, e.g. 100,100.</li>
+<li>Insert a <code>Timer</code> source and set the <code>Period</code> to one second.</li>
+<li>Insert a <code>Mod</code> transform and set its <code>Value</code> property to 2.</li>
+<li>Insert a <code>Multiply</code> transform and set its <code>Value</code> property to 255.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The output of <code>Timer</code> is a growing count of the number of ticks. The <code>Mod</code> operator computes the remainder of the integer division of a number by another. Because every integer number in the sequence is alternately even or odd, the remainder of the division of the clock ticks by two will constantly oscillate between 0 and 1. Together with the <code>Multiply</code> operator, this is an easy way to make a periodic toggle between 0 and some value.</p>
+</div>
+<ul>
+<li>Insert an <code>InputMapping</code> operator and connect it to the <code>SolidColor</code> source.</li>
+<li>Edit the <code>PropertyMappings</code> and add a mapping to the <code>Color</code> property. You will have to select four times the input to fill all the components of the <code>Color</code> scalar.</li>
+<li>Run the workflow and verify that the output of <code>SolidColor</code> oscillates between black and white.</li>
+<li>Insert an <code>Rhd2000EvalBoard</code> source.</li>
+<li>Select the <code>Rhd2000DataFrame</code> &gt; <code>BoardAdcData</code> and either save or visualize its output.</li>
+<li>Connect a photodiode, or a photoresistor, to the ephys analog input and hold it flat against the screen, on top of the visualizer window.</li>
+<li>Verify that you can capture the transitions between black and white in the ephys data using the photodiode.</li>
+</ul>
+<h3 id="exercise-5-synchronizing-video-acquisition-to-a-visual-stimulus-using-gpio"><strong>Exercise 5:</strong> Synchronizing video acquisition to a visual stimulus using GPIO</h3>
+<p>The easiest way to synchronize the video acquisition with a visual stimulus is to make sure that your camera can see and track both your object of interest <em>and</em> the visual stimulus. If you can extract the stimulus events from your video, then they are synchronized with all other video events by definition, since all pixels in a video frame are acquired synchronously.</p>
+<p>However, sometimes this is not feasible: the stimulus may be covered by the subject, it may not be possible to recover the exact stimulus parameters from the camera view, or the stimulus may need to be filtered out entirely in order to allow for accurate tracking. In these situations, one solution for industrial grade cameras is to operate the camera in trigger mode, where the input GPIO channels can be used to align the beginning of each frame acquisition to the refresh rate of the display.</p>
+<p>To do this, you can use the photodiode technique described in the previous exercise, but this time the digital signal from the photodiode will be used as a trigger for the camera by connecting it to one of the GPIO inputs.</p>
+<ul>
+<li>Assuming a DLP projector, how would you design the optical trigger for a camera system that ensures a single pulse is generated for each projected frame (hint: In a DLP projector, each colour of a BGR frame is projected sequentially: first the Blue channel, then the Green, and finally the Red channel, in quick succession)?</li>
+<li><strong>Optional:</strong> Synchronize a camera with a projector using the GPIO trigger system outlined above.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/blob/main/worksheets/synching-ephys.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,710 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Norm
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Norm
+   ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Bonsai.Dsp.Norm">
+  
+  
+  <h1 id="Bonsai_Dsp_Norm" data-uid="Bonsai.Dsp.Norm" class="text-break">Class Norm
+  </h1>
+  <div class="markdown level0 summary"><p>Represents an operator that calculates the absolute array norm, absolute difference norm,
+or relative difference norm for each array in the sequence.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">Norm</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Bonsai.Dsp.html">Bonsai.Dsp</a></h6>
+  <h6><strong>Assembly</strong>: Bonsai.Dsp.dll</h6>
+  <h5 id="Bonsai_Dsp_Norm_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Combinator]
+[WorkflowElementCategory(ElementCategory.Transform)]
+public class Norm</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Norm_NormType.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Norm.NormType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Norm.cs/#L21">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Norm_NormType_" data-uid="Bonsai.Dsp.Norm.NormType*"></a>
+  <h4 id="Bonsai_Dsp_Norm_NormType" data-uid="Bonsai.Dsp.Norm.NormType">NormType</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the type of array norm to calculate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NormTypes NormType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.NormTypes.html">NormTypes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Norm_Process_System_IObservable_OpenCV_Net_Point__.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Norm.Process(System.IObservable%7BOpenCV.Net.Point%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Norm.cs/#L59">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Norm_Process_" data-uid="Bonsai.Dsp.Norm.Process*"></a>
+  <h4 id="Bonsai_Dsp_Norm_Process_System_IObservable_OpenCV_Net_Point__" data-uid="Bonsai.Dsp.Norm.Process(System.IObservable{OpenCV.Net.Point})">Process(IObservable&lt;Point&gt;)</h4>
+  <div class="markdown level1 summary"><p>Calculates the absolute norm for each 2D point in an observable sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;double&gt; Process(IObservable&lt;Point&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point.html">Point</a>&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of 2D points with integer coordinates for which to calculate
+the norm.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>&gt;</td>
+        <td><p>A sequence containing the absolute norm for each point in the
+<code data-dev-comment-type="paramref" class="paramref">source</code> sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Norm_Process_System_IObservable_OpenCV_Net_Point2d__.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Norm.Process(System.IObservable%7BOpenCV.Net.Point2d%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Norm.cs/#L91">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Norm_Process_" data-uid="Bonsai.Dsp.Norm.Process*"></a>
+  <h4 id="Bonsai_Dsp_Norm_Process_System_IObservable_OpenCV_Net_Point2d__" data-uid="Bonsai.Dsp.Norm.Process(System.IObservable{OpenCV.Net.Point2d})">Process(IObservable&lt;Point2d&gt;)</h4>
+  <div class="markdown level1 summary"><p>Calculates the absolute norm for each 2D point in an observable sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;double&gt; Process(IObservable&lt;Point2d&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point2d.html">Point2d</a>&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of 2D points with double-precision floating-point coordinates
+for which to calculate the norm.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>&gt;</td>
+        <td><p>A sequence containing the absolute norm for each point in the
+<code data-dev-comment-type="paramref" class="paramref">source</code> sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Norm_Process_System_IObservable_OpenCV_Net_Point2f__.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Norm.Process(System.IObservable%7BOpenCV.Net.Point2f%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Norm.cs/#L75">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Norm_Process_" data-uid="Bonsai.Dsp.Norm.Process*"></a>
+  <h4 id="Bonsai_Dsp_Norm_Process_System_IObservable_OpenCV_Net_Point2f__" data-uid="Bonsai.Dsp.Norm.Process(System.IObservable{OpenCV.Net.Point2f})">Process(IObservable&lt;Point2f&gt;)</h4>
+  <div class="markdown level1 summary"><p>Calculates the absolute norm for each 2D point in an observable sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;double&gt; Process(IObservable&lt;Point2f&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point2f.html">Point2f</a>&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of 2D points with single-precision floating-point coordinates
+for which to calculate the norm.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>&gt;</td>
+        <td><p>A sequence containing the absolute norm for each point in the
+<code data-dev-comment-type="paramref" class="paramref">source</code> sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Norm_Process_System_IObservable_OpenCV_Net_Point3d__.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Norm.Process(System.IObservable%7BOpenCV.Net.Point3d%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Norm.cs/#L123">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Norm_Process_" data-uid="Bonsai.Dsp.Norm.Process*"></a>
+  <h4 id="Bonsai_Dsp_Norm_Process_System_IObservable_OpenCV_Net_Point3d__" data-uid="Bonsai.Dsp.Norm.Process(System.IObservable{OpenCV.Net.Point3d})">Process(IObservable&lt;Point3d&gt;)</h4>
+  <div class="markdown level1 summary"><p>Calculates the absolute norm for each 3D point in an observable sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;double&gt; Process(IObservable&lt;Point3d&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point3d.html">Point3d</a>&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of 3D points with double-precision floating-point coordinates
+for which to calculate the norm.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>&gt;</td>
+        <td><p>A sequence containing the absolute norm for each point in the
+<code data-dev-comment-type="paramref" class="paramref">source</code> sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Norm_Process_System_IObservable_OpenCV_Net_Point3f__.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Norm.Process(System.IObservable%7BOpenCV.Net.Point3f%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Norm.cs/#L107">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Norm_Process_" data-uid="Bonsai.Dsp.Norm.Process*"></a>
+  <h4 id="Bonsai_Dsp_Norm_Process_System_IObservable_OpenCV_Net_Point3f__" data-uid="Bonsai.Dsp.Norm.Process(System.IObservable{OpenCV.Net.Point3f})">Process(IObservable&lt;Point3f&gt;)</h4>
+  <div class="markdown level1 summary"><p>Calculates the absolute norm for each 3D point in an observable sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;double&gt; Process(IObservable&lt;Point3f&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point3f.html">Point3f</a>&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of 3D points with single-precision floating-point coordinates
+for which to calculate the norm.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>&gt;</td>
+        <td><p>A sequence containing the absolute norm for each point in the
+<code data-dev-comment-type="paramref" class="paramref">source</code> sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Norm_Process__1_System_IObservable___0__.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Norm.Process%60%601(System.IObservable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Norm.cs/#L141">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Norm_Process_" data-uid="Bonsai.Dsp.Norm.Process*"></a>
+  <h4 id="Bonsai_Dsp_Norm_Process__1_System_IObservable___0__" data-uid="Bonsai.Dsp.Norm.Process``1(System.IObservable{``0})">Process&lt;TArray&gt;(IObservable&lt;TArray&gt;)</h4>
+  <div class="markdown level1 summary"><p>Calculates the absolute array norm for each array in an observable sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;double&gt; Process&lt;TArray&gt;(IObservable&lt;TArray&gt; source)
+    where TArray : Arr</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TArray&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of multi-dimensional arrays for which to calculate the norm.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>&gt;</td>
+        <td><p>A sequence containing the absolute norm for each array in the
+<code data-dev-comment-type="paramref" class="paramref">source</code> sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TArray</span></td>
+        <td><p>The type of the array-like objects in the <code data-dev-comment-type="paramref" class="paramref">source</code> sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Norm_Process__2_System_IObservable_System_Tuple___0___1___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Norm.Process%60%602(System.IObservable%7BSystem.Tuple%7B%60%600%2C%60%601%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Norm.cs/#L164">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Norm_Process_" data-uid="Bonsai.Dsp.Norm.Process*"></a>
+  <h4 id="Bonsai_Dsp_Norm_Process__2_System_IObservable_System_Tuple___0___1___" data-uid="Bonsai.Dsp.Norm.Process``2(System.IObservable{System.Tuple{``0,``1}})">Process&lt;TArray1, TArray2&gt;(IObservable&lt;Tuple&lt;TArray1, TArray2&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Calculates the absolute difference norm, or relative difference norm, between each
+pair of arrays in an observable sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;double&gt; Process&lt;TArray1, TArray2&gt;(IObservable&lt;Tuple&lt;TArray1, TArray2&gt;&gt; source)
+    where TArray1 : Arr where TArray2 : Arr</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;TArray1, TArray2&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs of multi-dimensional arrays for which to calculate the
+absolute difference norm or relative difference norm.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>&gt;</td>
+        <td><p>A sequence containing the absolute difference norm, or relative difference norm,
+between each pair of arrays in the <code data-dev-comment-type="paramref" class="paramref">source</code> sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TArray1</span></td>
+        <td><p>The type of the first array-like object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TArray2</span></td>
+        <td><p>The type of the second array-like object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Norm_Process__3_System_IObservable_System_Tuple___0___1___2___.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Norm.Process%60%603(System.IObservable%7BSystem.Tuple%7B%60%600%2C%60%601%2C%60%602%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Norm.cs/#L194">View Source</a>
+  </span>
+  <a id="Bonsai_Dsp_Norm_Process_" data-uid="Bonsai.Dsp.Norm.Process*"></a>
+  <h4 id="Bonsai_Dsp_Norm_Process__3_System_IObservable_System_Tuple___0___1___2___" data-uid="Bonsai.Dsp.Norm.Process``3(System.IObservable{System.Tuple{``0,``1,``2}})">Process&lt;TArray1, TArray2, TMask&gt;(IObservable&lt;Tuple&lt;TArray1, TArray2, TMask&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Calculates the absolute difference norm, or relative difference norm, between each
+pair of arrays in an observable sequence with an additional operation mask.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;double&gt; Process&lt;TArray1, TArray2, TMask&gt;(IObservable&lt;Tuple&lt;TArray1, TArray2, TMask&gt;&gt; source)
+    where TArray1 : Arr where TArray2 : Arr where TMask : Arr</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-3">Tuple</a>&lt;TArray1, TArray2, TMask&gt;&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>A sequence of pairs of multi-dimensional arrays for which to calculate the
+absolute difference norm or relative difference norm, for elements in
+which the operation mask is non-zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>&gt;</td>
+        <td><p>A sequence containing the absolute difference norm, or relative difference norm,
+between each pair of arrays in the <code data-dev-comment-type="paramref" class="paramref">source</code> sequence, for
+elements in which the operation mask is non-zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TArray1</span></td>
+        <td><p>The type of the first array-like object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TArray2</span></td>
+        <td><p>The type of the second array-like object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TMask</span></td>
+        <td><p>The type of the array-like objects used in the operation mask.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Dsp_Norm.md&amp;value=---%0Auid%3A%20Bonsai.Dsp.Norm%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Dsp/Norm.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

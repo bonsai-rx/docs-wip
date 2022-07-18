@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Closed-Loop Systems </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Closed-Loop Systems ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="closed-loop-systems">Closed-Loop Systems</h1>
+
+<p>In a closed-loop experiment, we want the behaviour data to generate feedback in real-time into the external world, establishing a relationship where the output of the system depends on detected sensory input. Many behavioural experiments in neuroscience require some kind of closed-loop interaction between the subject and the experimental setup. The exercises below will show you how to use the online data processing capabilities of Bonsai to create and benchmark many different kinds of closed-loop systems.</p>
+<h2 id="measuring-closed-loop-latency">Measuring closed-loop latency</h2>
+<p>One of the most important benchmarks to evaluate the performance of a closed-loop system is the latency, or the time it takes for a change in the output to be generated in response to a change in the input.</p>
+<p>The easiest way to measure the latency of a closed-loop system is to use a digital feedback test. In this test, we measure a binary output from the closed-loop system and feed it directly into the input sensor. We then record a series of measurements where we change the output to <code>HIGH</code> if the sensor detects <code>LOW</code>, and change it to <code>LOW</code> if the sensor detects <code>HIGH</code>. The time interval between <code>HIGH</code> and <code>LOW</code> signals will give us the total closed-loop latency of the system, also known as the round-trip time.</p>
+<h3 id="exercise-1-measuring-serial-port-communication-latency"><strong>Exercise 1:</strong> Measuring serial port communication latency</h3>
+<p><img src="../images/closed-loop-latency-arduino.svg" alt="Arduino Closed-Loop Latency"></p>
+<ul>
+<li>Connect the digital pin 8 on the Arduino to digital pin 13 using a jumper wire.</li>
+<li>Insert a <code>DigitalInput</code> source and set its <code>Pin</code> property to 8.</li>
+<li>Insert a <code>BitwiseNot</code> transform.</li>
+<li>Insert a <code>DigitalOutput</code> sink and configure its <code>Pin</code> property to pin 13.</li>
+<li>Insert a <code>TimeInterval</code> operator.</li>
+<li>Right-click on the <code>TimeInterval</code> operator and select <code>Output</code> &gt; <code>Interval</code> &gt; <code>TotalMilliseconds</code>.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <code>TimeInterval</code> operator measures the interval between consecutive events in an observable sequence using the <a href="https://en.wikipedia.org/wiki/High_Precision_Event_Timer">high-precision event timer (HPET)</a> in the computer. The HPET has a frequency of at least 10MHz, allowing us to accurately time intervals with sub-microsecond precision.</p>
+</div>
+<ul>
+<li>Run the workflow and measure the round-trip time between digital input messages.</li>
+</ul>
+<h3 id="exercise-2-measuring-video-acquisition-latency"><strong>Exercise 2:</strong> Measuring video acquisition latency</h3>
+<p><img src="../images/closed-loop-latency-video.svg" alt="Video Closed-Loop Latency"></p>
+<ul>
+<li>Connect a red LED to Arduino digital pin 13.</li>
+<li>Insert a <code>CameraCapture</code> source.</li>
+<li>Insert a <code>Crop</code> transform.</li>
+<li>Run the workflow and set the <code>RegionOfInterest</code> property to a small area around the LED.</li>
+</ul>
+<div class="TIP">
+<h5>Tip</h5>
+<p>You can use the visual editor for an easier calibration. While the workflow is running, right-click on the <code>Crop</code> transform and select <code>Show Default Editor</code> from the context menu or click in the small button with ellipsis that appears when you select the <code>RegionOfInterest</code> property.</p>
+</div>
+<ul>
+<li>Insert a <code>Sum (Dsp)</code> transform and select the <code>Val2</code> field from the output.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <code>Sum (Dsp)</code> operator adds the value of all the pixels in the image together, across all the color channels. Assuming the default BGR format, the result of summing all the pixels in the Red channel of the image will be stored in <code>Val2</code>. <code>Val0</code> and <code>Val1</code> would store the Blue and Green values, respectively. If you are using an LED with a color other than Red, please select the output field accordingly.</p>
+</div>
+<ul>
+<li>Insert a <code>GreaterThan</code> transform.</li>
+<li>Insert a <code>BitwiseNot</code> transform.</li>
+<li>Insert a <code>DigitalOutput</code> sink and configure its <code>Pin</code> property to pin 13.</li>
+<li>Run the workflow and use the visualizer of the <code>Sum</code> operator to choose an appropriate threshold for <code>GreaterThan</code>. When connected to pin 13, the LED should flash a couple of times when the Arduino is first connected.</li>
+<li>Insert a <a href="https://bonsai-rx.org/docs/operators/distinctuntilchanged" :target="\_blank"><code>DistinctUntilChanged</code></a> operator after the <code>BitwiseNot</code> transform.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <code>DistinctUntilChanged</code> operator filters consecutive duplicate items from an observable sequence. In this case, we want to change the value of the LED only when the threshold output changes from <code>LOW</code> to <code>HIGH</code>, or vice-versa. This will let us measure correctly the latency between detecting a change in the input and measuring the response to that change.</p>
+</div>
+<ul>
+<li>Insert the <code>TimeInterval</code> operator and select <code>Output</code> &gt; <code>Interval</code> &gt; <code>TotalMilliseconds</code>.</li>
+<li>Run the workflow and measure the round-trip time between LED triggers.</li>
+</ul>
+<p><em>Given the measurements obtained in Exercise 2, what would you estimate is the <strong>input</strong> latency for video acquisition?</em></p>
+<h2 id="closed-loop-control">Closed-Loop Control</h2>
+<h3 id="exercise-3-triggering-a-digital-line-based-on-region-of-interest-activity"><strong>Exercise 3:</strong> Triggering a digital line based on region of interest activity</h3>
+<p><img src="../images/closed-loop-roi.svg" alt="Triggering a digital line on ROI activity"></p>
+<ul>
+<li>Insert a <code>CameraCapture</code> source.</li>
+<li>Insert a <code>Crop</code> transform.</li>
+<li>Run the workflow and use the <code>RegionOfInterest</code> property to specify the desired area.</li>
+<li>Insert a <code>Grayscale</code> and a <code>Threshold (Vision)</code> transform (or the color segmentation operators).</li>
+<li>Insert a <code>Sum (Dsp)</code> transform, and select the <code>Val0</code> field from the output.</li>
+<li>Insert a <code>GreaterThan</code> transform and configure the <code>Value</code> property to an appropriate threshold. Remember you can use the visualizers to see what values are coming through the <code>Sum</code> and what the result of the <code>GreaterThan</code> operator is.</li>
+<li>Insert the Arduino <code>DigitalOutput</code> sink.</li>
+<li>Set the <code>Pin</code> property of the <code>DigitalOutput</code> operator to 13.</li>
+<li>Configure the <code>PortName</code> property.</li>
+<li>Run the workflow and verify that entering the region of interest triggers the Arduino LED.</li>
+<li><strong>Optional:</strong> Replace the <code>Crop</code> transform by a <code>CropPolygon</code> to allow for non-rectangular regions.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <code>CropPolygon</code> operator uses the <code>Regions</code> property to define multiple, possibly non-rectangular regions. The visual editor is similar to <code>Crop</code>, where you draw a rectangular box. However, in <code>CropPolygon</code> you can move the corners of the box by right-clicking <em>inside</em> the box and dragging the cursor to the new position. You can add new points by double-clicking with the left mouse button, and delete points by double-clicking with the right mouse button. You can delete regions by pressing the <code>Del</code> key and cycle through selected regions by pressing the <code>Tab</code> key.</p>
+</div>
+<h3 id="exercise-4-modulating-stimulus-intensity-based-on-distance-to-a-point"><strong>Exercise 4:</strong> Modulating stimulus intensity based on distance to a point</h3>
+<p><img src="../images/closed-loop-generator.svg" alt="Playing a dynamic sound"></p>
+<ul>
+<li>Insert a <code>FunctionGenerator</code> source.</li>
+<li>Set the <code>Amplitude</code> property to 500, and the <code>Frequency</code> property to <code>200</code>.</li>
+<li>Insert an <code>AudioPlayback</code> sink.</li>
+<li>Externalize the <code>Amplitude</code> property of the <code>FunctionGenerator</code> using the right-click context menu.</li>
+</ul>
+<p>If you run the workflow, you should hear a pure tone coming through the speakers. The <code>FunctionGenerator</code> periodically emits buffered waveforms with values ranging between 0 and <code>Amplitude</code>, the shape of which changes the properties of the tone. For example, by changing the value of <code>Amplitude</code> you can make the sound loud or soft. The next step is to modulate the <code>Amplitude</code> property dynamically based on the distance of the object to a target.</p>
+<p><img src="../images/closed-loop-modulate.svg" alt="Modulating stimulus intensity based on distance to a point"></p>
+<ul>
+<li>Create a video tracking workflow using <code>ConvertColor</code>, <code>HsvThreshold</code>, and the <code>Centroid</code> operator to directly compute the centre of mass of a colored object.</li>
+<li>Insert a <code>Subtract</code> transform and configure the <code>Value</code> property to be some target coordinate in the image.</li>
+</ul>
+<p>The result of the <code>Subtract</code> operator will be a vector pointing from the target to the centroid of the largest object. The desired distance from the centroid to the target would be the length of that vector.</p>
+<ul>
+<li>Insert an <code>ExpressionTransform</code> operator. This node allows you to write small mathematical and logical expressions to transform input values.</li>
+<li>Right-click on the <code>ExpressionTransform</code> operator and select <code>Show Default Editor</code>. Set the expression to <code>Math.Sqrt(X*X + Y*Y)</code>.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Inside the <code>Expression</code> editor you can access any field of the input by name. In this case <code>X</code> and <code>Y</code> represent the corresponding fields of the <code>Point2f</code> data type. You can check which fields are available by right-clicking the previous node. You can use all the normal arithmetical and logical operators as well as the mathematical functions available in the <a href="https://msdn.microsoft.com/en-us/library/system.math(v=vs.110).aspx"><code>Math</code></a> type. The default expression <code>it</code> means &quot;input&quot; and represents the input value itself.</p>
+</div>
+<ul>
+<li>Connect the <code>ExpressionTransform</code> operator to the externalized <code>Amplitude</code> property.</li>
+<li>Run the workflow and verify that stimulus intensity is modulated by the distance of the object to the target point.</li>
+<li><strong>Optional:</strong> Modulate the <code>Frequency</code> property instead of <code>Amplitude</code>.</li>
+<li><strong>Optional:</strong> Use the <code>Rescale</code> operator to adjust the gain of the modulation by configuring the <code>Min</code>, <code>Max</code>, <code>RangeMax</code> and <code>RangeMin</code> properties. Set the <code>RescaleType</code> property to <code>Clamp</code> to restrict the output values to an allowed range.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can specify inverse relationships using <code>Rescale</code> if you set the <em>maximum</em> input value to the <code>Min</code> property, and the <em>minimum</em> input value to the <code>Max</code> property. In this case, a small distance will generate a large output, and a large distance will produce a small output.</p>
+</div>
+<h3 id="exercise-5-triggering-a-digital-line-based-on-distance-between-objects"><strong>Exercise 5:</strong> Triggering a digital line based on distance between objects</h3>
+<p><img src="../images/closed-loop-trigger.svg" alt="Triggering a digital line based on distance between objects"></p>
+<ul>
+<li>Reproduce the above object tracking workflow using <code>FindContours</code> and <code>BinaryRegionAnalysis</code>.</li>
+<li>Insert a <code>SortBinaryRegions</code> transform. This operator will sort the list of objects by area, in order of largest to smallest.</li>
+</ul>
+<p>To calculate the distance between the two largest objects in every frame you will need to take into account some special cases. Specifically, there is the possibility that no object is detected, or that the two objects may be touching each other and will be detected as a single object. You can develop a new operator in order to perform this specific calculation.</p>
+<ul>
+<li>Insert a <code>PythonTransform</code> operator. Change the <code>Script</code> property to the following code:</li>
+</ul>
+<pre><code class="lang-python">from math import sqrt
+
+@returns(float)
+def process(value):
+
+  # no objects were detected
+  if value.Count == 0:
+    return float.NaN
+
+  # only one object was detected, assume objects are touching
+  elif value.Count == 1:
+    return 0
+
+  # two or more objects were detected, compute distance
+  else:
+    # d: displacement between two largest objects
+    d = value[0].Centroid - value[1].Centroid
+    return sqrt(d.X * d.X + d.Y * d.Y)
+</code></pre>
+<ul>
+<li>Insert a <code>LessThan</code> transform and configure the <code>Value</code> property to an appropriate threshold.</li>
+<li>Connect the boolean output to Arduino pin 13 using a <code>DigitalOutput</code> sink.</li>
+<li>Run the workflow and verify that the Arduino LED is triggered when the two objects are close together.</li>
+</ul>
+<h3 id="exercise-6-centring-the-video-on-a-tracked-object"><strong>Exercise 6:</strong> Centring the video on a tracked object</h3>
+<p><img src="../images/closed-loop-warpaffine.svg" alt="Shifting the video using warp affine"></p>
+<ul>
+<li>Insert a <code>CameraCapture</code> source.</li>
+<li>Insert a <code>WarpAffine</code> transform. This node applies affine transformations on the input defined by the <code>Transform</code> matrix.</li>
+<li>Externalize the <code>Transform</code> property of the <code>WarpAffine</code> operator using the right-click context menu.</li>
+<li>Create an <code>AffineTransform</code> source and connect it to the externalized property.</li>
+<li>Run the workflow and change the values of the <code>Translation</code> property while visualizing the output of <code>WarpAffine</code>. Notice that the transformation induces a translation in the input image controlled by the values in the property.</li>
+</ul>
+<p><img src="../images/closed-loop-stabilization.svg" alt="Centring the video on a tracked object"></p>
+<ul>
+<li>In a new branch, create a video tracking pipeline using <code>ConvertColor</code>, <code>HsvThreshold</code>, and the <code>Centroid</code> operator to directly compute the centre of mass of a colored object.</li>
+<li>Insert a <code>Negate</code> transform. This will make the X and Y coordinates of the centroid negative.</li>
+</ul>
+<p>We now want to map our negative centroid to the <code>Translation</code> property of <code>AffineTransform</code>, so that we dynamically translate each frame using the negative position of the object. You can do this by using <a href="http://bonsai-rx.org/docs/property-mapping" :target="\_blank">property mapping operators</a>.</p>
+<ul>
+<li>Insert an <code>InputMapping</code> operator.</li>
+<li>Connect the <code>InputMapping</code> to the <code>AffineTransform</code> operator.</li>
+<li>Open the <code>PropertyMappings</code> editor and add a new mapping to the <code>Translation</code> property.</li>
+<li>Run the workflow. Verify the object is always placed at position (0,0). What is the problem?</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Generally for image coordinates, (0,0) is at the top-left corner, and the center will be at coordinates (width/2, height/2), usually (320,240) for images with 640 x 480 resolution.</p>
+</div>
+<ul>
+<li>Insert an <code>Add</code> transform. This will add a fixed offset to the point. Configure the <code>Value</code> property with an offset that will place the object at the image centre, e.g. (320,240).</li>
+<li>Run the workflow, and verify the output of <code>WarpAffine</code> is now a video which is always centred on the tracked object.</li>
+<li><strong>Optional</strong>: Insert a <code>Crop</code> transform after <code>WarpAffine</code> to select a bounded region around the object.</li>
+<li><strong>Optional</strong>: Modify the object tracking workflow to use <code>FindContours</code> and <code>BinaryRegionAnalysis</code>.</li>
+</ul>
+<h3 id="exercise-7-make-a-robotic-camera-follow-a-tracked-object"><strong>Exercise 7:</strong> Make a robotic camera follow a tracked object</h3>
+<p>On this exercise we will use the Pan and Tilt servo motor assembly to make the camera itself always point to the tracked object. The goal will be to keep the object always in the centre of the visual field of the camera. If the object is to the left of the centre, we turn the camera left, if it is to the right, we need to turn the camera right.</p>
+<p><img src="../images/closed-loop-pantilt-error.svg" alt="Computing the deviation from the image centre"></p>
+<ul>
+<li>Insert a <code>CameraCapture</code> source.</li>
+<li>Insert nodes to complete a video tracking workflow using <code>ConvertColor</code>, <code>HsvThreshold</code>, and the <code>Centroid</code> operator.</li>
+<li>Run the workflow and calibrate the threshold to make sure the colored object is perfectly segmented.</li>
+</ul>
+<p>To make the Pan and Tilt servo motors correct the position of the camera, we now need to transform the X and Y values of the centroid, which are in image coordinates, to servo motor commands in degrees. For each frame we will have an incremental error depending on the observed location of the object, i.e. the deviation from the image centre.</p>
+<ul>
+<li>Right-click the <code>Centroid</code> and select <code>Output</code> &gt; <code>X</code>.</li>
+<li>Insert a <code>Rescale</code> transform and set the <code>Max</code> property to 640 (the image width), and the <code>RangeMin</code> and <code>RangeMax</code> properties to 1 and -1, respectively.</li>
+</ul>
+<p>The output of this workflow will be a relative error signal indicating how much from the centre, and in which direction, the motor should turn. However, the commands to the servo are absolute motor positions in degrees. This means we will need to integrate the relative error signals to get the actual position where the servo should be. We also need to be aware of the servo operational range (0 to 180 degrees) in order not to damage the motors. To accomplish this, we will develop a new operator to compute the error-corrected integration before sending the final command to the servos.</p>
+<p><img src="../images/closed-loop-pantilt-servo.svg" alt="Computing the servo commands"></p>
+<ul>
+<li>Insert a <code>PythonTransform</code> operator after <code>Rescale</code>. Change the <code>Script</code> property to the following code:</li>
+</ul>
+<pre><code class="lang-python">position = 90.0
+
+@returns(float)
+def process(value):
+  global position
+  temp = position + value
+
+  # update the position only when the angle range is valid
+  if (20.0 &lt; temp and temp &lt; 160):
+     position = temp
+  return position
+</code></pre>
+<ul>
+<li>Insert a <code>ServoOutput</code> sink.</li>
+<li>Set the <code>Pin</code> property to the Arduino pin where the horizontal Pan motor is connected.</li>
+<li>Configure the <code>PortName</code> to the Arduino port where the micro-controller is connected.</li>
+<li>Run the workflow and validate the horizontal position of the motor is adjusted to keep the object in the middle.</li>
+</ul>
+<p><img src="../images/closed-loop-pantilt-tracking.svg" alt="Rescale Coordinates"></p>
+<ul>
+<li>Right-click the <code>Centroid</code> and select <code>Output</code> &gt; <code>Y</code> to create a new branch for the vertical Tilt motor.</li>
+<li>Insert a <code>Rescale</code> transform and set the <code>Max</code> property to 480 (the image height), and the <code>RangeMin</code> and <code>RangeMax</code> properties to -1 and 1, respectively (note these values are swapped from before because in image coordinates zero is at the image top).</li>
+<li>Copy and paste the <code>PythonTransform</code> script from the previous branch.</li>
+<li>Insert a <code>ServoOutput</code> sink and set the <code>Pin</code> property to the Arduino pin where the vertical Tilt motor is connected.</li>
+<li>Configure the <code>PortName</code> property.</li>
+<li>Run the workflow and validate the camera is tracking the object and keeping it in the centre of the image.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/blob/main/worksheets/closed-loop.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

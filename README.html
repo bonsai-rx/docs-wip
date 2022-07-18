@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bonsai Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Bonsai Documentation ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href=".">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="bonsai-documentation">Bonsai Documentation</h1>
+
+<p>This repo contains the technical reference manual for the Bonsai visual programming language, in addition to articles and examples that document the collective knowledge of the Bonsai user community.</p>
+<h1 id="would-you-like-to-contribute-to-this-repo">Would you like to contribute to this repo?</h1>
+<h2 id="step-by-step-guide-to-getting-started-as-a-contributor">Step-by-step guide to getting started as a contributor</h2>
+<ol>
+<li>Fork the &quot;develop&quot; branch of this repository.</li>
+<li>Download and install the latest stable version of <a href="https://dotnet.github.io/docfx/index.html">DocFx</a> (currently 2.59).</li>
+<li>In a Windows Powershell, use the command <code>docfx docfx.json --serve</code> to generate a local preview of the documentation website.</li>
+<li>If you are working on multiple articles at once, create a descriptively named branch of your fork of the repo for each article.</li>
+<li>When you are ready to have your contribution reviewed, commit your edits to the approriate branch of your fork of the repo and create a PR to merge that branch with the &quot;develop&quot; branch of this original repo. Because the &quot;develop&quot; branch was created explicitly to aid collaboration between contributors, pull requests to this branch will be accepted and merged rapidly (at least once a week).</li>
+<li>Once a piece of documentation has been polished, and at least two community members agree that it is ready for a final review, create a pull request to merge with the &quot;main&quot; branch of this repo. At this point, @glopesdev will conduct the final review and quality control check. If the contribution passes this final step, the PR to merge with &quot;main&quot; will be approved and the contribution will be published on the <a href="https://bonsai-rx.org/docs-wip/">publicly accessible Bonsai documentation website</a>.</li>
+</ol>
+<h2 id="contributor-style-guide">Contributor Style Guide</h2>
+<h3 id="why-use-the-develop-branch">Why use the &quot;develop&quot; branch?</h3>
+<p>The &quot;develop&quot; branch is specifically created so that contributors can quickly commit drafts of documentation and collaborate with other community members in order to edit and polish documentation contributions.</p>
+<h3 id="re-useupdate-existing-documentation">Re-use/update existing documentation</h3>
+<p>When working on an article, first check <a href="https://bonsai-rx.org/docs/">the old documentation</a> to see what written material might already exist for that topic.</p>
+<h3 id="including-figures">Including figures</h3>
+<p>To include a figure or image in an article:</p>
+<ul>
+<li>save your figure or image as a <code>.svg</code> file, naming the file using the pattern <code>[article filename]-[figure name].svg</code></li>
+<li>add the figure/image to the <strong>images</strong> folder in this repo</li>
+</ul>
+<h3 id="standard-formatting-for-operators-and-operator-properties">Standard formatting for operators and operator properties</h3>
+<p>When referring to operators (also known as nodes in Bonsai), place operator names inside a pair of backticks and double stars (<code>**`Operator_name`**</code>) so that the node names render as bold text in code snippet formatting (i.e. <strong><code>CameraCapture</code></strong>).</p>
+<p>When referring to operator properties, simply place the operator property name inside a pair of backticks (<code>`Operator_property_name`</code>).</p>
+<p>For both operators and operator properties, link the name to the relevant documentation in the code base, using the <a href="https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html">markdown syntax for xref in DocFX</a>.</p>
+<p>For example, the <strong><code>DigitalOutput</code></strong> node is part of the <code>Bonsai.Arduino</code> namespace/package, and contains a property called <code>PortName</code>. To reference this specific property you need to specify the full path to it including namespace, operator name and property name, like so: <code>xref:Bonsai.Arduino.DigitalOutput.PortName</code>.</p>
+<p>To find out the full path for any node, right-click on the operator of interest in Bonsai and select the option &quot;Go to Definition&quot; or hit F12. The xref will be the namespace + operator name + (optionally) property name.</p>
+<p><strong>Example:</strong></p>
+<pre><code class="lang-markdown">### **Exercise 7:** Control an LED
+
+![Control an LED](~/images/acquisition-led.svg)
+
+- Insert a [**`Boolean`**](xref:Bonsai.Expressions.BooleanProperty) source.
+- Insert a [**`DigitalOutput`**](xref:Bonsai.Arduino.DigitalOutput) sink.
+- Set the [`Pin`](xref:Bonsai.Arduino.DigitalOutput.Pin) property of the [**`DigitalOutput`**](xref:Bonsai.Arduino.DigitalOutput) operator to 13.
+- Configure the [`PortName`](xref:Bonsai.Arduino.DigitalOutput.PortName) property.
+- Run the workflow and change the [`Value`](xref:Bonsai.Expressions.BooleanProperty.Value) property of the [**`Boolean`**](xref:Bonsai.Expressions.BooleanProperty) operator.
+- **Optional:** Use your mouse to control the LED! Replace the [**`Boolean`**](xref:Bonsai.Expressions.BooleanProperty) operator by a `MouseMove` source (hint: use `GreaterThan`, `LessThan`, or equivalent operators to connect one of the mouse axis to [**`DigitalOutput`**](xref:Bonsai.Arduino.DigitalOutput).
+</code></pre>
+<h3 id="how-to-include-andor-reference-examples-of-workflows">How to include and/or reference examples of workflows</h3>
+<p>To include and/or reference an example workflow in an article of the documentation, first create the example workflow in a Bonsai workflow editor. Then open File -&gt; Export -&gt; Image or use keyboard shortcut Ctrl + Shift + E. Name the example according to the following pattern: <code>articleFileName_workflowName</code>. This will export the example workflow as both a <code>.svg</code> file and a <code>.bonsai</code> file.</p>
+<p>Add the <code>.svg</code> file to the <strong>images</strong> folder in this repo, and add the <code>.bonsai</code> file to the <strong>workflows</strong> folder in this repo. In the text of the article that includes/references this example workflow, add the <code>.svg</code> file as an image and link that image to the <code>.bonsai</code> file.</p>
+<p><strong>Example:</strong></p>
+<p>Assuming you want to include <code>acquisition-example.bonsai</code>:</p>
+<pre><code class="lang-markdown">[![Example Workflow](~/images/acquisition-example.svg)](~/workflows/acquisition-example.bonsai)
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/blob/main/README.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+    <script type="text/javascript" src="styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

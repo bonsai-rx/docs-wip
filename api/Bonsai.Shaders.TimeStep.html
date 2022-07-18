@@ -1,0 +1,956 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct TimeStep
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct TimeStep
+   ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Bonsai.Shaders.TimeStep">
+  
+  
+  <h1 id="Bonsai_Shaders_TimeStep" data-uid="Bonsai.Shaders.TimeStep" class="text-break">Struct TimeStep
+  </h1>
+  <div class="markdown level0 summary"><p>Represents the amount of time elapsed since the last update.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Bonsai.Shaders.html">Bonsai.Shaders</a></h6>
+  <h6><strong>Assembly</strong>: Bonsai.Shaders.dll</h6>
+  <h5 id="Bonsai_Shaders_TimeStep_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct TimeStep : IEquatable&lt;TimeStep&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_TimeStep__ctor_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.TimeStep.%23ctor(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/TimeStep.cs/#L48">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_TimeStep__ctor_" data-uid="Bonsai.Shaders.TimeStep.#ctor*"></a>
+  <h4 id="Bonsai_Shaders_TimeStep__ctor_System_Double_System_Double_" data-uid="Bonsai.Shaders.TimeStep.#ctor(System.Double,System.Double)">TimeStep(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> structure
+using the specified fixed-step elapsed time and variable-step elapsed
+clock time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeStep(double elapsedTime, double elapsedRealTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">elapsedTime</span></td>
+        <td><p>The amount of elapsed time since the last update, in seconds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">elapsedRealTime</span></td>
+        <td><p>The amount of elapsed time since the last update, in seconds, following
+the host computer clock.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_TimeStep_ElapsedRealTime.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.TimeStep.ElapsedRealTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/TimeStep.cs/#L34">View Source</a>
+  </span>
+  <h4 id="Bonsai_Shaders_TimeStep_ElapsedRealTime" data-uid="Bonsai.Shaders.TimeStep.ElapsedRealTime">ElapsedRealTime</h4>
+  <div class="markdown level1 summary"><p>The amount of elapsed time since the last update, in seconds, following
+the host computer clock.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ElapsedRealTime</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Bonsai_Shaders_TimeStep_ElapsedRealTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This field can be used to measure the real-time jitter of the update
+and render loops, or in variable-step state updates.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_TimeStep_ElapsedTime.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.TimeStep.ElapsedTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/TimeStep.cs/#L24">View Source</a>
+  </span>
+  <h4 id="Bonsai_Shaders_TimeStep_ElapsedTime" data-uid="Bonsai.Shaders.TimeStep.ElapsedTime">ElapsedTime</h4>
+  <div class="markdown level1 summary"><p>The amount of elapsed time since the last update, in seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ElapsedTime</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Bonsai_Shaders_TimeStep_ElapsedTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This field is useful for fixed-step deterministic state updates, where
+each step follows the target update or render refresh rates.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_TimeStep_Zero.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.TimeStep.Zero%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/TimeStep.cs/#L15">View Source</a>
+  </span>
+  <h4 id="Bonsai_Shaders_TimeStep_Zero" data-uid="Bonsai.Shaders.TimeStep.Zero">Zero</h4>
+  <div class="markdown level1 summary"><p>Represents the zero <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> value. This field is read-only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly TimeStep Zero</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_TimeStep_Add_Bonsai_Shaders_TimeStep_Bonsai_Shaders_TimeStep_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.TimeStep.Add(Bonsai.Shaders.TimeStep%2CBonsai.Shaders.TimeStep)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/TimeStep.cs/#L165">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_TimeStep_Add_" data-uid="Bonsai.Shaders.TimeStep.Add*"></a>
+  <h4 id="Bonsai_Shaders_TimeStep_Add_Bonsai_Shaders_TimeStep_Bonsai_Shaders_TimeStep_" data-uid="Bonsai.Shaders.TimeStep.Add(Bonsai.Shaders.TimeStep,Bonsai.Shaders.TimeStep)">Add(TimeStep, TimeStep)</h4>
+  <div class="markdown level1 summary"><p>Adds two <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> values together.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TimeStep Add(TimeStep left, TimeStep right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> to add.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><p>A new <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> object representing the sum of the
+<code data-dev-comment-type="paramref" class="paramref">left</code> and <code data-dev-comment-type="paramref" class="paramref">right</code> values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_TimeStep_Add_Bonsai_Shaders_TimeStep__Bonsai_Shaders_TimeStep__Bonsai_Shaders_TimeStep__.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.TimeStep.Add(Bonsai.Shaders.TimeStep%40%2CBonsai.Shaders.TimeStep%40%2CBonsai.Shaders.TimeStep%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/TimeStep.cs/#L133">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_TimeStep_Add_" data-uid="Bonsai.Shaders.TimeStep.Add*"></a>
+  <h4 id="Bonsai_Shaders_TimeStep_Add_Bonsai_Shaders_TimeStep__Bonsai_Shaders_TimeStep__Bonsai_Shaders_TimeStep__" data-uid="Bonsai.Shaders.TimeStep.Add(Bonsai.Shaders.TimeStep@,Bonsai.Shaders.TimeStep@,Bonsai.Shaders.TimeStep@)">Add(ref TimeStep, ref TimeStep, out TimeStep)</h4>
+  <div class="markdown level1 summary"><p>Adds two <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> values together and stores the result
+in a return value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Add(ref TimeStep left, ref TimeStep right, out TimeStep result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> to add.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> to add.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>When this method returns, contains the <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> object
+representing the sum of the <code data-dev-comment-type="paramref" class="paramref">left</code> and
+<code data-dev-comment-type="paramref" class="paramref">right</code> values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_TimeStep_Equals_Bonsai_Shaders_TimeStep_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.TimeStep.Equals(Bonsai.Shaders.TimeStep)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/TimeStep.cs/#L66">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_TimeStep_Equals_" data-uid="Bonsai.Shaders.TimeStep.Equals*"></a>
+  <h4 id="Bonsai_Shaders_TimeStep_Equals_Bonsai_Shaders_TimeStep_" data-uid="Bonsai.Shaders.TimeStep.Equals(Bonsai.Shaders.TimeStep)">Equals(TimeStep)</h4>
+  <div class="markdown level1 summary"><p>Returns a value indicating whether this instance is equal to the
+specified <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> structure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(TimeStep other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>The <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> object to compare with this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">other</code> represents
+the same timing values as this instance; otherwise,
+<span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_TimeStep_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.TimeStep.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/TimeStep.cs/#L81">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_TimeStep_Equals_" data-uid="Bonsai.Shaders.TimeStep.Equals*"></a>
+  <h4 id="Bonsai_Shaders_TimeStep_Equals_System_Object_" data-uid="Bonsai.Shaders.TimeStep.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Returns a value indicating whether the specified object is a <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a>
+structure with the same timing values as this <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to compare with this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">obj</code> is a <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a>
+structure and has the same timing values as this object; otherwise,
+<span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.equals#system-valuetype-equals(system-object)">ValueType.Equals(Object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_TimeStep_GetHashCode.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.TimeStep.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/TimeStep.cs/#L98">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_TimeStep_GetHashCode_" data-uid="Bonsai.Shaders.TimeStep.GetHashCode*"></a>
+  <h4 id="Bonsai_Shaders_TimeStep_GetHashCode" data-uid="Bonsai.Shaders.TimeStep.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Returns a hash code for this <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>An integer value that specifies a hash value for this
+<a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.gethashcode#system-valuetype-gethashcode">ValueType.GetHashCode()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_TimeStep_Subtract_Bonsai_Shaders_TimeStep_Bonsai_Shaders_TimeStep_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.TimeStep.Subtract(Bonsai.Shaders.TimeStep%2CBonsai.Shaders.TimeStep)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/TimeStep.cs/#L180">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_TimeStep_Subtract_" data-uid="Bonsai.Shaders.TimeStep.Subtract*"></a>
+  <h4 id="Bonsai_Shaders_TimeStep_Subtract_Bonsai_Shaders_TimeStep_Bonsai_Shaders_TimeStep_" data-uid="Bonsai.Shaders.TimeStep.Subtract(Bonsai.Shaders.TimeStep,Bonsai.Shaders.TimeStep)">Subtract(TimeStep, TimeStep)</h4>
+  <div class="markdown level1 summary"><p>Subtracts the second <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> value from the first.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TimeStep Subtract(TimeStep left, TimeStep right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><p>A new <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> object representing the difference between
+the <code data-dev-comment-type="paramref" class="paramref">left</code> and <code data-dev-comment-type="paramref" class="paramref">right</code> values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_TimeStep_Subtract_Bonsai_Shaders_TimeStep__Bonsai_Shaders_TimeStep__Bonsai_Shaders_TimeStep__.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.TimeStep.Subtract(Bonsai.Shaders.TimeStep%40%2CBonsai.Shaders.TimeStep%40%2CBonsai.Shaders.TimeStep%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/TimeStep.cs/#L150">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_TimeStep_Subtract_" data-uid="Bonsai.Shaders.TimeStep.Subtract*"></a>
+  <h4 id="Bonsai_Shaders_TimeStep_Subtract_Bonsai_Shaders_TimeStep__Bonsai_Shaders_TimeStep__Bonsai_Shaders_TimeStep__" data-uid="Bonsai.Shaders.TimeStep.Subtract(Bonsai.Shaders.TimeStep@,Bonsai.Shaders.TimeStep@,Bonsai.Shaders.TimeStep@)">Subtract(ref TimeStep, ref TimeStep, out TimeStep)</h4>
+  <div class="markdown level1 summary"><p>Subtracts the second <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> value from the first
+and stores the result in a return value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Subtract(ref TimeStep left, ref TimeStep right, out TimeStep result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>When this method returns, contains the <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> object
+representing the difference between the <code data-dev-comment-type="paramref" class="paramref">left</code> and
+<code data-dev-comment-type="paramref" class="paramref">right</code> values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_TimeStep_ToString.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.TimeStep.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/TimeStep.cs/#L114">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_TimeStep_ToString_" data-uid="Bonsai.Shaders.TimeStep.ToString*"></a>
+  <h4 id="Bonsai_Shaders_TimeStep_ToString" data-uid="Bonsai.Shaders.TimeStep.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> representation of this
+<a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> representing all the timing values of this
+<a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.tostring#system-valuetype-tostring">ValueType.ToString()</a></div>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_TimeStep_op_Addition_Bonsai_Shaders_TimeStep_Bonsai_Shaders_TimeStep_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.TimeStep.op_Addition(Bonsai.Shaders.TimeStep%2CBonsai.Shaders.TimeStep)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/TimeStep.cs/#L242">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_TimeStep_op_Addition_" data-uid="Bonsai.Shaders.TimeStep.op_Addition*"></a>
+  <h4 id="Bonsai_Shaders_TimeStep_op_Addition_Bonsai_Shaders_TimeStep_Bonsai_Shaders_TimeStep_" data-uid="Bonsai.Shaders.TimeStep.op_Addition(Bonsai.Shaders.TimeStep,Bonsai.Shaders.TimeStep)">Addition(TimeStep, TimeStep)</h4>
+  <div class="markdown level1 summary"><p>Adds two <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> values together.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TimeStep operator +(TimeStep left, TimeStep right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> value on the left-hand side of the
+addition operator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> value on the right-hand side of the
+addition operator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><p>A new <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> object representing the sum of the
+<code data-dev-comment-type="paramref" class="paramref">left</code> and <code data-dev-comment-type="paramref" class="paramref">right</code> values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_TimeStep_op_Equality_Bonsai_Shaders_TimeStep_Bonsai_Shaders_TimeStep_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.TimeStep.op_Equality(Bonsai.Shaders.TimeStep%2CBonsai.Shaders.TimeStep)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/TimeStep.cs/#L201">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_TimeStep_op_Equality_" data-uid="Bonsai.Shaders.TimeStep.op_Equality*"></a>
+  <h4 id="Bonsai_Shaders_TimeStep_op_Equality_Bonsai_Shaders_TimeStep_Bonsai_Shaders_TimeStep_" data-uid="Bonsai.Shaders.TimeStep.op_Equality(Bonsai.Shaders.TimeStep,Bonsai.Shaders.TimeStep)">Equality(TimeStep, TimeStep)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether two <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> values are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(TimeStep left, TimeStep right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> value on the left-hand side of the
+equality operator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> value on the right-hand side of the
+equality operator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">left</code> and <code data-dev-comment-type="paramref" class="paramref">right</code>
+have equal timing values; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_TimeStep_op_Inequality_Bonsai_Shaders_TimeStep_Bonsai_Shaders_TimeStep_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.TimeStep.op_Inequality(Bonsai.Shaders.TimeStep%2CBonsai.Shaders.TimeStep)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/TimeStep.cs/#L222">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_TimeStep_op_Inequality_" data-uid="Bonsai.Shaders.TimeStep.op_Inequality*"></a>
+  <h4 id="Bonsai_Shaders_TimeStep_op_Inequality_Bonsai_Shaders_TimeStep_Bonsai_Shaders_TimeStep_" data-uid="Bonsai.Shaders.TimeStep.op_Inequality(Bonsai.Shaders.TimeStep,Bonsai.Shaders.TimeStep)">Inequality(TimeStep, TimeStep)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether two <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> values are different.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(TimeStep left, TimeStep right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> value on the left-hand side of the
+inequality operator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> value on the right-hand side of the
+inequality operator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">left</code> and <code data-dev-comment-type="paramref" class="paramref">right</code>
+differ in any of their timing values; <span class="xref">false</span> if
+<code data-dev-comment-type="paramref" class="paramref">left</code> and <code data-dev-comment-type="paramref" class="paramref">right</code> are equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_TimeStep_op_Subtraction_Bonsai_Shaders_TimeStep_Bonsai_Shaders_TimeStep_.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.TimeStep.op_Subtraction(Bonsai.Shaders.TimeStep%2CBonsai.Shaders.TimeStep)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/TimeStep.cs/#L262">View Source</a>
+  </span>
+  <a id="Bonsai_Shaders_TimeStep_op_Subtraction_" data-uid="Bonsai.Shaders.TimeStep.op_Subtraction*"></a>
+  <h4 id="Bonsai_Shaders_TimeStep_op_Subtraction_Bonsai_Shaders_TimeStep_Bonsai_Shaders_TimeStep_" data-uid="Bonsai.Shaders.TimeStep.op_Subtraction(Bonsai.Shaders.TimeStep,Bonsai.Shaders.TimeStep)">Subtraction(TimeStep, TimeStep)</h4>
+  <div class="markdown level1 summary"><p>Subtracts the second <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> value from the first.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TimeStep operator -(TimeStep left, TimeStep right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> value on the left-hand side of the
+subtraction operator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> value on the right-hand side of the
+subtraction operator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a></td>
+        <td><p>A new <a class="xref" href="Bonsai.Shaders.TimeStep.html">TimeStep</a> object representing the difference between
+the <code data-dev-comment-type="paramref" class="paramref">left</code> and <code data-dev-comment-type="paramref" class="paramref">right</code> values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Shaders_TimeStep.md&amp;value=---%0Auid%3A%20Bonsai.Shaders.TimeStep%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Shaders/TimeStep.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Transform&lt;TSource, TResult&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Transform&lt;TSource, TResult&gt;
+   ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Bonsai.Transform`2">
+  
+  
+  <h1 id="Bonsai_Transform_2" data-uid="Bonsai.Transform`2" class="text-break">Class Transform&lt;TSource, TResult&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Represents an operation on observable sequences which transforms every element of the source
+sequence into an element in the result sequence.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Bonsai.Combinator-2.html">Combinator</a>&lt;TSource, TResult&gt;</div>
+    <div class="level2"><span class="xref">Transform&lt;TSource, TResult&gt;</span></div>
+      <div class="level3"><a class="xref" href="Bonsai.Dsp.Butterworth.html">Butterworth</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Dsp.Delay.html">Delay</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Dsp.Difference.html">Difference</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Dsp.FirFilter.html">FirFilter</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Dsp.FrequencyFilter.html">FrequencyFilter</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Dsp.IirFilter.html">IirFilter</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Dsp.RasterSpikes.html">RasterSpikes</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Dsp.ReferenceChannels.html">ReferenceChannels</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Dsp.SelectChannels.html">SelectChannels</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Dsp.Shift.html">Shift</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Dsp.Submatrix.html">Submatrix</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Dsp.Threshold.html">Threshold</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.IO.GetDirectoryName.html">GetDirectoryName</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.IO.GetExtension.html">GetExtension</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.IO.GetFileName.html">GetFileName</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.IO.GetFileNameWithoutExtension.html">GetFileNameWithoutExtension</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.IO.GetFullPath.html">GetFullPath</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.IO.GetPathRoot.html">GetPathRoot</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Resources.ResourceLoader.html">ResourceLoader</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Shaders.AspectRatio.html">AspectRatio</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Shaders.ExtractRotation.html">ExtractRotation</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Shaders.ExtractScale.html">ExtractScale</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Shaders.ExtractTranslation.html">ExtractTranslation</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Shaders.ExtrinsicsTransform.html">ExtrinsicsTransform</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Shaders.Input.NormalizedDeviceCoordinates.html">NormalizedDeviceCoordinates</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Shaders.Invert.html">Invert</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Shaders.MatrixTransform.html">MatrixTransform</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Shaders.NormalMatrix.html">NormalMatrix</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Shaders.RetrieveImage.html">RetrieveImage</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Shaders.Transpose.html">Transpose</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.AdaptiveThreshold.html">AdaptiveThreshold</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.ApproximatePolygon.html">ApproximatePolygon</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.AverageBinaryRegion.html">AverageBinaryRegion</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.BackgroundSubtraction.html">BackgroundSubtraction</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.BinaryRegionAnalysis.html">BinaryRegionAnalysis</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.BinaryRegionExtremes.html">BinaryRegionExtremes</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.CalibrateCameraChessboard.html">CalibrateCameraChessboard</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.Canny.html">Canny</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.Centroid.html">Centroid</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.ColorBalance.html">ColorBalance</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.ContourPoints.html">ContourPoints</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.ConvertColor.html">ConvertColor</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.ConvexityDefects.html">ConvexityDefects</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.Crop.html">Crop</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.CropPolygon.html">CropPolygon</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.DistanceTransform.html">DistanceTransform</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.DrawConnectedComponents.html">DrawConnectedComponents</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.DrawContours.html">DrawContours</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.Drawing.CanvasElement.html">CanvasElement</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.Drawing.CropCanvas.html">CropCanvas</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.Drawing.DrawCanvas.html">DrawCanvas</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.EqualizeHistogram.html">EqualizeHistogram</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.Filter2D.html">Filter2D</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.FindChessboardCorners.html">FindChessboardCorners</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.FindContours.html">FindContours</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.FindCornerSubPix.html">FindCornerSubPix</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.Flip.html">Flip</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.GoodFeaturesToTrack.html">GoodFeaturesToTrack</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.Grayscale.html">Grayscale</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.HaarCascade.html">HaarCascade</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.HoughCircles.html">HoughCircles</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.HoughLines.html">HoughLines</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.HsvThreshold.html">HsvThreshold</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.ImageHistogram.html">ImageHistogram</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.Laplace.html">Laplace</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.LargestBinaryRegion.html">LargestBinaryRegion</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.Mask.html">Mask</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.MergeBinaryRegions.html">MergeBinaryRegions</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.MinimumEnclosingCircle.html">MinimumEnclosingCircle</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.MorphologicalOperator.html">MorphologicalOperator</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.Normalize.html">Normalize</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.OpticalFlow.html">OpticalFlow</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.PolarTransform.html">PolarTransform</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.RangeThreshold.html">RangeThreshold</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.Resize.html">Resize</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.ResizeCanvas.html">ResizeCanvas</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.RoiActivity.html">RoiActivity</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.RoiActivityDetected.html">RoiActivityDetected</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.Skeletonization.html">Skeletonization</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.Smooth.html">Smooth</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.Sobel.html">Sobel</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.SortBinaryRegions.html">SortBinaryRegions</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.SparseOpticalFlow.html">SparseOpticalFlow</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.Threshold.html">Threshold</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.WarpAffine.html">WarpAffine</a></div>
+      <div class="level3"><a class="xref" href="Bonsai.Vision.WarpPerspective.html">WarpPerspective</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Bonsai.Combinator-2.html#Bonsai_Combinator_2_Process_System_IObservable__0__">Combinator&lt;TSource, TResult&gt;.Process(IObservable&lt;TSource&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Bonsai.html">Bonsai</a></h6>
+  <h6><strong>Assembly</strong>: Bonsai.Core.dll</h6>
+  <h5 id="Bonsai_Transform_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WorkflowElementCategory(ElementCategory.Transform)]
+public abstract class Transform&lt;TSource, TResult&gt; : Combinator&lt;TSource, TResult&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements in the source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The type of the elements in the result sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Transform_2.md&amp;value=---%0Auid%3A%20Bonsai.Transform%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/Transform.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

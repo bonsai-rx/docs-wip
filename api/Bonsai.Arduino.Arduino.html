@@ -1,0 +1,1217 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Arduino
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Arduino
+   ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Bonsai.Arduino.Arduino">
+  
+  
+  <h1 id="Bonsai_Arduino_Arduino" data-uid="Bonsai.Arduino.Arduino" class="text-break">Class Arduino
+  </h1>
+  <div class="markdown level0 summary"><p>Represents an Arduino board communicating with the host computer using
+the Firmata protocol.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">Arduino</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Bonsai.Arduino.html">Bonsai.Arduino</a></h6>
+  <h6><strong>Assembly</strong>: Bonsai.Arduino.dll</h6>
+  <h5 id="Bonsai_Arduino_Arduino_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Arduino : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino__ctor_System_String_.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L69">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino__ctor_" data-uid="Bonsai.Arduino.Arduino.#ctor*"></a>
+  <h4 id="Bonsai_Arduino_Arduino__ctor_System_String_" data-uid="Bonsai.Arduino.Arduino.#ctor(System.String)">Arduino(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bonsai.Arduino.Arduino.html">Arduino</a> class using the
+specified port name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Arduino(string portName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">portName</span></td>
+        <td><p>The port to use (for example, COM1).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino__ctor_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.%23ctor(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L80">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino__ctor_" data-uid="Bonsai.Arduino.Arduino.#ctor*"></a>
+  <h4 id="Bonsai_Arduino_Arduino__ctor_System_String_System_Int32_" data-uid="Bonsai.Arduino.Arduino.#ctor(System.String,System.Int32)">Arduino(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bonsai.Arduino.Arduino.html">Arduino</a> class using the
+specified port name and baud rate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Arduino(string portName, int baudRate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">portName</span></td>
+        <td><p>The port to use (for example, COM1).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">baudRate</span></td>
+        <td><p>The serial baud rate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_DefaultBaudRate.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.DefaultBaudRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L19">View Source</a>
+  </span>
+  <h4 id="Bonsai_Arduino_Arduino_DefaultBaudRate" data-uid="Bonsai.Arduino.Arduino.DefaultBaudRate">DefaultBaudRate</h4>
+  <div class="markdown level1 summary"><p>Represents the default serial baud rate used to communicate with the Arduino.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DefaultBaudRate = 57600</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_DefaultSamplingInterval.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.DefaultSamplingInterval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L24">View Source</a>
+  </span>
+  <h4 id="Bonsai_Arduino_Arduino_DefaultSamplingInterval" data-uid="Bonsai.Arduino.Arduino.DefaultSamplingInterval">DefaultSamplingInterval</h4>
+  <div class="markdown level1 summary"><p>Represents the default sampling interval for analog pins.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DefaultSamplingInterval = 19</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_IsOpen.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.IsOpen%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L124">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino_IsOpen_" data-uid="Bonsai.Arduino.Arduino.IsOpen*"></a>
+  <h4 id="Bonsai_Arduino_Arduino_IsOpen" data-uid="Bonsai.Arduino.Arduino.IsOpen">IsOpen</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating the open or closed status of the <a class="xref" href="Bonsai.Arduino.Arduino.html">Arduino</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOpen { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_MajorVersion.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.MajorVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L114">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino_MajorVersion_" data-uid="Bonsai.Arduino.Arduino.MajorVersion*"></a>
+  <h4 id="Bonsai_Arduino_Arduino_MajorVersion" data-uid="Bonsai.Arduino.Arduino.MajorVersion">MajorVersion</h4>
+  <div class="markdown level1 summary"><p>Gets the major version of the Firmata firmware reported by the board on initialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MajorVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_MinorVersion.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.MinorVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L119">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino_MinorVersion_" data-uid="Bonsai.Arduino.Arduino.MinorVersion*"></a>
+  <h4 id="Bonsai_Arduino_Arduino_MinorVersion" data-uid="Bonsai.Arduino.Arduino.MinorVersion">MinorVersion</h4>
+  <div class="markdown level1 summary"><p>Gets the minor version of the Firmata firmware reported by the board on initialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MinorVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_AnalogRead_System_Int32_.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.AnalogRead(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L299">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino_AnalogRead_" data-uid="Bonsai.Arduino.Arduino.AnalogRead*"></a>
+  <h4 id="Bonsai_Arduino_Arduino_AnalogRead_System_Int32_" data-uid="Bonsai.Arduino.Arduino.AnalogRead(System.Int32)">AnalogRead(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the current value of the specified analog pin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AnalogRead(int pin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">pin</span></td>
+        <td><p>The number of the analog pin to read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a> value representing a digitized analog measurement.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_AnalogWrite_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.AnalogWrite(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L310">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino_AnalogWrite_" data-uid="Bonsai.Arduino.Arduino.AnalogWrite*"></a>
+  <h4 id="Bonsai_Arduino_Arduino_AnalogWrite_System_Int32_System_Int32_" data-uid="Bonsai.Arduino.Arduino.AnalogWrite(System.Int32,System.Int32)">AnalogWrite(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Writes an analog value as a PWM wave to the specified digital output pin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AnalogWrite(int pin, int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">pin</span></td>
+        <td><p>The number of the digital pin to write.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a> value used to update the PWM signal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_Close.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.Close%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L492">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino_Close_" data-uid="Bonsai.Arduino.Arduino.Close*"></a>
+  <h4 id="Bonsai_Arduino_Arduino_Close" data-uid="Bonsai.Arduino.Arduino.Close">Close()</h4>
+  <div class="markdown level1 summary"><p>Closes the port connection, sets the <a class="xref" href="Bonsai.Arduino.Arduino.html#Bonsai_Arduino_Arduino_IsOpen">IsOpen</a>
+property to <span class="xref">false</span> and disposes of the
+internal <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.ports.serialport">SerialPort</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_DigitalPortRead_System_Int32_.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.DigitalPortRead(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L265">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino_DigitalPortRead_" data-uid="Bonsai.Arduino.Arduino.DigitalPortRead*"></a>
+  <h4 id="Bonsai_Arduino_Arduino_DigitalPortRead_System_Int32_" data-uid="Bonsai.Arduino.Arduino.DigitalPortRead(System.Int32)">DigitalPortRead(Int32)</h4>
+  <div class="markdown level1 summary"><p>Reads the current state of all the digital pins in the specified port.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte DigitalPortRead(int port)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">port</span></td>
+        <td><p>The number of the digital port (i.e. collection of 8 pins) to read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a> value where each bit represents the state of one pin in the digital port.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_DigitalPortWrite_System_Int32_System_Byte_.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.DigitalPortWrite(System.Int32%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L279">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino_DigitalPortWrite_" data-uid="Bonsai.Arduino.Arduino.DigitalPortWrite*"></a>
+  <h4 id="Bonsai_Arduino_Arduino_DigitalPortWrite_System_Int32_System_Byte_" data-uid="Bonsai.Arduino.Arduino.DigitalPortWrite(System.Int32,System.Byte)">DigitalPortWrite(Int32, Byte)</h4>
+  <div class="markdown level1 summary"><p>Sets the state of all the digital output pins in the specified
+port simultaneously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DigitalPortWrite(int port, byte value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">port</span></td>
+        <td><p>The number of the digital port (i.e. collection of 8 pins) to write.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a> value where each bit will be used to set the state of one pin in the digital port.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_DigitalRead_System_Int32_.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.DigitalRead(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L235">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino_DigitalRead_" data-uid="Bonsai.Arduino.Arduino.DigitalRead*"></a>
+  <h4 id="Bonsai_Arduino_Arduino_DigitalRead_System_Int32_" data-uid="Bonsai.Arduino.Arduino.DigitalRead(System.Int32)">DigitalRead(Int32)</h4>
+  <div class="markdown level1 summary"><p>Reads the current state of the specified digital input pin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DigitalRead(int pin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">pin</span></td>
+        <td><p>The number of the digital pin to read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><span class="xref">true</span> if the pin is HIGH; <span class="xref">false</span> if the pin is LOW.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_DigitalWrite_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.DigitalWrite(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L249">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino_DigitalWrite_" data-uid="Bonsai.Arduino.Arduino.DigitalWrite*"></a>
+  <h4 id="Bonsai_Arduino_Arduino_DigitalWrite_System_Int32_System_Boolean_" data-uid="Bonsai.Arduino.Arduino.DigitalWrite(System.Int32,System.Boolean)">DigitalWrite(Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets the state of the specified digital output pin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DigitalWrite(int pin, bool value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">pin</span></td>
+        <td><p>The number of the digital pin to write.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p><span class="xref">true</span> to set the pin HIGH; <span class="xref">false</span> to set the pin LOW.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_GetPortNumber_System_Int32_.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.GetPortNumber(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L403">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino_GetPortNumber_" data-uid="Bonsai.Arduino.Arduino.GetPortNumber*"></a>
+  <h4 id="Bonsai_Arduino_Arduino_GetPortNumber_System_Int32_" data-uid="Bonsai.Arduino.Arduino.GetPortNumber(System.Int32)">GetPortNumber(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the digital port number for the specified pin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetPortNumber(int pin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">pin</span></td>
+        <td><p>The pin number for which to retrieve the digital port.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a> identifier for the digital port containing the specified pin.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_I2CConfig_System_Byte___.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.I2CConfig(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L356">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino_I2CConfig_" data-uid="Bonsai.Arduino.Arduino.I2CConfig*"></a>
+  <h4 id="Bonsai_Arduino_Arduino_I2CConfig_System_Byte___" data-uid="Bonsai.Arduino.Arduino.I2CConfig(System.Byte[])">I2CConfig(Byte[])</h4>
+  <div class="markdown level1 summary"><p>Configures I2C settings such as delay time and power pins.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void I2CConfig(params byte[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The I2C configuration arguments. The first two bytes are used
+to configure the optional delay time, in microseconds, between
+writing to the I2C register, and reading the data from the device.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_I2CRequest_System_Int32_Bonsai_Arduino_I2CRequestMode_System_Byte___.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.I2CRequest(System.Int32%2CBonsai.Arduino.I2CRequestMode%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L377">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino_I2CRequest_" data-uid="Bonsai.Arduino.Arduino.I2CRequest*"></a>
+  <h4 id="Bonsai_Arduino_Arduino_I2CRequest_System_Int32_Bonsai_Arduino_I2CRequestMode_System_Byte___" data-uid="Bonsai.Arduino.Arduino.I2CRequest(System.Int32,Bonsai.Arduino.I2CRequestMode,System.Byte[])">I2CRequest(Int32, I2CRequestMode, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Sends a request to the I2C device with the specified address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void I2CRequest(int address, I2CRequestMode mode, params byte[] data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">address</span></td>
+        <td><p>The address of the slave device in the I2C bus.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bonsai.Arduino.I2CRequestMode.html">I2CRequestMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>The read/write mode of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data payload for the I2C request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_I2CWrite_System_Int32_System_Byte___.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.I2CWrite(System.Int32%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L366">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino_I2CWrite_" data-uid="Bonsai.Arduino.Arduino.I2CWrite*"></a>
+  <h4 id="Bonsai_Arduino_Arduino_I2CWrite_System_Int32_System_Byte___" data-uid="Bonsai.Arduino.Arduino.I2CWrite(System.Int32,System.Byte[])">I2CWrite(Int32, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Writes a data payload to the I2C device with the specified address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void I2CWrite(int address, params byte[] data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">address</span></td>
+        <td><p>The address of the slave device in the I2C bus.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data payload to write to the device.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_Open.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.Open%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L161">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino_Open_" data-uid="Bonsai.Arduino.Arduino.Open*"></a>
+  <h4 id="Bonsai_Arduino_Arduino_Open" data-uid="Bonsai.Arduino.Arduino.Open">Open()</h4>
+  <div class="markdown level1 summary"><p>Opens a new serial port connection to the Arduino board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Open()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_PinMode_System_Int32_Bonsai_Arduino_PinMode_.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.PinMode(System.Int32%2CBonsai.Arduino.PinMode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L216">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino_PinMode_" data-uid="Bonsai.Arduino.Arduino.PinMode*"></a>
+  <h4 id="Bonsai_Arduino_Arduino_PinMode_System_Int32_Bonsai_Arduino_PinMode_" data-uid="Bonsai.Arduino.Arduino.PinMode(System.Int32,Bonsai.Arduino.PinMode)">PinMode(Int32, PinMode)</h4>
+  <div class="markdown level1 summary"><p>Sets the mode of an individual Arduino pin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PinMode(int pin, PinMode mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">pin</span></td>
+        <td><p>The number of the pin to configure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bonsai.Arduino.PinMode.html">PinMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>The pin mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_ReportAnalog_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.ReportAnalog(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L192">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino_ReportAnalog_" data-uid="Bonsai.Arduino.Arduino.ReportAnalog*"></a>
+  <h4 id="Bonsai_Arduino_Arduino_ReportAnalog_System_Int32_System_Boolean_" data-uid="Bonsai.Arduino.Arduino.ReportAnalog(System.Int32,System.Boolean)">ReportAnalog(Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Enables or disables reporting of analog pin values for
+the specified pin number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReportAnalog(int pin, bool state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">pin</span></td>
+        <td><p>The number of the pin to configure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">state</span></td>
+        <td><p><span class="xref">true</span> if analog reporting for the pin should be enabled;
+<span class="xref">false</span> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_ReportDigital_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.ReportDigital(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L206">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino_ReportDigital_" data-uid="Bonsai.Arduino.Arduino.ReportDigital*"></a>
+  <h4 id="Bonsai_Arduino_Arduino_ReportDigital_System_Int32_System_Boolean_" data-uid="Bonsai.Arduino.Arduino.ReportDigital(System.Int32,System.Boolean)">ReportDigital(Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Enables or disables reporting of digital pin changes for
+the specified digital port in the Arduino.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReportDigital(int port, bool state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">port</span></td>
+        <td><p>The digital port to configure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">state</span></td>
+        <td><p><span class="xref">true</span> if reporting of digital pin changes on the
+specified port should be enabled; <span class="xref">false</span> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_SamplingInterval_System_Int32_.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.SamplingInterval(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L324">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino_SamplingInterval_" data-uid="Bonsai.Arduino.Arduino.SamplingInterval*"></a>
+  <h4 id="Bonsai_Arduino_Arduino_SamplingInterval_System_Int32_" data-uid="Bonsai.Arduino.Arduino.SamplingInterval(System.Int32)">SamplingInterval(Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the sampling rate for reporting analog and I2C data in the main firmware loop.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SamplingInterval(int milliseconds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">milliseconds</span></td>
+        <td><p>The sampling interval, in milliseconds, between analog and I2C measurements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_SendSysex_System_Byte_System_Byte___.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.SendSysex(System.Byte%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L339">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino_SendSysex_" data-uid="Bonsai.Arduino.Arduino.SendSysex*"></a>
+  <h4 id="Bonsai_Arduino_Arduino_SendSysex_System_Byte_System_Byte___" data-uid="Bonsai.Arduino.Arduino.SendSysex(System.Byte,System.Byte[])">SendSysex(Byte, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Sends the specified MIDI SysEx command using the specified arguments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendSysex(byte command, params byte[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td><span class="parametername">command</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a> value indicating the SysEx command ID.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The optional extended payload sent to configure the SysEx command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_AnalogInputReceived.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.AnalogInputReceived%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L99">View Source</a>
+  </span>
+  <h4 id="Bonsai_Arduino_Arduino_AnalogInputReceived" data-uid="Bonsai.Arduino.Arduino.AnalogInputReceived">AnalogInputReceived</h4>
+  <div class="markdown level1 summary"><p>Occurs when the <a class="xref" href="Bonsai.Arduino.Arduino.html">Arduino</a> object receives a new analog input event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;AnalogInputReceivedEventArgs&gt; AnalogInputReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Bonsai.Arduino.AnalogInputReceivedEventArgs.html">AnalogInputReceivedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_DigitalInputReceived.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.DigitalInputReceived%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L104">View Source</a>
+  </span>
+  <h4 id="Bonsai_Arduino_Arduino_DigitalInputReceived" data-uid="Bonsai.Arduino.Arduino.DigitalInputReceived">DigitalInputReceived</h4>
+  <div class="markdown level1 summary"><p>Occurs when the <a class="xref" href="Bonsai.Arduino.Arduino.html">Arduino</a> object receives a new digital input event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;DigitalInputReceivedEventArgs&gt; DigitalInputReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Bonsai.Arduino.DigitalInputReceivedEventArgs.html">DigitalInputReceivedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_SysexReceived.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.SysexReceived%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L109">View Source</a>
+  </span>
+  <h4 id="Bonsai_Arduino_Arduino_SysexReceived" data-uid="Bonsai.Arduino.Arduino.SysexReceived">SysexReceived</h4>
+  <div class="markdown level1 summary"><p>Occurs when the <a class="xref" href="Bonsai.Arduino.Arduino.html">Arduino</a> object receives a new MIDI SysEx message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SysexReceivedEventArgs&gt; SysexReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Bonsai.Arduino.SysexReceivedEventArgs.html">SysexReceivedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino_System_IDisposable_Dispose.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino.System%23IDisposable%23Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L509">View Source</a>
+  </span>
+  <a id="Bonsai_Arduino_Arduino_System_IDisposable_Dispose_" data-uid="Bonsai.Arduino.Arduino.System#IDisposable#Dispose*"></a>
+  <h4 id="Bonsai_Arduino_Arduino_System_IDisposable_Dispose" data-uid="Bonsai.Arduino.Arduino.System#IDisposable#Dispose">IDisposable.Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IDisposable.Dispose()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Arduino_Arduino.md&amp;value=---%0Auid%3A%20Bonsai.Arduino.Arduino%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Arduino/Arduino.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

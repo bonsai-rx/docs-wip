@@ -1,0 +1,986 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Zip
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Zip
+   ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Bonsai.Reactive.Zip">
+  
+  
+  <h1 id="Bonsai_Reactive_Zip" data-uid="Bonsai.Reactive.Zip" class="text-break">Class Zip
+  </h1>
+  <div class="markdown level0 summary"><p>Represents an operator that combines values from the source sequences whenever
+all of the sequences have produced an element.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">Zip</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Bonsai.Reactive.html">Bonsai.Reactive</a></h6>
+  <h6><strong>Assembly</strong>: Bonsai.Core.dll</h6>
+  <h5 id="Bonsai_Reactive_Zip_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Combinator]
+public class Zip</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Reactive_Zip_Process__1_System_IObservable___0__System_IObservable___0__System_IObservable___0____.md&amp;value=---%0Auid%3A%20Bonsai.Reactive.Zip.Process%60%601(System.IObservable%7B%60%600%7D%2CSystem.IObservable%7B%60%600%7D%2CSystem.IObservable%7B%60%600%7D%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/Reactive/Zip.cs/#L202">View Source</a>
+  </span>
+  <a id="Bonsai_Reactive_Zip_Process_" data-uid="Bonsai.Reactive.Zip.Process*"></a>
+  <h4 id="Bonsai_Reactive_Zip_Process__1_System_IObservable___0__System_IObservable___0__System_IObservable___0____" data-uid="Bonsai.Reactive.Zip.Process``1(System.IObservable{``0},System.IObservable{``0},System.IObservable{``0}[])">Process&lt;TSource&gt;(IObservable&lt;TSource&gt;, IObservable&lt;TSource&gt;, IObservable&lt;TSource&gt;[])</h4>
+  <div class="markdown level1 summary"><p>Merges the specified sources into one observable sequence by emitting a list with
+the elements of the observable sequences whenever all of the sequences have produced
+a new element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;IList&lt;TSource&gt;&gt; Process&lt;TSource&gt;(IObservable&lt;TSource&gt; first, IObservable&lt;TSource&gt; second, params IObservable&lt;TSource&gt;[] remainder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">first</span></td>
+        <td><p>The first observable sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource&gt;</td>
+        <td><span class="parametername">second</span></td>
+        <td><p>The second observable sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource&gt;[]</td>
+        <td><span class="parametername">remainder</span></td>
+        <td><p>The remaining observable sequences to combine.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;TSource&gt;&gt;</td>
+        <td><p>An observable sequence containing the result of combining the elements of the
+sources into lists.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements in the source sequences.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Reactive_Zip_Process__1_System_IObservable_System_IObservable___0___.md&amp;value=---%0Auid%3A%20Bonsai.Reactive.Zip.Process%60%601(System.IObservable%7BSystem.IObservable%7B%60%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/Reactive/Zip.cs/#L221">View Source</a>
+  </span>
+  <a id="Bonsai_Reactive_Zip_Process_" data-uid="Bonsai.Reactive.Zip.Process*"></a>
+  <h4 id="Bonsai_Reactive_Zip_Process__1_System_IObservable_System_IObservable___0___" data-uid="Bonsai.Reactive.Zip.Process``1(System.IObservable{System.IObservable{``0}})">Process&lt;TSource&gt;(IObservable&lt;IObservable&lt;TSource&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Merges elements from all inner observable sequences into one observable sequence by emitting
+a list with the elements of each sequence whenever all of the sequences have produced
+a new element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;IList&lt;TSource&gt;&gt; Process&lt;TSource&gt;(IObservable&lt;IObservable&lt;TSource&gt;&gt; sources)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource&gt;&gt;</td>
+        <td><span class="parametername">sources</span></td>
+        <td><p>The observable sequence of inner observable sequences.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;TSource&gt;&gt;</td>
+        <td><p>An observable sequence containing the result of combining the elements of the
+inner sequences into lists.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td><p>The type of the elements in the source sequences.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Reactive_Zip_Process__2_System_IObservable___0__System_IObservable___1__.md&amp;value=---%0Auid%3A%20Bonsai.Reactive.Zip.Process%60%602(System.IObservable%7B%60%600%7D%2CSystem.IObservable%7B%60%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/Reactive/Zip.cs/#L32">View Source</a>
+  </span>
+  <a id="Bonsai_Reactive_Zip_Process_" data-uid="Bonsai.Reactive.Zip.Process*"></a>
+  <h4 id="Bonsai_Reactive_Zip_Process__2_System_IObservable___0__System_IObservable___1__" data-uid="Bonsai.Reactive.Zip.Process``2(System.IObservable{``0},System.IObservable{``1})">Process&lt;TSource1, TSource2&gt;(IObservable&lt;TSource1&gt;, IObservable&lt;TSource2&gt;)</h4>
+  <div class="markdown level1 summary"><p>Merges the specified sources into one observable sequence by emitting a pair with
+the elements of the observable sequences whenever all of the sequences have produced
+a new element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Tuple&lt;TSource1, TSource2&gt;&gt; Process&lt;TSource1, TSource2&gt;(IObservable&lt;TSource1&gt; source1, IObservable&lt;TSource2&gt; source2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource1&gt;</td>
+        <td><span class="parametername">source1</span></td>
+        <td><p>The first observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource2&gt;</td>
+        <td><span class="parametername">source2</span></td>
+        <td><p>The second observable source.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;TSource1, TSource2&gt;&gt;</td>
+        <td><p>An observable sequence containing the result of combining the elements of the sources
+into pairs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource1</span></td>
+        <td><p>The type of the elements in the first source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource2</span></td>
+        <td><p>The type of the elements in the second source sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Reactive_Zip_Process__3_System_IObservable___0__System_IObservable___1__System_IObservable___2__.md&amp;value=---%0Auid%3A%20Bonsai.Reactive.Zip.Process%60%603(System.IObservable%7B%60%600%7D%2CSystem.IObservable%7B%60%601%7D%2CSystem.IObservable%7B%60%602%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/Reactive/Zip.cs/#L54">View Source</a>
+  </span>
+  <a id="Bonsai_Reactive_Zip_Process_" data-uid="Bonsai.Reactive.Zip.Process*"></a>
+  <h4 id="Bonsai_Reactive_Zip_Process__3_System_IObservable___0__System_IObservable___1__System_IObservable___2__" data-uid="Bonsai.Reactive.Zip.Process``3(System.IObservable{``0},System.IObservable{``1},System.IObservable{``2})">Process&lt;TSource1, TSource2, TSource3&gt;(IObservable&lt;TSource1&gt;, IObservable&lt;TSource2&gt;, IObservable&lt;TSource3&gt;)</h4>
+  <div class="markdown level1 summary"><p>Merges the specified sources into one observable sequence by emitting a triple with
+the elements of the observable sequences whenever all of the sequences have produced
+a new element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Tuple&lt;TSource1, TSource2, TSource3&gt;&gt; Process&lt;TSource1, TSource2, TSource3&gt;(IObservable&lt;TSource1&gt; source1, IObservable&lt;TSource2&gt; source2, IObservable&lt;TSource3&gt; source3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource1&gt;</td>
+        <td><span class="parametername">source1</span></td>
+        <td><p>The first observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource2&gt;</td>
+        <td><span class="parametername">source2</span></td>
+        <td><p>The second observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource3&gt;</td>
+        <td><span class="parametername">source3</span></td>
+        <td><p>The third observable source.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-3">Tuple</a>&lt;TSource1, TSource2, TSource3&gt;&gt;</td>
+        <td><p>An observable sequence containing the result of combining the elements of the sources
+into triples.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource1</span></td>
+        <td><p>The type of the elements in the first source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource2</span></td>
+        <td><p>The type of the elements in the second source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource3</span></td>
+        <td><p>The type of the elements in the third source sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Reactive_Zip_Process__4_System_IObservable___0__System_IObservable___1__System_IObservable___2__System_IObservable___3__.md&amp;value=---%0Auid%3A%20Bonsai.Reactive.Zip.Process%60%604(System.IObservable%7B%60%600%7D%2CSystem.IObservable%7B%60%601%7D%2CSystem.IObservable%7B%60%602%7D%2CSystem.IObservable%7B%60%603%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/Reactive/Zip.cs/#L79">View Source</a>
+  </span>
+  <a id="Bonsai_Reactive_Zip_Process_" data-uid="Bonsai.Reactive.Zip.Process*"></a>
+  <h4 id="Bonsai_Reactive_Zip_Process__4_System_IObservable___0__System_IObservable___1__System_IObservable___2__System_IObservable___3__" data-uid="Bonsai.Reactive.Zip.Process``4(System.IObservable{``0},System.IObservable{``1},System.IObservable{``2},System.IObservable{``3})">Process&lt;TSource1, TSource2, TSource3, TSource4&gt;(IObservable&lt;TSource1&gt;, IObservable&lt;TSource2&gt;, IObservable&lt;TSource3&gt;, IObservable&lt;TSource4&gt;)</h4>
+  <div class="markdown level1 summary"><p>Merges the specified sources into one observable sequence by emitting a quadruple with
+the elements of the observable sequences whenever all of the sequences have produced
+a new element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Tuple&lt;TSource1, TSource2, TSource3, TSource4&gt;&gt; Process&lt;TSource1, TSource2, TSource3, TSource4&gt;(IObservable&lt;TSource1&gt; source1, IObservable&lt;TSource2&gt; source2, IObservable&lt;TSource3&gt; source3, IObservable&lt;TSource4&gt; source4)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource1&gt;</td>
+        <td><span class="parametername">source1</span></td>
+        <td><p>The first observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource2&gt;</td>
+        <td><span class="parametername">source2</span></td>
+        <td><p>The second observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource3&gt;</td>
+        <td><span class="parametername">source3</span></td>
+        <td><p>The third observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource4&gt;</td>
+        <td><span class="parametername">source4</span></td>
+        <td><p>The fourth observable source.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-4">Tuple</a>&lt;TSource1, TSource2, TSource3, TSource4&gt;&gt;</td>
+        <td><p>An observable sequence containing the result of combining the elements of the sources
+into quadruples.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource1</span></td>
+        <td><p>The type of the elements in the first source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource2</span></td>
+        <td><p>The type of the elements in the second source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource3</span></td>
+        <td><p>The type of the elements in the third source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource4</span></td>
+        <td><p>The type of the elements in the fourth source sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Reactive_Zip_Process__5_System_IObservable___0__System_IObservable___1__System_IObservable___2__System_IObservable___3__System_IObservable___4__.md&amp;value=---%0Auid%3A%20Bonsai.Reactive.Zip.Process%60%605(System.IObservable%7B%60%600%7D%2CSystem.IObservable%7B%60%601%7D%2CSystem.IObservable%7B%60%602%7D%2CSystem.IObservable%7B%60%603%7D%2CSystem.IObservable%7B%60%604%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/Reactive/Zip.cs/#L107">View Source</a>
+  </span>
+  <a id="Bonsai_Reactive_Zip_Process_" data-uid="Bonsai.Reactive.Zip.Process*"></a>
+  <h4 id="Bonsai_Reactive_Zip_Process__5_System_IObservable___0__System_IObservable___1__System_IObservable___2__System_IObservable___3__System_IObservable___4__" data-uid="Bonsai.Reactive.Zip.Process``5(System.IObservable{``0},System.IObservable{``1},System.IObservable{``2},System.IObservable{``3},System.IObservable{``4})">Process&lt;TSource1, TSource2, TSource3, TSource4, TSource5&gt;(IObservable&lt;TSource1&gt;, IObservable&lt;TSource2&gt;, IObservable&lt;TSource3&gt;, IObservable&lt;TSource4&gt;, IObservable&lt;TSource5&gt;)</h4>
+  <div class="markdown level1 summary"><p>Merges the specified sources into one observable sequence by emitting a quintuple with
+the elements of the observable sequences whenever all of the sequences have produced
+a new element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Tuple&lt;TSource1, TSource2, TSource3, TSource4, TSource5&gt;&gt; Process&lt;TSource1, TSource2, TSource3, TSource4, TSource5&gt;(IObservable&lt;TSource1&gt; source1, IObservable&lt;TSource2&gt; source2, IObservable&lt;TSource3&gt; source3, IObservable&lt;TSource4&gt; source4, IObservable&lt;TSource5&gt; source5)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource1&gt;</td>
+        <td><span class="parametername">source1</span></td>
+        <td><p>The first observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource2&gt;</td>
+        <td><span class="parametername">source2</span></td>
+        <td><p>The second observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource3&gt;</td>
+        <td><span class="parametername">source3</span></td>
+        <td><p>The third observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource4&gt;</td>
+        <td><span class="parametername">source4</span></td>
+        <td><p>The fourth observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource5&gt;</td>
+        <td><span class="parametername">source5</span></td>
+        <td><p>The fifth observable source.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-5">Tuple</a>&lt;TSource1, TSource2, TSource3, TSource4, TSource5&gt;&gt;</td>
+        <td><p>An observable sequence containing the result of combining the elements of the sources
+into quintuples.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource1</span></td>
+        <td><p>The type of the elements in the first source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource2</span></td>
+        <td><p>The type of the elements in the second source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource3</span></td>
+        <td><p>The type of the elements in the third source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource4</span></td>
+        <td><p>The type of the elements in the fourth source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource5</span></td>
+        <td><p>The type of the elements in the fifth source sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Reactive_Zip_Process__6_System_IObservable___0__System_IObservable___1__System_IObservable___2__System_IObservable___3__System_IObservable___4__System_IObservable___5__.md&amp;value=---%0Auid%3A%20Bonsai.Reactive.Zip.Process%60%606(System.IObservable%7B%60%600%7D%2CSystem.IObservable%7B%60%601%7D%2CSystem.IObservable%7B%60%602%7D%2CSystem.IObservable%7B%60%603%7D%2CSystem.IObservable%7B%60%604%7D%2CSystem.IObservable%7B%60%605%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/Reactive/Zip.cs/#L140">View Source</a>
+  </span>
+  <a id="Bonsai_Reactive_Zip_Process_" data-uid="Bonsai.Reactive.Zip.Process*"></a>
+  <h4 id="Bonsai_Reactive_Zip_Process__6_System_IObservable___0__System_IObservable___1__System_IObservable___2__System_IObservable___3__System_IObservable___4__System_IObservable___5__" data-uid="Bonsai.Reactive.Zip.Process``6(System.IObservable{``0},System.IObservable{``1},System.IObservable{``2},System.IObservable{``3},System.IObservable{``4},System.IObservable{``5})">Process&lt;TSource1, TSource2, TSource3, TSource4, TSource5, TSource6&gt;(IObservable&lt;TSource1&gt;, IObservable&lt;TSource2&gt;, IObservable&lt;TSource3&gt;, IObservable&lt;TSource4&gt;, IObservable&lt;TSource5&gt;, IObservable&lt;TSource6&gt;)</h4>
+  <div class="markdown level1 summary"><p>Merges the specified sources into one observable sequence by emitting a sextuple with
+the elements of the observable sequences whenever all of the sequences have produced
+a new element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Tuple&lt;TSource1, TSource2, TSource3, TSource4, TSource5, TSource6&gt;&gt; Process&lt;TSource1, TSource2, TSource3, TSource4, TSource5, TSource6&gt;(IObservable&lt;TSource1&gt; source1, IObservable&lt;TSource2&gt; source2, IObservable&lt;TSource3&gt; source3, IObservable&lt;TSource4&gt; source4, IObservable&lt;TSource5&gt; source5, IObservable&lt;TSource6&gt; source6)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource1&gt;</td>
+        <td><span class="parametername">source1</span></td>
+        <td><p>The first observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource2&gt;</td>
+        <td><span class="parametername">source2</span></td>
+        <td><p>The second observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource3&gt;</td>
+        <td><span class="parametername">source3</span></td>
+        <td><p>The third observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource4&gt;</td>
+        <td><span class="parametername">source4</span></td>
+        <td><p>The fourth observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource5&gt;</td>
+        <td><span class="parametername">source5</span></td>
+        <td><p>The fifth observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource6&gt;</td>
+        <td><span class="parametername">source6</span></td>
+        <td><p>The sixth observable source.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-6">Tuple</a>&lt;TSource1, TSource2, TSource3, TSource4, TSource5, TSource6&gt;&gt;</td>
+        <td><p>An observable sequence containing the result of combining the elements of the sources
+into sextuples.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource1</span></td>
+        <td><p>The type of the elements in the first source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource2</span></td>
+        <td><p>The type of the elements in the second source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource3</span></td>
+        <td><p>The type of the elements in the third source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource4</span></td>
+        <td><p>The type of the elements in the fourth source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource5</span></td>
+        <td><p>The type of the elements in the fifth source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource6</span></td>
+        <td><p>The type of the elements in the sixth source sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Reactive_Zip_Process__7_System_IObservable___0__System_IObservable___1__System_IObservable___2__System_IObservable___3__System_IObservable___4__System_IObservable___5__System_IObservable___6__.md&amp;value=---%0Auid%3A%20Bonsai.Reactive.Zip.Process%60%607(System.IObservable%7B%60%600%7D%2CSystem.IObservable%7B%60%601%7D%2CSystem.IObservable%7B%60%602%7D%2CSystem.IObservable%7B%60%603%7D%2CSystem.IObservable%7B%60%604%7D%2CSystem.IObservable%7B%60%605%7D%2CSystem.IObservable%7B%60%606%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/Reactive/Zip.cs/#L175">View Source</a>
+  </span>
+  <a id="Bonsai_Reactive_Zip_Process_" data-uid="Bonsai.Reactive.Zip.Process*"></a>
+  <h4 id="Bonsai_Reactive_Zip_Process__7_System_IObservable___0__System_IObservable___1__System_IObservable___2__System_IObservable___3__System_IObservable___4__System_IObservable___5__System_IObservable___6__" data-uid="Bonsai.Reactive.Zip.Process``7(System.IObservable{``0},System.IObservable{``1},System.IObservable{``2},System.IObservable{``3},System.IObservable{``4},System.IObservable{``5},System.IObservable{``6})">Process&lt;TSource1, TSource2, TSource3, TSource4, TSource5, TSource6, TSource7&gt;(IObservable&lt;TSource1&gt;, IObservable&lt;TSource2&gt;, IObservable&lt;TSource3&gt;, IObservable&lt;TSource4&gt;, IObservable&lt;TSource5&gt;, IObservable&lt;TSource6&gt;, IObservable&lt;TSource7&gt;)</h4>
+  <div class="markdown level1 summary"><p>Merges the specified sources into one observable sequence by emitting a septuple with
+the elements of the observable sequences whenever all of the sequences have produced
+a new element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;Tuple&lt;TSource1, TSource2, TSource3, TSource4, TSource5, TSource6, TSource7&gt;&gt; Process&lt;TSource1, TSource2, TSource3, TSource4, TSource5, TSource6, TSource7&gt;(IObservable&lt;TSource1&gt; source1, IObservable&lt;TSource2&gt; source2, IObservable&lt;TSource3&gt; source3, IObservable&lt;TSource4&gt; source4, IObservable&lt;TSource5&gt; source5, IObservable&lt;TSource6&gt; source6, IObservable&lt;TSource7&gt; source7)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource1&gt;</td>
+        <td><span class="parametername">source1</span></td>
+        <td><p>The first observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource2&gt;</td>
+        <td><span class="parametername">source2</span></td>
+        <td><p>The second observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource3&gt;</td>
+        <td><span class="parametername">source3</span></td>
+        <td><p>The third observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource4&gt;</td>
+        <td><span class="parametername">source4</span></td>
+        <td><p>The fourth observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource5&gt;</td>
+        <td><span class="parametername">source5</span></td>
+        <td><p>The fifth observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource6&gt;</td>
+        <td><span class="parametername">source6</span></td>
+        <td><p>The sixth observable source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TSource7&gt;</td>
+        <td><span class="parametername">source7</span></td>
+        <td><p>The seventh observable source.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.tuple-7">Tuple</a>&lt;TSource1, TSource2, TSource3, TSource4, TSource5, TSource6, TSource7&gt;&gt;</td>
+        <td><p>An observable sequence containing the result of combining the elements of the sources
+into septuples.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource1</span></td>
+        <td><p>The type of the elements in the first source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource2</span></td>
+        <td><p>The type of the elements in the second source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource3</span></td>
+        <td><p>The type of the elements in the third source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource4</span></td>
+        <td><p>The type of the elements in the fourth source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource5</span></td>
+        <td><p>The type of the elements in the fifth source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource6</span></td>
+        <td><p>The type of the elements in the sixth source sequence.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSource7</span></td>
+        <td><p>The type of the elements in the seventh source sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Reactive_Zip.md&amp;value=---%0Auid%3A%20Bonsai.Reactive.Zip%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Core/Reactive/Zip.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

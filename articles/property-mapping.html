@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Property Mapping </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Property Mapping ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="property-mapping">
+<h1 id="property-mapping">Property Mapping</h1>
+
+<p>Each Bonsai operator exposes a set of configuration properties that allow you to parameterize that operator's behaviour. These parameters can be configured manually from the editor <code>Properties</code> panel. However, there are times when you may need to map the properties of an operator dynamically from the output of other observable sequences.</p>
+<p>As an example, imagine you wanted to continuously playback a sound WAV file to the speakers at a specified volume level. You might design a workflow that looks like the following:</p>
+<p><img src="../images/language-wavplayback.svg" alt="WAV file playback"></p>
+<p>Using the <code>ConvertScale</code> operator you could set the volume manually by changing its <code>Scale</code> parameter.</p>
+<p>But imagine you wanted to design a variation of this workflow where the playback volume is now modulated continuously depending on some other variable, for example the horizontal position of the mouse cursor as it moves across the screen.</p>
+<p>A simple way to compute the desired scale value would be to rescale the X coordinate of mouse movements to a range between zero and one:</p>
+<p><img src="../images/language-mouserescale.svg" alt="Rescaled mouse position"></p>
+<p>However, how would you now connect the sequence of scale values computed from the mouse position to changes in the <code>Scale</code> property of the <code>ConvertScale</code> node?</p>
+<p>Property mapping operators allow you to do exactly this. They are operators that take a single input sequence and react to notifications from that sequence by changing the values of the specified properties in the <em>subsequent</em> node. There are three types of property mapping operators, described below.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Mapping Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="../images/language-externalizedmapping.svg" alt="Externalized mapping"></td>
+<td>Externalize one or more operator properties. The properties can be optionally named and will show up in the <code>Properties</code> panel for node groups.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="../images/language-propertymapping.svg" alt="Property mapping"></td>
+<td>Map multiple properties simultaneously. Individual members of input data items can be mapped to different properties in the target node.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="../images/language-inputmapping.svg" alt="Input mapping"></td>
+<td>Map multiple properties synchronized with input notifications. Same as above, but property changes are guaranteed to arrive simultaneously with input data.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="externalized-properties">Externalized properties</h2>
+<p>The externalized mapping operator allows you to create externalized properties. The easiest way to initialize the mapping is from the right-click context menu when a single node is selected. Selecting a property will create the externalized mapping node or add it to an existing one.</p>
+<p><img src="../images/language-externalizedproperty.png" alt="Externalized property"></p>
+<p>After the specified property has been externalized, it can be subscribed to any input sequence which is compatible with the data type of the property. Every time the input sequence emits a new item, the externalized property will react by changing the target property to the incoming value.</p>
+<p>Property values are updated independently of what the target operator might be doing at any point in time. Specifically, the connection between the externalized property and its target is not considered as an active input. This is indicated in the editor by the red coloured edge linking the property mapping operator to its target.</p>
+<p>This means that property updates may happen even while the target operator is receiving input notifications from other nodes. Care must be taken to ensure that changing the property state in this way does not break the behaviour of the workflow.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Some operators respond to changes in their parameters only at specific moments. For example, the parameters of the <code>Timer</code> operator must be set before the observable sequence is initialized. In this case, the input to the externalized property needs to be emitted immediately during the subscription phase for the mapping to work.</p>
+</div>
+<p>Externalized properties also have one more function when placed inside node groups, for example inside a <code>NestedWorkflow</code>. If they are given a name, they will be exposed as top-level properties of the node group. When the node representing that group is selected, all named externalized properties will show up in the <code>Properties</code> panel.</p>
+<h2 id="mapping-multiple-properties">Mapping multiple properties</h2>
+<p>Multiple properties can be mapped simultaneously from the same input by using the <code>PropertyMapping</code> operator. You can select which properties to map by using the editors available in the <code>Properties</code> panel. For each mapped property you must specify its source, i.e. which members of the input data item are used to assign its value.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If the type of the selected member does not match the type of the property, a conversion is attempted. If no compatible conversion is available, Bonsai checks whether it is possible to construct the corresponding data type from the selected members. For example, it would be possible to map a <code>Point</code> data type by selecting two numeric values from the input. In this case, the values would be used to construct a <code>Point</code> instance by assigning them to the X and Y fields.</p>
+</div>
+<p>Every time the input sequence sends out a new data item, all the specified property mappings are updated at the same time. This guarantees that property updates are sequentially performed in chunks. It is also possible to connect property mapping operators to multiple target nodes. In this case, the property updates will affect all nodes to which the operator is connected to.</p>
+<h2 id="mapping-properties-from-input-data">Mapping properties from input data</h2>
+<p>Sometimes you need to synchronize the property update with the node inputs, i.e. you do not want the property mapping operator to change the property values in between input notifications.</p>
+<p>For example, imagine a transform operator which is converting the input from one format to another, where the format specification is given by a set of operator properties. You may need the target format to change dynamically from time to time, but you may also need to guarantee that parts of the format specification do not change while the operator was converting some other input. The <code>InputMapping</code> operator allows you to do this by synchronizing property updates with input notifications.</p>
+<p>Fundamentally, the <code>InputMapping</code> operator works exactly the same way as <code>PropertyMapping</code>, but now the connection from the mapping operator to its target node is considered as a proper input. It is possible to select which specific member of the original input data will be used as the input data to the target by setting the <code>Selector</code> property of <code>InputMapping</code>.</p>
+<p>Whenever the original input sequence sends out a new data item, all the specified property mappings will be updated at the same time before this item is finally allowed to go through and notify the target. In this way, you can be sure that no property changes are performed between input notifications.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/blob/main/articles/property-mapping.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

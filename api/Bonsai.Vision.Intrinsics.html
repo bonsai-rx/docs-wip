@@ -1,0 +1,788 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct Intrinsics
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct Intrinsics
+   ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Bonsai.Vision.Intrinsics">
+  
+  
+  <h1 id="Bonsai_Vision_Intrinsics" data-uid="Bonsai.Vision.Intrinsics" class="text-break">Struct Intrinsics
+  </h1>
+  <div class="markdown level0 summary"><p>Represents parameters that describe the camera intrinsic properties
+such as the focal length or lens distortion.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Bonsai.Vision.html">Bonsai.Vision</a></h6>
+  <h6><strong>Assembly</strong>: Bonsai.Vision.dll</h6>
+  <h5 id="Bonsai_Vision_Intrinsics_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct Intrinsics : IEquatable&lt;Intrinsics&gt;</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_Intrinsics_FocalLength.md&amp;value=---%0Auid%3A%20Bonsai.Vision.Intrinsics.FocalLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/Intrinsics.cs/#L21">View Source</a>
+  </span>
+  <h4 id="Bonsai_Vision_Intrinsics_FocalLength" data-uid="Bonsai.Vision.Intrinsics.FocalLength">FocalLength</h4>
+  <div class="markdown level1 summary"><p>The focal length of the camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d FocalLength</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point2d.html">Point2d</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_Intrinsics_ImageSize.md&amp;value=---%0Auid%3A%20Bonsai.Vision.Intrinsics.ImageSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/Intrinsics.cs/#L16">View Source</a>
+  </span>
+  <h4 id="Bonsai_Vision_Intrinsics_ImageSize" data-uid="Bonsai.Vision.Intrinsics.ImageSize">ImageSize</h4>
+  <div class="markdown level1 summary"><p>The image size of the camera, in pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Size? ImageSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Size.html">Size</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_Intrinsics_PrincipalPoint.md&amp;value=---%0Auid%3A%20Bonsai.Vision.Intrinsics.PrincipalPoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/Intrinsics.cs/#L26">View Source</a>
+  </span>
+  <h4 id="Bonsai_Vision_Intrinsics_PrincipalPoint" data-uid="Bonsai.Vision.Intrinsics.PrincipalPoint">PrincipalPoint</h4>
+  <div class="markdown level1 summary"><p>The principal point of the camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d PrincipalPoint</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point2d.html">Point2d</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_Intrinsics_RadialDistortion.md&amp;value=---%0Auid%3A%20Bonsai.Vision.Intrinsics.RadialDistortion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/Intrinsics.cs/#L31">View Source</a>
+  </span>
+  <h4 id="Bonsai_Vision_Intrinsics_RadialDistortion" data-uid="Bonsai.Vision.Intrinsics.RadialDistortion">RadialDistortion</h4>
+  <div class="markdown level1 summary"><p>The radial distortion coefficients of the camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point3d RadialDistortion</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point3d.html">Point3d</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_Intrinsics_TangentialDistortion.md&amp;value=---%0Auid%3A%20Bonsai.Vision.Intrinsics.TangentialDistortion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/Intrinsics.cs/#L36">View Source</a>
+  </span>
+  <h4 id="Bonsai_Vision_Intrinsics_TangentialDistortion" data-uid="Bonsai.Vision.Intrinsics.TangentialDistortion">TangentialDistortion</h4>
+  <div class="markdown level1 summary"><p>The tangential distortion coefficients of the camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2d TangentialDistortion</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Point2d.html">Point2d</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_Intrinsics_FovY.md&amp;value=---%0Auid%3A%20Bonsai.Vision.Intrinsics.FovY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/Intrinsics.cs/#L41">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_Intrinsics_FovY_" data-uid="Bonsai.Vision.Intrinsics.FovY*"></a>
+  <h4 id="Bonsai_Vision_Intrinsics_FovY" data-uid="Bonsai.Vision.Intrinsics.FovY">FovY</h4>
+  <div class="markdown level1 summary"><p>Gets the vertical field of view of the camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly double? FovY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_Intrinsics_Equals_Bonsai_Vision_Intrinsics_.md&amp;value=---%0Auid%3A%20Bonsai.Vision.Intrinsics.Equals(Bonsai.Vision.Intrinsics)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/Intrinsics.cs/#L141">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_Intrinsics_Equals_" data-uid="Bonsai.Vision.Intrinsics.Equals*"></a>
+  <h4 id="Bonsai_Vision_Intrinsics_Equals_Bonsai_Vision_Intrinsics_" data-uid="Bonsai.Vision.Intrinsics.Equals(Bonsai.Vision.Intrinsics)">Equals(Intrinsics)</h4>
+  <div class="markdown level1 summary"><p>Returns a value indicating whether this instance is equal to the
+specified <a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a> structure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Intrinsics other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>The <a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a> object to compare with this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">other</code> represents
+the same parameter values as this instance; otherwise,
+<span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_Intrinsics_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Bonsai.Vision.Intrinsics.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/Intrinsics.cs/#L160">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_Intrinsics_Equals_" data-uid="Bonsai.Vision.Intrinsics.Equals*"></a>
+  <h4 id="Bonsai_Vision_Intrinsics_Equals_System_Object_" data-uid="Bonsai.Vision.Intrinsics.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Returns a value indicating whether the specified object is an <a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a>
+structure with the same parameter values as this <a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a> structure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to compare with this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">obj</code> is an <a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a>
+structure and has the same parameter values as this structure; otherwise,
+<span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.equals#system-valuetype-equals(system-object)">ValueType.Equals(Object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_Intrinsics_FromCameraMatrix_OpenCV_Net_Mat_OpenCV_Net_Mat_System_Nullable_OpenCV_Net_Size__.md&amp;value=---%0Auid%3A%20Bonsai.Vision.Intrinsics.FromCameraMatrix(OpenCV.Net.Mat%2COpenCV.Net.Mat%2CSystem.Nullable%7BOpenCV.Net.Size%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/Intrinsics.cs/#L71">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_Intrinsics_FromCameraMatrix_" data-uid="Bonsai.Vision.Intrinsics.FromCameraMatrix*"></a>
+  <h4 id="Bonsai_Vision_Intrinsics_FromCameraMatrix_OpenCV_Net_Mat_OpenCV_Net_Mat_System_Nullable_OpenCV_Net_Size__" data-uid="Bonsai.Vision.Intrinsics.FromCameraMatrix(OpenCV.Net.Mat,OpenCV.Net.Mat,System.Nullable{OpenCV.Net.Size})">FromCameraMatrix(Mat, Mat, Nullable&lt;Size&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns an <a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a> structure representing the camera
+intrinsic parameters extracted from a camera matrix, lens distortion
+and optional image size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Intrinsics FromCameraMatrix(Mat cameraMatrix, Mat distortionCoefficients, Size? imageSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a></td>
+        <td><span class="parametername">cameraMatrix</span></td>
+        <td><p>A 2x3 matrix specifying the focal lengths and principal point offset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a></td>
+        <td><span class="parametername">distortionCoefficients</span></td>
+        <td><p>A 1x5 or 5x1 vector specifying the coefficients for the lens distortion
+model.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Size.html">Size</a>&gt;</td>
+        <td><span class="parametername">imageSize</span></td>
+        <td><p>The image size of the camera, in pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a></td>
+        <td><p>An <a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a> object representing the extracted camera
+intrinsic parameters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_Intrinsics_FromCameraMatrix_OpenCV_Net_Mat_OpenCV_Net_Mat_System_Nullable_OpenCV_Net_Size__Bonsai_Vision_Intrinsics__.md&amp;value=---%0Auid%3A%20Bonsai.Vision.Intrinsics.FromCameraMatrix(OpenCV.Net.Mat%2COpenCV.Net.Mat%2CSystem.Nullable%7BOpenCV.Net.Size%7D%2CBonsai.Vision.Intrinsics%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/Intrinsics.cs/#L94">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_Intrinsics_FromCameraMatrix_" data-uid="Bonsai.Vision.Intrinsics.FromCameraMatrix*"></a>
+  <h4 id="Bonsai_Vision_Intrinsics_FromCameraMatrix_OpenCV_Net_Mat_OpenCV_Net_Mat_System_Nullable_OpenCV_Net_Size__Bonsai_Vision_Intrinsics__" data-uid="Bonsai.Vision.Intrinsics.FromCameraMatrix(OpenCV.Net.Mat,OpenCV.Net.Mat,System.Nullable{OpenCV.Net.Size},Bonsai.Vision.Intrinsics@)">FromCameraMatrix(Mat, Mat, Nullable&lt;Size&gt;, out Intrinsics)</h4>
+  <div class="markdown level1 summary"><p>Initializes an <a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a> structure representing the camera
+intrinsic parameters extracted from a camera matrix, lens distortion
+and optional image size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FromCameraMatrix(Mat cameraMatrix, Mat distortionCoefficients, Size? imageSize, out Intrinsics intrinsics)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a></td>
+        <td><span class="parametername">cameraMatrix</span></td>
+        <td><p>A 2x3 matrix specifying the focal lengths and principal point offset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Mat.html">Mat</a></td>
+        <td><span class="parametername">distortionCoefficients</span></td>
+        <td><p>A 1x5 or 5x1 vector specifying the coefficients for the lens distortion
+model.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://horizongir.github.io/opencv.net/api/OpenCV.Net.Size.html">Size</a>&gt;</td>
+        <td><span class="parametername">imageSize</span></td>
+        <td><p>The image size of the camera, in pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a></td>
+        <td><span class="parametername">intrinsics</span></td>
+        <td><p>When this method returns, contains an <a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a> object
+representing the extracted camera intrinsic parameters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_Intrinsics_GetHashCode.md&amp;value=---%0Auid%3A%20Bonsai.Vision.Intrinsics.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/Intrinsics.cs/#L177">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_Intrinsics_GetHashCode_" data-uid="Bonsai.Vision.Intrinsics.GetHashCode*"></a>
+  <h4 id="Bonsai_Vision_Intrinsics_GetHashCode" data-uid="Bonsai.Vision.Intrinsics.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Returns a hash code for this <a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a> structure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>An integer value that specifies a hash value for this
+<a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a> structure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.gethashcode#system-valuetype-gethashcode">ValueType.GetHashCode()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_Intrinsics_ToString.md&amp;value=---%0Auid%3A%20Bonsai.Vision.Intrinsics.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/Intrinsics.cs/#L194">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_Intrinsics_ToString_" data-uid="Bonsai.Vision.Intrinsics.ToString*"></a>
+  <h4 id="Bonsai_Vision_Intrinsics_ToString" data-uid="Bonsai.Vision.Intrinsics.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> representation of this
+<a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a> structure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> containing all the parameter values of this
+<a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a> structure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.tostring#system-valuetype-tostring">ValueType.ToString()</a></div>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_Intrinsics_op_Equality_Bonsai_Vision_Intrinsics_Bonsai_Vision_Intrinsics_.md&amp;value=---%0Auid%3A%20Bonsai.Vision.Intrinsics.op_Equality(Bonsai.Vision.Intrinsics%2CBonsai.Vision.Intrinsics)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/Intrinsics.cs/#L217">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_Intrinsics_op_Equality_" data-uid="Bonsai.Vision.Intrinsics.op_Equality*"></a>
+  <h4 id="Bonsai_Vision_Intrinsics_op_Equality_Bonsai_Vision_Intrinsics_Bonsai_Vision_Intrinsics_" data-uid="Bonsai.Vision.Intrinsics.op_Equality(Bonsai.Vision.Intrinsics,Bonsai.Vision.Intrinsics)">Equality(Intrinsics, Intrinsics)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether two <a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a> structures are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Intrinsics left, Intrinsics right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The <a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a> structure on the left-hand side of the
+equality operator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The <a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a> structure on the right-hand side of the
+equality operator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">left</code> and <code data-dev-comment-type="paramref" class="paramref">right</code>
+have equal parameter values; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_Intrinsics_op_Inequality_Bonsai_Vision_Intrinsics_Bonsai_Vision_Intrinsics_.md&amp;value=---%0Auid%3A%20Bonsai.Vision.Intrinsics.op_Inequality(Bonsai.Vision.Intrinsics%2CBonsai.Vision.Intrinsics)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/Intrinsics.cs/#L238">View Source</a>
+  </span>
+  <a id="Bonsai_Vision_Intrinsics_op_Inequality_" data-uid="Bonsai.Vision.Intrinsics.op_Inequality*"></a>
+  <h4 id="Bonsai_Vision_Intrinsics_op_Inequality_Bonsai_Vision_Intrinsics_Bonsai_Vision_Intrinsics_" data-uid="Bonsai.Vision.Intrinsics.op_Inequality(Bonsai.Vision.Intrinsics,Bonsai.Vision.Intrinsics)">Inequality(Intrinsics, Intrinsics)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether two <a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a> structures are different.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Intrinsics left, Intrinsics right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The <a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a> structure on the left-hand side of the
+inequality operator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The <a class="xref" href="Bonsai.Vision.Intrinsics.html">Intrinsics</a> structure on the right-hand side of the
+inequality operator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">left</code> and <code data-dev-comment-type="paramref" class="paramref">right</code>
+differ in any of their parameter values; <span class="xref">false</span> if
+<code data-dev-comment-type="paramref" class="paramref">left</code> and <code data-dev-comment-type="paramref" class="paramref">right</code> are equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Vision_Intrinsics.md&amp;value=---%0Auid%3A%20Bonsai.Vision.Intrinsics%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Vision/Intrinsics.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>

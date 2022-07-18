@@ -1,0 +1,674 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DynamicPropertyDescriptor
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DynamicPropertyDescriptor
+   ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <div class="masthead">
+          <div class="masthead__inner-wrap container">
+            <div class="masthead__menu">
+              <nav id="site-nav" class="greedy-nav">
+                
+                <a class="navbar-brand" href="//bonsai-rx.org/">
+                  <img id="logo" class="svg" src="../logo.svg" alt="">
+                </a>
+                <ul class="visible-links">
+                  <li class="masthead__menu-item"><a href="../.">Docs</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/learn">Learn</a></li>
+                  <li class="masthead__menu-item"><a href="//bonsai-rx.org/community">Community</a></li>
+                </ul>
+                <button class="greedy-nav__toggle hidden" type="button">
+                  <div class="navicon"></div>
+                </button>
+                <ul class="hidden-links hidden"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Bonsai.Design.DynamicPropertyDescriptor">
+  
+  
+  <h1 id="Bonsai_Design_DynamicPropertyDescriptor" data-uid="Bonsai.Design.DynamicPropertyDescriptor" class="text-break">Class DynamicPropertyDescriptor
+  </h1>
+  <div class="markdown level0 summary"><p>Provides a virtual property for a class.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.memberdescriptor">MemberDescriptor</a></div>
+    <div class="level2"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor">PropertyDescriptor</a></div>
+    <div class="level3"><span class="xref">DynamicPropertyDescriptor</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.addvaluechanged#system-componentmodel-propertydescriptor-addvaluechanged(system-object-system-eventhandler)">PropertyDescriptor.AddValueChanged(Object, EventHandler)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.equals#system-componentmodel-propertydescriptor-equals(system-object)">PropertyDescriptor.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.createinstance#system-componentmodel-propertydescriptor-createinstance(system-type)">PropertyDescriptor.CreateInstance(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.fillattributes#system-componentmodel-propertydescriptor-fillattributes(system-collections-ilist)">PropertyDescriptor.FillAttributes(IList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.getchildproperties#system-componentmodel-propertydescriptor-getchildproperties">PropertyDescriptor.GetChildProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.getchildproperties#system-componentmodel-propertydescriptor-getchildproperties(system-attribute())">PropertyDescriptor.GetChildProperties(Attribute[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.getchildproperties#system-componentmodel-propertydescriptor-getchildproperties(system-object)">PropertyDescriptor.GetChildProperties(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.getchildproperties#system-componentmodel-propertydescriptor-getchildproperties(system-object-system-attribute())">PropertyDescriptor.GetChildProperties(Object, Attribute[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.geteditor#system-componentmodel-propertydescriptor-geteditor(system-type)">PropertyDescriptor.GetEditor(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.gethashcode#system-componentmodel-propertydescriptor-gethashcode">PropertyDescriptor.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.getinvocationtarget#system-componentmodel-propertydescriptor-getinvocationtarget(system-type-system-object)">PropertyDescriptor.GetInvocationTarget(Type, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.gettypefromname#system-componentmodel-propertydescriptor-gettypefromname(system-string)">PropertyDescriptor.GetTypeFromName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.onvaluechanged#system-componentmodel-propertydescriptor-onvaluechanged(system-object-system-eventargs)">PropertyDescriptor.OnValueChanged(Object, EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.removevaluechanged#system-componentmodel-propertydescriptor-removevaluechanged(system-object-system-eventhandler)">PropertyDescriptor.RemoveValueChanged(Object, EventHandler)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.getvaluechangedhandler#system-componentmodel-propertydescriptor-getvaluechangedhandler(system-object)">PropertyDescriptor.GetValueChangedHandler(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.converter#system-componentmodel-propertydescriptor-converter">PropertyDescriptor.Converter</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.islocalizable#system-componentmodel-propertydescriptor-islocalizable">PropertyDescriptor.IsLocalizable</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.serializationvisibility#system-componentmodel-propertydescriptor-serializationvisibility">PropertyDescriptor.SerializationVisibility</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.supportschangeevents#system-componentmodel-propertydescriptor-supportschangeevents">PropertyDescriptor.SupportsChangeEvents</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.memberdescriptor.createattributecollection#system-componentmodel-memberdescriptor-createattributecollection">MemberDescriptor.CreateAttributeCollection()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.memberdescriptor.findmethod#system-componentmodel-memberdescriptor-findmethod(system-type-system-string-system-type()-system-type)">MemberDescriptor.FindMethod(Type, String, Type[], Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.memberdescriptor.findmethod#system-componentmodel-memberdescriptor-findmethod(system-type-system-string-system-type()-system-type-system-boolean)">MemberDescriptor.FindMethod(Type, String, Type[], Type, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.memberdescriptor.getsite#system-componentmodel-memberdescriptor-getsite(system-object)">MemberDescriptor.GetSite(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.memberdescriptor.attributearray#system-componentmodel-memberdescriptor-attributearray">MemberDescriptor.AttributeArray</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.memberdescriptor.attributes#system-componentmodel-memberdescriptor-attributes">MemberDescriptor.Attributes</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.memberdescriptor.category#system-componentmodel-memberdescriptor-category">MemberDescriptor.Category</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.memberdescriptor.description#system-componentmodel-memberdescriptor-description">MemberDescriptor.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.memberdescriptor.isbrowsable#system-componentmodel-memberdescriptor-isbrowsable">MemberDescriptor.IsBrowsable</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.memberdescriptor.name#system-componentmodel-memberdescriptor-name">MemberDescriptor.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.memberdescriptor.namehashcode#system-componentmodel-memberdescriptor-namehashcode">MemberDescriptor.NameHashCode</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.memberdescriptor.designtimeonly#system-componentmodel-memberdescriptor-designtimeonly">MemberDescriptor.DesignTimeOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.memberdescriptor.displayname#system-componentmodel-memberdescriptor-displayname">MemberDescriptor.DisplayName</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Bonsai.Design.html">Bonsai.Design</a></h6>
+  <h6><strong>Assembly</strong>: Bonsai.Design.dll</h6>
+  <h5 id="Bonsai_Design_DynamicPropertyDescriptor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DynamicPropertyDescriptor : PropertyDescriptor</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Design_DynamicPropertyDescriptor__ctor_System_String_System_Type_System_Func_System_Object_System_Object__System_Action_System_Object_System_Object__System_Attribute___.md&amp;value=---%0Auid%3A%20Bonsai.Design.DynamicPropertyDescriptor.%23ctor(System.String%2CSystem.Type%2CSystem.Func%7BSystem.Object%2CSystem.Object%7D%2CSystem.Action%7BSystem.Object%2CSystem.Object%7D%2CSystem.Attribute%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Design/DynamicPropertyDescriptor.cs/#L31">View Source</a>
+  </span>
+  <a id="Bonsai_Design_DynamicPropertyDescriptor__ctor_" data-uid="Bonsai.Design.DynamicPropertyDescriptor.#ctor*"></a>
+  <h4 id="Bonsai_Design_DynamicPropertyDescriptor__ctor_System_String_System_Type_System_Func_System_Object_System_Object__System_Action_System_Object_System_Object__System_Attribute___" data-uid="Bonsai.Design.DynamicPropertyDescriptor.#ctor(System.String,System.Type,System.Func{System.Object,System.Object},System.Action{System.Object,System.Object},System.Attribute[])">DynamicPropertyDescriptor(String, Type, Func&lt;Object, Object&gt;, Action&lt;Object, Object&gt;, Attribute[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bonsai.Design.DynamicPropertyDescriptor.html">DynamicPropertyDescriptor</a> class
+using the specified name, type, and dynamic methods for getting and setting
+property values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicPropertyDescriptor(string name, Type type, Func&lt;object, object&gt; getter, Action&lt;object, object&gt; setter, params Attribute[] attributes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the dynamic property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of the dynamic property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><span class="parametername">getter</span></td>
+        <td><p>A method used to get the current value of the dynamic property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><span class="parametername">setter</span></td>
+        <td><p>A method used to set the value of the dynamic property to a different value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.attribute">Attribute</a>[]</td>
+        <td><span class="parametername">attributes</span></td>
+        <td><p>An optional array of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.attribute">Attribute</a> objects that contains the property attributes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Design_DynamicPropertyDescriptor_ComponentType.md&amp;value=---%0Auid%3A%20Bonsai.Design.DynamicPropertyDescriptor.ComponentType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Design/DynamicPropertyDescriptor.cs/#L53">View Source</a>
+  </span>
+  <a id="Bonsai_Design_DynamicPropertyDescriptor_ComponentType_" data-uid="Bonsai.Design.DynamicPropertyDescriptor.ComponentType*"></a>
+  <h4 id="Bonsai_Design_DynamicPropertyDescriptor_ComponentType" data-uid="Bonsai.Design.DynamicPropertyDescriptor.ComponentType">ComponentType</h4>
+  <div class="markdown level1 summary"><p>Gets the type of the component this property is bound to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Type ComponentType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.componenttype#system-componentmodel-propertydescriptor-componenttype">PropertyDescriptor.ComponentType</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Design_DynamicPropertyDescriptor_IsReadOnly.md&amp;value=---%0Auid%3A%20Bonsai.Design.DynamicPropertyDescriptor.IsReadOnly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Design/DynamicPropertyDescriptor.cs/#L70">View Source</a>
+  </span>
+  <a id="Bonsai_Design_DynamicPropertyDescriptor_IsReadOnly_" data-uid="Bonsai.Design.DynamicPropertyDescriptor.IsReadOnly*"></a>
+  <h4 id="Bonsai_Design_DynamicPropertyDescriptor_IsReadOnly" data-uid="Bonsai.Design.DynamicPropertyDescriptor.IsReadOnly">IsReadOnly</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this property is read-only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsReadOnly { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.isreadonly#system-componentmodel-propertydescriptor-isreadonly">PropertyDescriptor.IsReadOnly</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Design_DynamicPropertyDescriptor_PropertyType.md&amp;value=---%0Auid%3A%20Bonsai.Design.DynamicPropertyDescriptor.PropertyType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Design/DynamicPropertyDescriptor.cs/#L78">View Source</a>
+  </span>
+  <a id="Bonsai_Design_DynamicPropertyDescriptor_PropertyType_" data-uid="Bonsai.Design.DynamicPropertyDescriptor.PropertyType*"></a>
+  <h4 id="Bonsai_Design_DynamicPropertyDescriptor_PropertyType" data-uid="Bonsai.Design.DynamicPropertyDescriptor.PropertyType">PropertyType</h4>
+  <div class="markdown level1 summary"><p>Gets the type of the dynamic property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Type PropertyType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.propertytype#system-componentmodel-propertydescriptor-propertytype">PropertyDescriptor.PropertyType</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Design_DynamicPropertyDescriptor_CanResetValue_System_Object_.md&amp;value=---%0Auid%3A%20Bonsai.Design.DynamicPropertyDescriptor.CanResetValue(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Design/DynamicPropertyDescriptor.cs/#L45">View Source</a>
+  </span>
+  <a id="Bonsai_Design_DynamicPropertyDescriptor_CanResetValue_" data-uid="Bonsai.Design.DynamicPropertyDescriptor.CanResetValue*"></a>
+  <h4 id="Bonsai_Design_DynamicPropertyDescriptor_CanResetValue_System_Object_" data-uid="Bonsai.Design.DynamicPropertyDescriptor.CanResetValue(System.Object)">CanResetValue(Object)</h4>
+  <div class="markdown level1 summary"><p>Returns whether resetting an object changes its value. Dynamic
+properties do not support resetting, so resetting an object
+never changes its value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanResetValue(object component)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.canresetvalue#system-componentmodel-propertydescriptor-canresetvalue(system-object)">PropertyDescriptor.CanResetValue(Object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Design_DynamicPropertyDescriptor_GetValue_System_Object_.md&amp;value=---%0Auid%3A%20Bonsai.Design.DynamicPropertyDescriptor.GetValue(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Design/DynamicPropertyDescriptor.cs/#L62">View Source</a>
+  </span>
+  <a id="Bonsai_Design_DynamicPropertyDescriptor_GetValue_" data-uid="Bonsai.Design.DynamicPropertyDescriptor.GetValue*"></a>
+  <h4 id="Bonsai_Design_DynamicPropertyDescriptor_GetValue_System_Object_" data-uid="Bonsai.Design.DynamicPropertyDescriptor.GetValue(System.Object)">GetValue(Object)</h4>
+  <div class="markdown level1 summary"><p>Gets the current value of the property on a component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object GetValue(object component)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.getvalue#system-componentmodel-propertydescriptor-getvalue(system-object)">PropertyDescriptor.GetValue(Object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Design_DynamicPropertyDescriptor_ResetValue_System_Object_.md&amp;value=---%0Auid%3A%20Bonsai.Design.DynamicPropertyDescriptor.ResetValue(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Design/DynamicPropertyDescriptor.cs/#L88">View Source</a>
+  </span>
+  <a id="Bonsai_Design_DynamicPropertyDescriptor_ResetValue_" data-uid="Bonsai.Design.DynamicPropertyDescriptor.ResetValue*"></a>
+  <h4 id="Bonsai_Design_DynamicPropertyDescriptor_ResetValue_System_Object_" data-uid="Bonsai.Design.DynamicPropertyDescriptor.ResetValue(System.Object)">ResetValue(Object)</h4>
+  <div class="markdown level1 summary"><p>Resets the value for this property of the component to the default value.
+Dynamic properties do not support resetting their values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ResetValue(object component)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.resetvalue#system-componentmodel-propertydescriptor-resetvalue(system-object)">PropertyDescriptor.ResetValue(Object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Design_DynamicPropertyDescriptor_SetValue_System_Object_System_Object_.md&amp;value=---%0Auid%3A%20Bonsai.Design.DynamicPropertyDescriptor.SetValue(System.Object%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Design/DynamicPropertyDescriptor.cs/#L96">View Source</a>
+  </span>
+  <a id="Bonsai_Design_DynamicPropertyDescriptor_SetValue_" data-uid="Bonsai.Design.DynamicPropertyDescriptor.SetValue*"></a>
+  <h4 id="Bonsai_Design_DynamicPropertyDescriptor_SetValue_System_Object_System_Object_" data-uid="Bonsai.Design.DynamicPropertyDescriptor.SetValue(System.Object,System.Object)">SetValue(Object, Object)</h4>
+  <div class="markdown level1 summary"><p>Sets the value of the dynamic property to a different value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetValue(object component, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.setvalue#system-componentmodel-propertydescriptor-setvalue(system-object-system-object)">PropertyDescriptor.SetValue(Object, Object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Design_DynamicPropertyDescriptor_ShouldSerializeValue_System_Object_.md&amp;value=---%0Auid%3A%20Bonsai.Design.DynamicPropertyDescriptor.ShouldSerializeValue(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Design/DynamicPropertyDescriptor.cs/#L112">View Source</a>
+  </span>
+  <a id="Bonsai_Design_DynamicPropertyDescriptor_ShouldSerializeValue_" data-uid="Bonsai.Design.DynamicPropertyDescriptor.ShouldSerializeValue*"></a>
+  <h4 id="Bonsai_Design_DynamicPropertyDescriptor_ShouldSerializeValue_System_Object_" data-uid="Bonsai.Design.DynamicPropertyDescriptor.ShouldSerializeValue(System.Object)">ShouldSerializeValue(Object)</h4>
+  <div class="markdown level1 summary"><p>Determines a value indicating whether the value of this property needs
+to be persisted. Dynamic property values are transient, so they always
+need to be persisted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool ShouldSerializeValue(object component)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertydescriptor.shouldserializevalue#system-componentmodel-propertydescriptor-shouldserializevalue(system-object)">PropertyDescriptor.ShouldSerializeValue(Object)</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bonsai-rx/docs-wip/new/main/apiSpec/new?filename=Bonsai_Design_DynamicPropertyDescriptor.md&amp;value=---%0Auid%3A%20Bonsai.Design.DynamicPropertyDescriptor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/bonsai-rx/bonsai/blob/8a6535cfbe8e4edea494a2abfd0e9189bda5634e/Bonsai.Design/DynamicPropertyDescriptor.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/jquery.greedy-navigation.js"></script>
+  </body>
+</html>
